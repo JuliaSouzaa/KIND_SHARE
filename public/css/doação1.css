@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
+/* Importa a fonte "Ruda" do Google Fonts com pesos variando de 400 a 900 */
+
+/* Aplica a fonte "Ruda" ao body e a todos os textos e botões */
+body, h1, h2, h3, h4, h5, h6, p, a, button {
+    font-family: 'Ruda', sans-serif; /* Define a fonte "Ruda" como padrão para o site */
+}
+
+/* Estilos para o cabeçalho (header) */
+header {
+    background-color: black; /* Define a cor de fundo do cabeçalho como preto */
+    color: white; /* Define a cor do texto no cabeçalho como branco */
+    display: flex; /* Usa flexbox para organizar os itens do cabeçalho */
+    justify-content: space-between; /* Espaça os itens igualmente entre as extremidades */
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding: 10px 20px; /* Adiciona padding ao redor do conteúdo do cabeçalho */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura/altura do cabeçalho */
+    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" ao cabeçalho */
+}
+
+/* Estilos para os links de navegação no cabeçalho */
+header nav a {
+    color: white; /* Define a cor dos links como branco */
+    margin: 0 10px; /* Adiciona uma margem horizontal de 10px entre os links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 1em; /* Define o tamanho da fonte dos links */
+    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" aos links */
+}
+
+/* Estilos para os ícones de perfil e redes sociais */
+.socialIcons a, .icon-section a, .btn-learn-more, .btnnecessidades, .btn-to-top {
+    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" aos botões e links */
+}
+
+/* Estilos para as legendas, textos e ícones */
+.icon-section p, .text-container h2, .text-container p, .comunidades h2, .comunidades p {
+    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" aos textos das seções */
+}
+
+/* Remove as margens e preenchimentos padrões do body */
+body {
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o padding padrão */
+    background-color: #FFFAFA !important; /* Define uma cor de fundo suave */
+}
+
+/* Estilos para o logotipo no cabeçalho */
+header .logo img {
+    width: 60px; /* Define a largura da logo */
+    height: auto; /* Mantém a proporção da logo */
+}
+
+/* Estilos para a seção de ícones no cabeçalho (pesquisa e perfil) */
+header .icons {
+    display: flex; /* Usa flexbox para organizar os ícones em linha */
+    align-items: center; /* Centraliza verticalmente os ícones */
+    gap: 10px; /* Adiciona um espaço de 10px entre os ícones */
+}
+
+/* Estilos para os ícones individuais no cabeçalho */
+header .icons .icon {
+    font-size: 24px; /* Define o tamanho do ícone */
+    color: white; /* Define a cor dos ícones como branco */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar o mouse */
+    transition: color 0.3s; /* Transição suave para a mudança de cor */
+}
+
+/* Mudança de cor ao passar o mouse sobre o ícone */
+header .icons .icon:hover {
+    color: #ffa600; /* Muda a cor do ícone para laranja ao passar o mouse */
+}
+
+/* Estilo para os links de ícones no cabeçalho */
+header .icons a {
+    color: inherit; /* Herda a cor do ícone */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+/* Ajusta a aparência de todos os ícones de redes sociais */
+.socialIcons a {
+    display: flex; /* Flexbox para centralizar os ícones */
+    justify-content: center; /* Centraliza horizontalmente os ícones */
+    align-items: center; /* Centraliza verticalmente os ícones */
+    width: 40px; /* Define a largura dos ícones */
+    height: 40px; /* Define a altura dos ícones */
+    margin: 0 10px; /* Adiciona uma margem horizontal de 10px entre os ícones */
+    border-radius: 50%; /* Define os ícones como circulares */
+    background-color: #fff; /* Define o fundo dos ícones como branco */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+/* Efeito hover para os ícones de redes sociais */
+.socialIcons a:hover {
+    background-color: #007BFF; /* Muda a cor de fundo dos ícones ao passar o mouse */
+    color: white; /* Muda a cor do texto dos ícones ao passar o mouse */
+}
+
+/* Estilo geral para botões */
+.btn {
+    padding: 15px !important; /* Adiciona padding interno aos botões */
+    font-size: 35px !important; /* Define o tamanho da fonte dos botões */
+    border-radius: 0px !important; /* Define bordas arredondadas */
+    transition: background-color 0.3s, transform 0.3s !important; /* Suave transição ao alterar cor e tamanho */
+    font-family: 'Ruda', sans-serif !important;
+}
+
+/* Estilo para botões primários */
+.btn-primary {
+    display: inline-block !important;
+    padding: 30px 70px !important;
+    background-color: #ffa500 !important;
+    color: white !important;
+    border-radius: 50px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    margin-top: 20px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important; /* Adiciona uma transição suave ao transformar e à sombra */
+    border: none !important; 
+    font-family: 'Ruda', sans-serif !important;
+  }
+
+/* Efeito hover para botões primários */
+.btn-primary:hover {
+    background-color: #e69500 !important; /* Muda a cor de fundo no hover */
+    transform: translateY(-5px) !important; /* Move o botão 5px para cima */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important; /* Adiciona uma sombra mais pronunciada para o efeito de levantar */
+  }
+
+/* Estilo para botões de sucesso */
+.btn-success {
+    display: inline-block !important;
+    padding: 30px 70px !important;
+    background-color: #ffa500 !important;
+    color: white !important;
+    border-radius: 50px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    margin-top: 20px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important; /* Adiciona uma transição suave ao transformar e à sombra */
+    border: none !important; 
+    font-family: 'Ruda', sans-serif !important;
+}
+
+/* Efeito hover para botões de sucesso */
+.btn-success:hover {
+    background-color: #e69500 !important; /* Muda a cor de fundo no hover */
+    transform: translateY(-5px) !important; /* Move o botão 5px para cima */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important; /* Adiciona uma sombra mais pronunciada para o efeito de levantar */
+  }
+
+
+
+/* Estilo das caixas de doação */
+.box {
+    background-color: #fff; /* Fundo branco */
+    padding: 20px; /* Padding interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+}
+
+/* Estilo da seção de dúvidas */
+.section_container {
+    background-color: #e9ecef; /* Fundo cinza claro */
+    padding: 20px; /* Padding interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-top: 30px; /* Margem superior */
+}
+
+/* Tornar imagens responsivas */
+.client__card img {
+    max-width: 90%; /* Define a largura máxima como 100% do container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: block;  /* Define a imagem como um elemento de bloco, permitindo que as propriedades de margem sejam aplicadas corretamente.*/
+    margin: 0 auto; /* Deixa a imagem no centro*/
+}
+
+/*BOTAO CONFIRA*/
+/*.botaos {
+    display: inline-block !important;
+    padding: 10px 20px !important; /* Largura & Tamanho*/
+/*    background-color: #ffa500 !important;
+    color: white !important;
+    font-size: 20px;  /* Tamanho da Fonte */
+ /*   border-radius: 50px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    margin-top: 20px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important; /* Adiciona uma transição suave ao transformar e à sombra */
+ /*   border: none !important; 
+    font-family: 'Ruda', sans-serif !important;
+}
+
+.botaos:hover {
+    background-color: #e69500 !important; /* Muda a cor de fundo no hover */
+/*    transform: translateY(-5px) !important; /* Move o botão 5px para cima */
+/*    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important; /* Adiciona uma sombra mais pronunciada para o efeito de levantar}
+
+
+
+
+/* Botão de voltar ao topo */
+.btn-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e69500;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 12px; /* Borda levemente arredondada */
+    display: none; /* Inicialmente invisível */
+    z-index: 1000;
+    width: 50px;  /* Deixando o botão quadrado */
+    height: 50px; /* Deixando o botão quadrado */
+    text-align: center;
+    line-height: 20px; /* Alinha o ícone verticalmente */
+}
+
+.btn-to-top:hover {
+    background-color: rgb(255, 215, 56);
+    color: black;
+    transition: 0.3s ease;
+}
+
+    /* FOOTER */
+    * {
+        padding: 0; /* Remove todo o preenchimento (padding) de todos os elementos */
+        margin: 0; /* Remove toda a margem de todos os elementos */
+        box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura e altura dos elementos */
+    }
+    
+    footer {
+        background-color: #111; /* Define a cor de fundo do footer como um cinza escuro */
+    }
+    
+    .footerContainer {
+        width: 100%; /* Faz com que o container do footer ocupe toda a largura disponível */
+        padding: 70px 30px 20px; /* Define o preenchimento interno do footer */
+    }
+    
+    .socialIcons {
+        display: flex; /* Utiliza o layout flexbox para organizar os ícones sociais em linha */
+        justify-content: center; /* Centraliza os ícones sociais horizontalmente */
+    }
+    
+    .socialIcons a {
+        text-decoration: none; /* Remove o sublinhado dos links */
+        padding: 10px; /* Adiciona espaço interno ao redor dos links dos ícones */
+        background-color: orange; /* Define a cor de fundo dos ícones sociais como laranja */
+        margin: 10px; /* Adiciona uma margem de 10px ao redor dos ícones sociais */
+        border-radius: 50%; /* Faz com que os ícones tenham bordas arredondadas */
+    }
+    
+    .socialIcons a i {
+        font-size: 2em; /* Define o tamanho do ícone social como 2em */
+        color: black; /* Define a cor dos ícones como preto */
+        opacity: 0.9; /* Define a opacidade dos ícones como 90% */
+    }
+    
+    /* Efeito de hover nos ícones sociais */
+    .socialIcons a:hover {
+        background-color: #111; /* Muda a cor de fundo para cinza escuro ao passar o mouse */
+        transition: 0.5s; /* Aplica uma transição suave ao mudar de cor */
+    }
+    
+    .socialIcons a:hover i {
+        color: white; /* Muda a cor do ícone para branco ao passar o mouse */
+        transition: 0.5s; /* Aplica uma transição suave ao mudar de cor do ícone */
+    }
+    
+    .footerNav {
+        margin: 30px 0; /* Adiciona uma margem de 30px em cima e embaixo da navegação do footer */
+    }
+    
+    .footerNav ul {
+        display: flex; /* Utiliza o layout flexbox para organizar os itens da lista em linha */
+        justify-content: center; /* Centraliza os itens da lista horizontalmente */
+        list-style-type: none; /* Remove os marcadores da lista */
+    }
+    
+    .footerNav ul li a {
+        color: white; /* Define a cor dos links da navegação como branca */
+        margin: 20px; /* Adiciona uma margem de 20px ao redor dos links */
+        text-decoration: none; /* Remove o sublinhado dos links */
+        font-size: 1.3em; /* Define o tamanho da fonte dos links da navegação */
+        opacity: 0.7; /* Define a opacidade dos links como 70% */
+        transition: 0.5s; /* Aplica uma transição suave nas propriedades que mudam */
+    }
+    
+    .footerNav ul li a:hover {
+        opacity: 1; /* Aumenta a opacidade para 100% ao passar o mouse sobre os links */
+    }
+    
+    .footerBottom {
+        background-color: #000; /* Define a cor de fundo da parte inferior do footer como preto */
+        padding: 20px; /* Adiciona um espaço interno de 20px ao redor do conteúdo */
+        text-align: center; /* Centraliza o texto dentro do footer inferior */
+    }
+    
+    .footerBottom p {
+        color: white; /* Define a cor do texto como branca */
+    }
+    
+    .designer {
+        opacity: 0.7; /* Define a opacidade como 70% */
+        text-transform: uppercase; /* Transforma o texto para letras maiúsculas */
+        letter-spacing: 1px; /* Adiciona espaçamento entre as letras */
+        font-weight: 400; /* Define o peso da fonte como normal */
+        margin: 0px 5px; /* Adiciona uma margem de 5px ao redor do texto */
+    }
+    
+    @media (max-width: 700px) {
+        .footerNav ul {
+            flex-direction: column; /* Muda a direção dos itens da lista para coluna em telas menores */
+        } 
+        .footerNav ul li {
+            width: 100%; /* Faz com que cada item da lista ocupe toda a largura disponível */
+            text-align: center; /* Centraliza o texto dos itens da lista */
+            margin: 10px; /* Adiciona uma margem de 10px ao redor dos itens da lista */
+        }
+        .socialIcons a {
+            padding: 8px; /* Reduz o preenchimento interno dos ícones sociais em telas menores */
+            margin: 4px; /* Reduz a margem dos ícones sociais em telas menores */
+        }
+    }
+    
+    footer {
+        background-color: #111; /* Redefine a cor de fundo do footer (redundante, pois já está definido anteriormente) */
+        clear: both; /* Garante que o footer não flutue dentro de outro container, forçando-o a aparecer abaixo de qualquer elemento flutuante */
+    }

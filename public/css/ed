@@ -1,0 +1,70 @@
+:root {
+    --bg-orange:         #f0a500;
+    --bg-orange-hover:   #D85F08;
+    --bg-black:          #000000;
+    --bg-marrom-1:       #757575;
+    --bg-marrom-2:       #F4F4F4;
+    --bg-white:          #FFFFFF;
+    --bg-yellow:         #e69500;
+}
+
+html, body {
+    font-size: 16px;
+    font-family: "Ruda", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.login-card {
+    background-color: var(--bg-white);
+    border-radius: 100px 0 100px 0; /* Bordas arredondadas */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 450px; /* Largura fixa do card */
+    padding: 40px; /* Padding interno do card */
+}
+
+/* Estilos para as seções de perfil */
+h3 {
+    margin-bottom: 20px; /* Espaçamento inferior para os títulos */
+    color: var(--bg-black); /* Cor do título */
+}
+
+.text-lg {
+    font-size: 1.25rem; /* Tamanho do texto maior */
+}
+
+/* Estilo dos formulários dentro das seções */
+.input-group {
+    margin-bottom: 20px; /* Espaçamento entre grupos de inputs */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 0px;
+    border: 1px solid #ddd;
+    background-color: var(--bg-marrom-2);
+    box-sizing: border-box;
+}
+
+/* Botão para as ações do perfil */
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    color: var(--bg-white);
+    background-color: var(--bg-orange);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: var(--bg-orange-hover); /* Efeito hover */
+}

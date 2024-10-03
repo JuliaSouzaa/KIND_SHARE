@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
+/* Importa a fonte "Ruda" do Google Fonts com pesos que variam de 400 a 900 */
+
+body {
+    background-color: #000; /* Cor de fundo preta */
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f7c04a; /* Cor de fundo amarela para o card */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 100px 0 100px 0; /* Bordas arredondadas apenas nos cantos superiores */
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: column; /* Organiza itens verticalmente */
+    align-items: center; /* Centraliza itens horizontalmente */
+    justify-content: center; /* Centraliza itens verticalmente */
+    text-align: center; /* Centraliza o texto dentro do card */
+    padding: 20px; /* Espaçamento interno do card */
+    height: 400px; /* Altura mínima para garantir que o card tenha espaço suficiente */
+}
+
+/* Estilo do título */
+.card-title {
+    margin-bottom: 20px;
+}
+
+/* Estilo do texto */
+.card-text {
+    margin-bottom: 20px;
+}
+
+/* Estilo dos botões */
+.btn-custom {
+    display: inline-block; /* Necessário para definir largura percentual */
+    width: 80%; /* Largura percentual ajustada */
+    margin: 10px 0; /* Espaçamento vertical entre os botões */
+    border-radius: 50px; /* Bordas arredondadas nos botões */
+    padding: 10px 0; /* Espaçamento interno dos botões */
+    font-size: 16px; /* Tamanho da fonte dos botões */
+    color: #000; /* Cor do texto dos botões */
+    background-color: #fff; /* Cor de fundo dos botões */
+    border: 1px solid #ddd; /* Cor da borda dos botões */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    transition: background-color 0.3s, border-color 0.3s; /* Transição suave para cor de fundo e borda */
+}
+
+/* Centraliza os botões dentro do card */
+.card .btn-custom {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo do botão ao passar o mouse */
+.btn-custom:hover {
+    background-color: #c58907; /* Cor de fundo amarela ao passar o mouse */
+    border-color: #c58907; /* Cor da borda amarela ao passar o mouse */
+}

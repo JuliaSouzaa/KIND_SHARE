@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
+
+/* Configurações de Cores */
+:root {
+    --bg-orange:         #f0a500;
+    --bg-orange-hover:   #D85F08;
+    --bg-black:          #000000;
+    --bg-marrom-1:       #757575;
+    --bg-marrom-2:       #F4F4F4;
+    --bg-white:          #FFFFFF;
+    --bg-yellow:         #FCB705;
+}
+
+/* Configuração do corpo e tamanho de fonte */
+html, body {
+    font-size: 16px;
+    font-family: "Ruda", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Centralizando o conteúdo principal */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.login-card {
+    background-color: var(--bg-white);
+    border-radius: 100px 0 100px 0;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    padding: 40px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo-img-default {
+    width: auto;
+    height: 120px;
+}
+
+/* Input Text Fields */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 0px;
+    border: 1px solid #ddd;
+    background-color: var(--bg-marrom-2);
+    box-sizing: border-box;
+}
+
+/* Botões */
+.button-container {
+    margin-top: 10px;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    color: var(--bg-white);
+    background-color: var(--bg-orange);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Ruda", sans-serif;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: var(--bg-orange-hover);
+}
+
+.google-login-container {
+    margin-top: 10px;
+}
+
+.btn-google {
+    width: 100%;
+    padding: 12px;
+    color: var(--bg-white);
+    background-color: #2b2b2b;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Ruda", sans-serif;
+}
+
+.btn-google i {
+    margin-right: 10px;
+}
+
+/* Link para cadastro */
+.register-link {
+    margin-top: 20px;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: var(--bg-orange);
+    font-weight: 600;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}

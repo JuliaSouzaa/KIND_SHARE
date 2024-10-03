@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
+/* Importa a fonte "Ruda" do Google Fonts com pesos que variam de 400 a 900 */
+
+:root {
+    --bg-orange:         #f0a500;
+    --bg-orange-hover:   #D85F08;
+    --bg-black:          #000000;
+    --bg-marrom-1:       #757575;
+    --bg-marrom-2:       #F4F4F4;
+    --bg-white:          #f1eee2e0;
+    --bg-yellow:         #e69500;
+}
+/* Define variáveis de cores para serem usadas ao longo do código, facilitando a manutenção e ajustes futuros */
+
+html, body {
+    height: 100%;
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove paddings padrão */
+    background-image: url('../img/1.png'); /* Define a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+}
+
+    .main-container {
+        font-size: 16px; /* Define o tamanho da fonte base como 16px */
+        font-family: "Ruda", sans-serif; /* Define a fonte principal do corpo */
+        font-weight: 400; /* Define o peso da fonte padrão como 400 */
+        display: flex; /* Usa flexbox para layout */
+        align-items: center; /* Centraliza o conteúdo verticalmente */
+        height: 100vh; /* Ocupa 100% da altura da viewport */
+        position: relative;
+        justify-content: center; /* Centraliza o conteúdo */
+        overflow: hidden; /* Esconde qualquer overflow */
+    }
+    
+    .login-card {
+        background-color: var(--bg-white); /* Define o fundo do card como branco */
+        border-radius: 100px 0 100px 0; /* Arredonda os cantos superior esquerdo e inferior direito */
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Aumenta a sombra para dar o efeito de "saltar" */
+        width: 450px; /* Define a largura fixa do card */
+        padding: 40px; /* Adiciona padding interno de 40px ao redor do conteúdo */
+        position: absolute; /* Permite que o card de login seja posicionado em relação ao contêiner principal */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translateX(-50%); /* Ajusta para o centro */
+        z-index: 1; /* O login card estará atrás do texto */
+        margin-left: 50px; /* Reduz o espaço lateral à esquerda */
+        margin-right: 13px; /* Espaço lateral à direita para igualar ao texto */
+        transition: transform 1s ease-out; /* Transição suave */
+    }
+    
+    .welcome-message {
+        position: absolute; /* Permite posicionamento absoluto */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translateX(-50%); /* Ajusta para o centro */
+        color: white; /* Define a cor do texto da mensagem */
+        transition: transform 1s ease-out; /* Transição suave */
+        opacity: 0; /* Inicialmente invisível */
+        display: flex; /* Adiciona flexbox para o alinhamento vertical */
+        flex-direction: column; /* Alinha os itens verticalmente */
+        align-items: flex-start; /* Alinha à esquerda */
+        margin-left: 90px; /* Alinhamento lateral à esquerda igual ao login-card */
+    }
+    
+    .welcome-message h2 {
+        max-width: 500px; /* Limita a largura do parágrafo */
+        font-size: 3rem; /* Tamanho da fonte do h2 */
+        margin: 0; /* Remove margens padrão do h2 */
+    }
+    
+    .welcome-message p {
+        max-width: 400px; /* Limita a largura do parágrafo */
+        font-size: 1.5rem; /* Tamanho da fonte do parágrafo */
+        margin-top: 10px; /* Adiciona margem superior entre o h2 e o p */
+    }
+    
+    
+
+/* Estilos para o card de login, com bordas arredondadas, sombra e padding interno */
+
+.card-body {
+    text-align: center; /* Centraliza todo o conteúdo dentro do corpo do card */
+}
+
+.logo-container {
+    margin-bottom: 20px; /* Adiciona margem inferior para espaçamento entre o logo e o resto do conteúdo */
+}
+
+.logo-img-default {
+    width: auto; /* Mantém a proporção da largura da imagem */
+    height: 190px; /* Define a altura fixa da imagem do logo */
+}
+/* Estilos da imagem do logo */
+
+.input-group {
+    margin-bottom: 20px; /* Adiciona espaçamento entre grupos de inputs */
+    text-align: left; /* Alinha os labels e inputs à esquerda */
+}
+
+.input-group label {
+    display: block; /* O label ocupa a largura completa */
+    margin-bottom: 5px; /* Adiciona margem inferior para espaçar o label do input */
+    font-weight: 600; /* Torna o texto do label mais espesso */
+    font-size: 1rem; /* Define o tamanho da fonte como 1 rem (equivalente a 16px) */
+}
+/* Estilos para os labels dos campos de input */
+
+.input-group input {
+    width: 100%; /* O input ocupa 100% da largura disponível */
+    padding: 12px; /* Adiciona padding interno ao input */
+    font-size: 1rem; /* Define o tamanho da fonte como 16px */
+    border-radius: 0px; /* Remove o arredondamento padrão das bordas */
+    border: 1px solid #ddd; /* Define uma borda fina cinza clara */
+    background-color: var(--bg-marrom-2); /* Define a cor de fundo do input */
+    box-sizing: border-box; /* Inclui o padding e bordas nas dimensões totais do input */
+}
+/* Estilos para os campos de input, incluindo largura total, padding e borda */
+
+.button-container {
+    margin-top: 10px; /* Adiciona margem superior entre o input e o botão */
+}
+
+.btn-login {
+    width: 100%; /* O botão ocupa 100% da largura do container */
+    padding: 12px; /* Adiciona padding interno ao botão */
+    color: var(--bg-white); /* Define a cor do texto como branco */
+    background-color: var(--bg-orange); /* Define a cor de fundo como laranja */
+    border: none; /* Remove borda padrão */
+    border-radius: 50px; /* Arredonda as bordas do botão */
+    cursor: pointer; /* Define o cursor como pointer para indicar que é clicável */
+    font-size: 1rem; /* Define o tamanho da fonte como 16px */
+    font-family: "Ruda", sans-serif; /* Aplica a fonte "Ruda" */
+    transition: background-color 0.3s; /* Adiciona uma transição suave ao fundo ao interagir */
+}
+/* Estilos para o botão de login, com cores, bordas arredondadas e transição suave ao passar o mouse */
+
+.btn-login:hover {
+    background-color: var(--bg-orange-hover); /* Muda a cor de fundo quando o botão é hoverado */
+}
+/* Efeito hover no botão de login, mudando a cor do fundo */
+
+.google-login-container {
+    margin-top: 10px; /* Adiciona margem superior no container do botão Google */
+    
+}
+
+.btn-google {
+    width: 100%; /* O botão do Google ocupa 100% da largura do container */
+    padding: 12px; /* Adiciona padding interno */
+    color: var(--bg-white); /* Define a cor do texto como branco */
+    background-color: #2b2b2b; /* Define o fundo como preto */
+    border: none; /* Remove borda padrão */
+    border-radius: 50px; /* Arredonda as bordas do botão */
+    cursor: pointer; /* Define o cursor como pointer */
+    font-size: 1rem; /* Define o tamanho da fonte como 16px */
+    font-family: "Ruda", sans-serif !important; /* Aplica a fonte "Ruda" */
+}
+
+.btn-google i {
+    margin-right: 10px; /* Adiciona margem entre o ícone e o texto */
+}
+/* Estilos para o botão de login do Google, similar ao botão de login normal */
+
+.register-link {
+    margin-top: 20px; /* Adiciona margem superior ao link de registro */
+}
+
+.btn-link {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: var(--bg-orange); /* Define a cor do link como laranja */
+    font-weight: 600; /* Aumenta o peso da fonte */
+}
+
+.btn-link:hover {
+    text-decoration: underline; /* Adiciona sublinhado quando o link é hoverado */
+}
+/* Estilos para o link de registro, com cor laranja e efeito hover com sublinhado */

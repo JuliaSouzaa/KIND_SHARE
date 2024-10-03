@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
+/* Importa a fonte "Ruda" do Google Fonts com pesos que variam de 400 a 900 */
+
+/* Define a fonte padrão para o site e remove as margens e preenchimentos padrões */
+body {
+    margin: 0 !important; /* Remove margens padrão do navegador */
+    padding: 0 !important; /* Remove preenchimento padrão do navegador */
+    background-color: #FFFAFA !important;
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+/* Estilos para o cabeçalho (header) */
+header {
+    background-color: black !important; /* Define a cor de fundo do cabeçalho */
+    color: white !important; /* Define a cor do texto no cabeçalho */
+    display: flex !important; /* Usa o layout flexbox para organizar os itens */
+    justify-content: space-between !important; /* Espaça os itens igualmente entre as extremidades */
+    align-items: center !important; /* Centraliza os itens verticalmente no centro */
+    padding: 10px 20px !important; /* Padding para dar um bom espaço ao redor do conteúdo */
+    box-sizing: border-box !important; /* Garante que o padding seja considerado no tamanho total */
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+
+}
+
+/* Estilos para o logotipo no cabeçalho */
+header .logo img {
+    width: 60px !important; /* Aumente o tamanho da logo */
+    height: auto !important; /* Mantém a proporção da imagem */
+}
+
+/* Estilos para os links de navegação no cabeçalho */
+header nav a {
+    color: white !important; /* Define a cor dos links como branco */
+    margin: 0 10px !important; /* Adiciona uma margem horizontal de 10px entre os links */
+    text-decoration: none !important; /* Remove o sublinhado dos links */
+    font-size: 1em !important; /* Tamanho da fonte dos links */
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+/* Estilos para a seção de ícones no cabeçalho (pesquisa e perfil) */
+header .icons {
+    display: flex !important; /* Usa o layout flexbox para organizar os ícones em linha */
+    align-items: center !important; /* Centraliza verticalmente os itens */
+    gap: 10px !important; /* Define um espaçamento (gap) de 10px entre os ícones */
+}
+
+/* Estilos para os ícones individuais no cabeçalho */
+header .icons .icon {
+    font-size: 24px !important; /* Tamanho do ícone */
+    color: white !important; /* Cor padrão dos ícones */
+    cursor: pointer !important; /* Muda o cursor para uma mãozinha quando passar o mouse sobre o ícone */
+    transition: color 0.3s !important; /* Animação suave para a mudança de cor */
+}
+
+/* Mudança de cor ao passar o mouse sobre o ícone */
+header .icons .icon:hover {
+    color: #ffa600 !important; /* Cor que o ícone muda ao passar o mouse */
+}
+
+/* Garantindo que o link do ícone de perfil não altere a aparência do cursor */
+header .icons a {
+    color: inherit !important; /* Herda a cor do ícone */
+    text-decoration: none !important; /* Remove o sublinhado do link */
+}
+
+
+/* Ajustando a aparência de todos os ícones de rede social */
+.socialIcons a {
+    display: flex !important; /* Flex para centralizar o conteúdo */
+    justify-content: center !important; /* Centraliza os ícones dentro dos links */
+    align-items: center !important; /* Alinha verticalmente os ícones */
+    width: 40px !important; /* Define a largura do ícone */
+    height: 40px !important; /* Define a altura do ícone */
+    margin: 0 10px !important; /* Margem entre os ícones */
+    border-radius: 50% !important; /* Deixa os ícones circulares */
+    background-color: #fff !important; /* Cor de fundo dos ícones */
+    transition: background-color 0.3s !important; /* Transição suave para a cor de fundo */
+}
+
+.socialIcons a:hover {
+    background-color: #007BFF; /* Muda a cor de fundo ao passar o mouse */
+    color: white !important; /* Muda a cor do texto ao passar o mouse */
+}
+
+
+
+/* Estilos para a seção "Transformando Comunidades" */
+.comunidades {
+    background-color: #f8cf47; /* Cor de fundo amarela */
+    padding: 60px; /* Aumenta o padding geral para criar mais espaço ao redor */
+    border-radius: 120px 0 120px 0; /* Aumenta as bordas arredondadas apenas nos cantos superiores */
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo no centro */
+    justify-content: space-between; /* Espaçamento entre imagem e texto */
+    gap: 30px; /* Aumenta o espaço entre o texto e a imagem */
+    max-width: 90%; /* Limita a largura máxima da seção */
+    margin: 120px auto 0; /* Cria espaço acima da seção para a navbar e centraliza a seção */
+    box-sizing: border-box; /* Inclui padding e bordas na largura total */
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+/* Estilos para o texto */
+.comunidades .texto {
+    flex: 1;
+    max-width: 50%; /* Limita a largura do texto */
+    margin-right: 30px; /* Espaço entre o texto e a imagem */
+    padding-left: 30px; /* Ajusta o espaço interno à esquerda do texto */
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+.comunidades h2 {
+    font-size: 36px; /* Aumenta o tamanho do título */
+    font-weight: bold;
+    margin-bottom: 20px; /* Espaço entre o título e o parágrafo */
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+.comunidades p {
+    font-size: 22px; /* Aumenta o tamanho da fonte do parágrafo */
+    line-height: 1.8; /* Aumenta o espaçamento entre linhas para melhorar a legibilidade */
+    color: #333;
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+/* Estilos para a imagem */
+.comunidades .imagem-comunidade {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Alinha o carrossel no centro horizontalmente */
+    align-items: center; /* Alinha o carrossel no centro verticalmente */
+    position: relative; /* Necessário para posicionar os controles do carrossel */
+}
+
+/* Estilos para o carrossel */
+.carrossel {
+    position: relative;
+    width: 600px; /* Largura do carrossel */
+    height: 600px; /* Altura do carrossel ajustada */
+    overflow: hidden;
+    border-radius: 20px; /* Borda arredondada para o carrossel */
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+.carrossel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transição suave entre as imagens */
+}
+
+.carrossel-images img {
+    width: 600px; /* Largura das imagens */
+    height: 600px; /* Altura das imagens ajustada */
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
+    border-radius: 20px; /* Borda arredondada para as imagens */
+}
+
+/* Estilos para os controles do carrossel */
+.carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.carrossel-btn.prev {
+    left: 10px;
+}
+
+.carrossel-btn.next {
+    right: 10px;
+}
+
+
+/* Estilo dos itens da navegação */
+.navbar-nav .nav-item {
+    margin: 0; /* Remove margens extras */
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* Cor do texto dos links */
+    padding: 15px 20px; /* Espaçamento interno dos links */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s ease; /* Transições suaves para cor e fundo */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    background-color: transparent; /* Fundo transparente para todos os links */
+}
+
+/* Estilo dos botões de pesquisa e perfil */
+.form-inline {
+    position: absolute;
+    right: 20px; /* Alinha os botões ao canto direito */
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+    display: flex;
+}
+
+/* Estilo dos botões */
+.form-inline .btn {
+    background-color: transparent; /* Fundo transparente para os ícones */
+    border: none; /* Remove bordas padrão */
+    color: #fff; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    margin-left: 10px; /* Espaço entre os ícones */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+/* Efeito de hover nos botões */
+.form-inline .btn:hover {
+    color: #f0a500; /* Cor dos ícones ao passar o mouse */
+    transform: scale(1.1); /* Leve aumento no tamanho do ícone */
+}
+
+/* Estilo para a seção "Conheça as Outras Crianças" */
+.outras-criancas {
+    padding: 40px; /* Espaço ao redor da seção */
+    text-align: center; /* Centraliza o texto */
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+.outras-criancas h2 {
+    font-size: 36px; /* Tamanho do título */
+    font-weight: bold;
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+/* Estilos para os cartões */
+.cards {
+    display: flex;
+    justify-content: center; /* Centraliza os cartões horizontalmente */
+    gap: 20px; /* Espaçamento entre os cartões */
+    flex-wrap: wrap; /* Permite que os cartões se ajustem em várias linhas, se necessário */
+}
+
+/* Efeito de animação nos cartões das crianças */
+.card {
+    background-color: #fff; /* Fundo branco para os cartões */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites do cartão */
+    text-align: center; /* Centraliza o texto dentro do cartão */
+    max-width: 300px; /* Largura máxima do cartão */
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin: 10px; /* Espaço ao redor dos cartões */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para transformações e sombras */
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+/* Efeito ao passar o mouse sobre o cartão */
+.card:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do cartão */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+}
+
+.card img {
+    max-width: 100%; /* Ajusta a imagem para não ultrapassar os limites do cartão */
+    height: 200px; /* Ajusta a altura das imagens nos cartões */
+    object-fit: cover; /* Garante que as imagens cubram o espaço disponível */
+    border-bottom: 2px solid #f8cf47; /* Linha de separação abaixo da imagem */
+}
+
+.card h3 {
+    font-size: 24px; /* Tamanho do subtítulo */
+    margin: 10px 0; /* Espaço acima e abaixo do subtítulo */
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+.card p {
+    font-size: 18px; /* Tamanho do texto descritivo */
+    color: #555; /* Cor do texto */
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+/* Estilo do botão "Veja Mais!" */
+.ver-mais {
+    display: flex;
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    margin-top: 20px; /* Espaço acima do botão */
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+.ver-mais button {
+    background-color: #ffe100; /* Cor de fundo do botão */
+    color: #000; /* Cor do texto do botão */
+    border: none; /* Remove bordas padrão */
+    border-radius: 8px; /* Arredonda as bordas do botão */
+    padding: 12px 24px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Fonte em negrito */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+/* Efeito de hover no botão */
+.ver-mais button:hover {
+    background-color: #ffd700; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento no tamanho do botão */
+}
+
+/* Efeito de foco no botão */
+.ver-mais button:focus {
+    outline: none; /* Remove o contorno padrão do foco */
+    box-shadow: 0 0 0 2px #ffe100; /* Adiciona uma borda externa ao foco */
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+section {
+    background-color: #fdc659;
+    padding: 30px 40px;
+    border-radius: 20px;   
+    box-shadow: 1px 1px 10px #000000;
+    max-width: 700px;
+    max-height: 800px;
+    margin: 50px auto; /* Altera para margin: 50px auto para centralizar */
+    width: 100%; /* Opcional, para garantir que ele não ultrapasse a tela */
+    box-sizing: border-box; /* Para garantir que padding não afete a largura total */
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+#bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+}
+
+
+span {
+    border-bottom: var(--Claro) solid 2px;
+    padding: 0 0 3px 0;
+    cursor: pointer;
+}
+
+form {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos do formulário */
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+h2 {
+    margin: 10px 0;
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+input {
+    margin: 6px 0;
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
+
+button:hover {
+    background: var(--Vermelho);
+    color: var(--Claro);
+}
+
+p {
+    margin: 20px 0;
+    font-size: 15px;
+    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+}
