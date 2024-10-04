@@ -56,21 +56,20 @@
         </div>
     </nav>
 
-    <div class="icons">
-        <i class="fas fa-search icon" id="searchIcon"></i> <!-- Ícone de pesquisa -->
-        <i class="fas fa-user icon" id="profileIcon" onclick="toggleDropdown()"></i> <!-- ícone do usuário -->
-        <div class="user-dropdown">
-           
-            <div class="dropdown-content" id="dropdownMenu">
-           
-                <a class="dropdown-item" href="{{ route('profile.edit') }}">{{ Auth::user()->name }}</a> <!-- Link para o perfil -->
-                <form method="POST" action="{{ route('logout') }}">
-                    @csrf
-                    <button type="submit" class="dropdown-button">Log Out</button> <!-- Botão de logout -->
-                </form>
-            </div>
+<div class="icons">
+    <i class="fas fa-search icon" id="searchIcon"></i> <!-- Ícone de pesquisa -->
+    <i class="fas fa-user icon" id="profileIcon" onclick="toggleDropdown()"></i> <!-- Ícone do usuário -->
+    <div class="user-dropdown">
+        <div class="dropdown-content" id="dropdownMenu">
+            <a class="dropdown-link" href="{{ route('profile.edit') }}">{{ Auth::user()->name }}</a> <!-- Link para o perfil -->
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <button type="submit" class="dropdown-button">Log Out</button> <!-- Botão de logout -->
+            </form>
         </div>
     </div>
+</div>
+
 
 </header>
     
