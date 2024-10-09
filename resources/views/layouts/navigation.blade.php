@@ -1,3 +1,5 @@
+<!-- TELA DEPOIS DE LOGADA -->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -10,6 +12,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>KIND SHARE</title>
+
+    <style>
+      .search-container {
+          display: none; /* Inicialmente oculta */
+          position: absolute; /* Remove da normal flow */
+          right: 80px; /* Ajuste para mais à esquerda */
+          top: 15px; /* Ajuste conforme necessário para a posição vertical */
+          z-index: 1000; /* Fica acima de outros elementos */
+      }
+      #searchInput {
+          width: 200px; /* Ajuste o tamanho conforme necessário */
+          margin-right: 5px; /* Espaço entre a caixa de texto e a lupa */
+      }
+  </style>
+
 </head>
 <body>
 
@@ -18,7 +37,10 @@
     Bem-vindo(a), {{ Auth::user()->name }}!
 </div>
 
-<!-- Header -->
+@include('components.nav')
+
+<!--
+
 <header>
     <div class="logo">
         <img src="img/logo_preta.png" alt="Logo KIND SHARE">
@@ -56,46 +78,12 @@
         </div>
     </nav>
 
-<div class="icons">
-    <i class="fas fa-search icon" id="searchIcon"></i> <!-- Ícone de pesquisa -->
-    <i class="fas fa-user icon" id="profileIcon" onclick="toggleDropdown()"></i> <!-- Ícone do usuário -->
-    <div class="user-dropdown">
-        <div class="dropdown-content" id="dropdownMenu">
-            <a class="dropdown-link" href="{{ route('profile.edit') }}">{{ Auth::user()->name }}</a> <!-- Link para o perfil -->
-            <form method="POST" action="{{ route('logout') }}">
-                @csrf
-                <button type="submit" class="dropdown-button">Log Out</button> <!-- Botão de logout -->
-            </form>
-        </div>
-    </div>
-</div>
+    
 
 
 </header>
-    
-<!-- Adicione o script para a mensagem de boas-vindas -->
-<script>
-    window.onload = function() {
-        const message = document.getElementById('welcome-message');
-        message.style.display = 'block';
-        setTimeout(() => {
-            message.style.display = 'none';
-        }, 3000); // Exibe a mensagem por 3 segundos
-    };
 
-    function toggleDropdown() {
-        const dropdownMenu = document.getElementById('dropdownMenu');
-        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
-    }
-
-    // Para fechar o dropdown ao clicar fora
-    window.onclick = function(event) {
-        const dropdownMenu = document.getElementById('dropdownMenu');
-        if (!event.target.matches('#profileIcon')) {
-            dropdownMenu.style.display = 'none';
-        }
-    };
-</script>
+-->
 
 <!-- Carrossel -->
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
@@ -208,33 +196,32 @@
   <br><br>
 
   <!-- Botão de voltar ao topo -->
-<a href="#" class="btn-to-top">
+  <a href="#" class="btn-to-top">
     <i class="fa-solid fa-arrow-up"></i>
   </a>
-  
-  <!--FOOTER-->
-  <footer>
+
+  <!-- FOOTER -->
+<footer>
     <div class="footerContainer"></div>
-        <div class="socialIcons">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div class="footerNav">
-            <ul><li><a href="">Home</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Quem Somos</a></li>
-            </ul>
-        </div>
-        
+    <div class="socialIcons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="footerNav">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Quem Somos</a></li>
+        </ul>
     </div>
     <div class="footerBottom">
         <p>Copyright &copy;2024; KIND SHARE</p>
     </div>
-  </footer>
+</footer>
 
-<!-- Exibe a seta quando o usuário rolar 100px para baixo-->
-  <script>
+<script>
+
     window.onscroll = function() {
         let btnToTop = document.querySelector('.btn-to-top');
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -249,8 +236,38 @@
         event.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-</script>
 
+    window.onload = function() {
+        const message = document.getElementById('welcome-message');
+        message.style.display = 'block';
+        setTimeout(() => {
+            message.style.display = 'none';
+        }, 3000); // Exibe a mensagem por 3 segundos
+    };
+
+    function toggleDropdown() {
+        const dropdownMenu = document.getElementById('dropdownMenu');
+        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    // Para fechar o dropdown ao clicar fora
+    window.onclick = function(event) {
+        const dropdownMenu = document.getElementById('dropdownMenu');
+        if (!event.target.matches('#profileIcon')) {
+            dropdownMenu.style.display = 'none';
+        }
+    };
+
+    document.getElementById('searchIcon').addEventListener('click', function() {
+        const searchContainer = document.querySelector('.search-container');
+        if (searchContainer.style.display === "none" || searchContainer.style.display === "") {
+            searchContainer.style.display = "flex"; // Mostra a caixa de pesquisa
+            document.getElementById('searchInput').focus(); // Foca na caixa de texto
+        } else {
+            searchContainer.style.display = "none"; // Oculta a caixa de pesquisa
+        }
+    });
+</script>
 
 </body>
 </html>

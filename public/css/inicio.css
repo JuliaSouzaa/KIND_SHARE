@@ -36,6 +36,8 @@ header nav a {
     font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" aos links */
 }
 
+
+
 .navbar-nav {
     display: flex; /* Define que a lista de navegação deve ser um flex container */
     justify-content: center; /* Centraliza os itens de navegação */

@@ -1,3 +1,5 @@
+<!-- CADASTRO -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,17 +39,30 @@
                     </div>
 
                     <div class="input-group">
+                        <label for="cpf">CPF</label>
+                        <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="dob">Data de Nascimento</label>
+                        <input type="date" class="form-control" id="dob" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Telefone</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Digite seu telefone"  required>
+                    </div>
+
+                    <div class="input-group">
                         <label for="password">Senha</label>
                         <input type="password" id="password" name="password" placeholder="Digite sua senha" required autocomplete="new-password">
                         <x-input-error :messages="$errors->get('password')" class="mt-2" />
                     </div>
-                    
+
                     <div class="input-group">
                         <label for="password_confirmation">Confirmar Senha</label>
                         <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Confirme sua senha" required autocomplete="new-password">
                         <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
                     </div>
-                    
+   
                     <div class="button-container">
                         <button type="submit" class="btn-login">Cadastrar</button>
                     </div>

@@ -1,3 +1,5 @@
+<!-- TELA ANTES DE LOGADA -->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -11,9 +13,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> <!-- LINK PARA CARROSEL-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!-- LINK PARA FOOTER-->
     
-    
-
     <title>KIND SHARE</title>
+
+    <style>
+      .search-container {
+          display: none; /* Inicialmente oculta */
+          position: absolute; /* Remove da normal flow */
+          right: 80px; /* Ajuste para mais à esquerda */
+          top: 15px; /* Ajuste conforme necessário para a posição vertical */
+          z-index: 1000; /* Fica acima de outros elementos */
+      }
+      #searchInput {
+          width: 200px; /* Ajuste o tamanho conforme necessário */
+          margin-right: 5px; /* Espaço entre a caixa de texto e a lupa */
+      }
+  </style>
+    
 </head>
 <body>
 
@@ -22,6 +37,7 @@
     <div class="logo">
         <img src="img/logo_preta.png" alt="Logo KIND SHARE">
     </div>
+    
     <nav class="navbar navbar-expand-lg navbar-light">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -54,6 +70,8 @@
             </ul>
         </div>
     </nav>
+
+
     <div class="icons">
         <div class="search-container" style="display: none;">
             <input type="text" class="form-control" placeholder="Pesquisar..." id="searchInput">
@@ -179,9 +197,9 @@
   <br><br>
 
   <!-- Botão de voltar ao topo -->
-<a href="#" class="btn-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-  </a>
+    <a href="#" class="btn-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
   
   <!--FOOTER-->
   <footer>
@@ -205,7 +223,7 @@
   </footer>
 
 <!-- Exibe a seta quando o usuário rolar 100px para baixo-->
-  <script>
+<script>
     window.onscroll = function() {
         let btnToTop = document.querySelector('.btn-to-top');
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -220,14 +238,17 @@
         event.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-</script>
 
-<!--Seleciona o ícone de perfil pelo ID-->
-<script>
-document.getElementById('profileIcon').addEventListener('click', function() {
-    // Redireciona para a página E-C.html
-    window.location.href = 'E-C.html';
-});
+    document.getElementById('searchIcon').addEventListener('click', function() {
+        const searchContainer = document.querySelector('.search-container');
+        if (searchContainer.style.display === "none" || searchContainer.style.display === "") {
+            searchContainer.style.display = "flex"; // Mostra a caixa de pesquisa
+            document.getElementById('searchInput').focus(); // Foca na caixa de texto
+        } else {
+            searchContainer.style.display = "none"; // Oculta a caixa de pesquisa
+        }
+    });
+
 </script>
 
 
