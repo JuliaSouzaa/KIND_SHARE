@@ -45,19 +45,20 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link"  href="{{ route('welcome') }}">karol</a>
+                <a class="nav-link"  href="{{ route('welcome') }}">Ínicio</a>
+            
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="instituicaoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ONGS</a>
                     <ul class="dropdown-menu" aria-labelledby="instituicaoDropdown">
-                        <li><a class="dropdown-item" href="#">Instituição</a></li>
-                        <li><a class="dropdown-item" href="#">Doe Agora</a></li>
-                        <li><a class="dropdown-item" href="#">Necessidades</a></li>
+                        <li><a class="dropdown-item" href="/instuicoes">Instituição</a></li>
+                        <li><a class="dropdown-item" href="/doação">Doe Agora</a></li>
+                        <li><a class="dropdown-item" href="/lista_necessidades">Necessidades</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Envolva-se</a>
+                    <a class="nav-link" href="/envolva-se">Envolva-se</a>
                 </li>
 
                 <li class="nav-item">
@@ -65,7 +66,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre</a>
+                    <a class="nav-link" href="/sobre">Sobre</a>
                 </li>
             </ul>
         </div>
@@ -116,23 +117,23 @@
 <div class="icon-section">
     <div>
         <img src="img/ong1.png" alt="Corações Unidos">
-        <p><a href="coracao_unido.html">Corações Unidos</a></p>
+        <p><a href="/coracao_unido">Corações Unidos</a></p>
     </div>
     <div>
         <img src="img/ong2.png" alt="Lira e Cia">
-        <p><a href="pagina-lira-e-cia.html">Lira e Cia</a></p>
+        <p><a href="/lira-e-cia">Lira e Cia</a></p>
     </div>
     <div>
         <img src="img/ong3.png" alt="Vozes da Comunidade">
-        <p><a href="pagina-vozes-da-comunidade.html">Vozes da Comunidade</a></p>
+        <p><a href="/vozes-da-comunidade">Vozes da Comunidade</a></p>
     </div>
     <div>
         <img src="img/ong4.png" alt="Rede de Esperança">
-        <p><a href="pagina-rede-de-esperanca.html">Rede de Esperança</a></p>
+        <p><a href="/rede-de-esperanca">Rede de Esperança</a></p>
     </div>
     <div>
         <img src="img/ong5.png" alt="Amigos do Bem">
-        <p><a href="pagina-amigos-do-bem.html">Amigos do Bem</a></p>
+        <p><a href="/amigos-do-bem">Amigos do Bem</a></p>
     </div>
 </div>
 
@@ -206,13 +207,13 @@
     <div class="footerContainer"></div>
         <div class="socialIcons">
             <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/kindshare__tcc/"><i class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-youtube"></i></a>
         </div>
         <div class="footerNav">
-            <ul><li><a href="">Home</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Quem Somos</a></li>
+            <ul><li><a href="/">Home</a></li>
+                <li><a href="/sobre">Sobre</a></li>
+                <li><a href="/equipe">Quem Somos</a></li>
             </ul>
         </div>
         

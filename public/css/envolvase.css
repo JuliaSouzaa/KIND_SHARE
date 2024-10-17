@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
+/* Importa a fonte "Ruda" do Google Fonts com pesos que variam de 400 a 900 */
+
+/* Aplica a fonte "Ruda" ao body e a todos os textos e botões */
+body, h1, h2, h3, h4, h5, h6, p, a, button {
+    font-family: 'Ruda', sans-serif; /* Define a fonte "Ruda" como padrão */
+}
+
+body {
+    background: linear-gradient(180deg, #ffffff, #ffbf48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.profile {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    font-size: 30px;
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 40px;
+    color: #f0a500;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link-item {
+    background-color: #f0a500; /* Cor de fundo do botão */
+    padding: 15px;
+    border-radius: 10px; /* Arredondar os cantos */
+    text-align: center;
+    text-decoration: none;
+    color: #fff; /* Cor do texto */
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+}
+
+/* Efeito ao passar o mouse */
+.link-item:hover {
+    background-color: #ffbf48; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Leve elevação do botão */
+}
+
+/* Efeito ao focar (por exemplo, quando a tecla Tab é usada) */
+.link-item:focus {
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 5px rgba(255, 166, 0, 0.8); /* Sombra ao focar */
+}
+
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    align-self: left;
+}

@@ -1,86 +1,109 @@
 @import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
-/* Importa a fonte "Ruda" do Google Fonts com pesos que variam de 400 a 900 */
+/* Importa a fonte "Ruda" do Google Fonts com pesos variando de 400 a 900 */
 
-/* Define a fonte padrão para o site e remove as margens e preenchimentos padrões */
-body {
-    margin: 0 !important; /* Remove margens padrão do navegador */
-    padding: 0 !important; /* Remove preenchimento padrão do navegador */
-    background-color: #FFFAFA !important;
-    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+/* Aplica a fonte "Ruda" ao body e a todos os textos e botões */
+body, h1, h2, h3, h4, h5, h6, p, a, button {
+    font-family: 'Ruda', sans-serif; /* Define a fonte "Ruda" como padrão para o site */
 }
 
 /* Estilos para o cabeçalho (header) */
 header {
-    background-color: black !important; /* Define a cor de fundo do cabeçalho */
-    color: white !important; /* Define a cor do texto no cabeçalho */
-    display: flex !important; /* Usa o layout flexbox para organizar os itens */
-    justify-content: space-between !important; /* Espaça os itens igualmente entre as extremidades */
-    align-items: center !important; /* Centraliza os itens verticalmente no centro */
-    padding: 10px 20px !important; /* Padding para dar um bom espaço ao redor do conteúdo */
-    box-sizing: border-box !important; /* Garante que o padding seja considerado no tamanho total */
-    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+    background-color: black; /* Define a cor de fundo do cabeçalho como preto */
+    color: white; /* Define a cor do texto no cabeçalho como branco */
+    display: flex; /* Usa flexbox para organizar os itens do cabeçalho */
+    justify-content: space-between; /* Espaça os itens igualmente entre as extremidades */
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding: 10px 20px; /* Adiciona padding ao redor do conteúdo do cabeçalho */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura/altura do cabeçalho */
+    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" ao cabeçalho */
+}
 
+/* Estilos para os ícones de perfil e redes sociais */
+.socialIcons a, .icon-section a, .btn-learn-more, .btnnecessidades, .btn-to-top {
+    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" aos botões e links */
+}
+
+/* Estilos para as legendas, textos e ícones */
+.icon-section p, .text-container h2, .text-container p, .comunidades h2, .comunidades p {
+    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" aos textos das seções */
+}
+
+/* Remove as margens e preenchimentos padrões do body */
+body {
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o padding padrão */
+    background-color: #FFFAFA !important; /* Define uma cor de fundo suave */
 }
 
 /* Estilos para o logotipo no cabeçalho */
 header .logo img {
-    width: 60px !important; /* Aumente o tamanho da logo */
-    height: auto !important; /* Mantém a proporção da imagem */
-}
-
-/* Estilos para os links de navegação no cabeçalho */
-header nav a {
-    color: white !important; /* Define a cor dos links como branco */
-    margin: 0 10px !important; /* Adiciona uma margem horizontal de 10px entre os links */
-    text-decoration: none !important; /* Remove o sublinhado dos links */
-    font-size: 1em !important; /* Tamanho da fonte dos links */
-    font-family: 'Ruda', sans-serif !important; /* Define a fonte Ruda como padrão */
+    width: 60px; /* Define a largura da logo */
+    height: auto; /* Mantém a proporção da logo */
 }
 
 /* Estilos para a seção de ícones no cabeçalho (pesquisa e perfil) */
 header .icons {
-    display: flex !important; /* Usa o layout flexbox para organizar os ícones em linha */
-    align-items: center !important; /* Centraliza verticalmente os itens */
-    gap: 10px !important; /* Define um espaçamento (gap) de 10px entre os ícones */
+    display: flex; /* Usa flexbox para organizar os ícones em linha */
+    align-items: center; /* Centraliza verticalmente os ícones */
+    gap: 10px; /* Adiciona um espaço de 10px entre os ícones */
 }
 
 /* Estilos para os ícones individuais no cabeçalho */
 header .icons .icon {
-    font-size: 24px !important; /* Tamanho do ícone */
-    color: white !important; /* Cor padrão dos ícones */
-    cursor: pointer !important; /* Muda o cursor para uma mãozinha quando passar o mouse sobre o ícone */
-    transition: color 0.3s !important; /* Animação suave para a mudança de cor */
+    font-size: 24px; /* Define o tamanho do ícone */
+    color: white; /* Define a cor dos ícones como branco */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar o mouse */
+    transition: color 0.3s; /* Transição suave para a mudança de cor */
 }
 
 /* Mudança de cor ao passar o mouse sobre o ícone */
 header .icons .icon:hover {
-    color: #ffa600 !important; /* Cor que o ícone muda ao passar o mouse */
+    color: #ffa600; /* Muda a cor do ícone para laranja ao passar o mouse */
 }
 
-/* Garantindo que o link do ícone de perfil não altere a aparência do cursor */
+/* Estilo para os links de ícones no cabeçalho */
 header .icons a {
-    color: inherit !important; /* Herda a cor do ícone */
-    text-decoration: none !important; /* Remove o sublinhado do link */
+    color: inherit; /* Herda a cor do ícone */
+    text-decoration: none; /* Remove o sublinhado do link */
 }
 
+.navbar-nav .nav-link {
+    color: white !important;
+}
 
-/* Ajustando a aparência de todos os ícones de rede social */
+.navbar-nav .dropdown-menu {
+    background-color: #333; /* Fundo escuro no dropdown */
+}
+
+.navbar-nav .dropdown-item {
+    color: white !important;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+
+/* PARTE DO FOOTER NAO TIRAR DAQUI */
+/* Ajusta a aparência de todos os ícones de redes sociais */
 .socialIcons a {
-    display: flex !important; /* Flex para centralizar o conteúdo */
-    justify-content: center !important; /* Centraliza os ícones dentro dos links */
-    align-items: center !important; /* Alinha verticalmente os ícones */
-    width: 40px !important; /* Define a largura do ícone */
-    height: 40px !important; /* Define a altura do ícone */
-    margin: 0 10px !important; /* Margem entre os ícones */
-    border-radius: 50% !important; /* Deixa os ícones circulares */
-    background-color: #fff !important; /* Cor de fundo dos ícones */
-    transition: background-color 0.3s !important; /* Transição suave para a cor de fundo */
+    display: flex; /* Flexbox para centralizar os ícones */
+    justify-content: center; /* Centraliza horizontalmente os ícones */
+    align-items: center; /* Centraliza verticalmente os ícones */
+    width: 40px; /* Define a largura dos ícones */
+    height: 40px; /* Define a altura dos ícones */
+    margin: 0 10px; /* Adiciona uma margem horizontal de 10px entre os ícones */
+    border-radius: 50%; /* Define os ícones como circulares */
+    background-color: #fff; /* Define o fundo dos ícones como branco */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
 }
 
+/* Efeito hover para os ícones de redes sociais */
 .socialIcons a:hover {
-    background-color: #007BFF; /* Muda a cor de fundo ao passar o mouse */
-    color: white !important; /* Muda a cor do texto ao passar o mouse */
+    background-color: #007BFF; /* Muda a cor de fundo dos ícones ao passar o mouse */
+    color: white; /* Muda a cor do texto dos ícones ao passar o mouse */
 }
+
+
 
 
 
