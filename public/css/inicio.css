@@ -6,51 +6,48 @@ body, h1, h2, h3, h4, h5, h6, p, a, button {
     font-family: 'Ruda', sans-serif; /* Define a fonte "Ruda" como padrão */
 }
 
-   /* Estilos para o cabeçalho (header) */
-   header {
-    background-color: black; /* Define a cor de fundo do cabeçalho */
-    color: white; /* Define a cor do texto no cabeçalho */
-    display: flex; /* Usa o layout flexbox para organizar os itens */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Centraliza os itens verticalmente no centro */
-    padding: 10px 20px; /* Padding para dar um bom espaço ao redor do conteúdo */
-    box-sizing: border-box; /* Garante que o padding seja considerado no tamanho total */
-    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" ao cabeçalho */
-    margin-bottom: 0; /* Remove margens inferiores do header */
+/* Estilos para o cabeçalho (header) */
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-family: 'Ruda', sans-serif;
+    margin-bottom: 0;
 }
 
-/* Centraliza a navbar */
+/* Navbar Styles */
 .navbar {
-    width: 100%; /* Define que a navbar ocupe 100% da largura do container */
-    justify-content: center; /* Centraliza os itens de navegação */
-    background-color: transparent; /* Remove qualquer fundo padrão da navbar */
+    width: 100%;
+    justify-content: center;
+    background-color: transparent;
     padding: 0;
 }
 
-/* Estilos para os links de navegação no cabeçalho */
 header nav a {
-    color: white; /* Define a cor dos links como branco */
-    margin: 0 10px; /* Adiciona uma margem horizontal de 10px entre os links */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    font-size: 1em; /* Tamanho da fonte dos links */
-    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" aos links */
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Ruda', sans-serif;
 }
 
-
-
 .navbar-nav {
-    display: flex; /* Define que a lista de navegação deve ser um flex container */
-    justify-content: center; /* Centraliza os itens de navegação */
-    width: 100%; /* A lista de navegação ocupa 100% da largura disponível */
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .navbar-nav .nav-link {
     color: white !important;
-    padding: 0 15px; /* Adiciona espaço entre os links de navegação */
+    padding: 0 15px;
 }
 
 .navbar-nav .dropdown-menu {
-    background-color: #333; /* Fundo escuro no dropdown */
+    background-color: #333;
 }
 
 .navbar-nav .dropdown-item {
@@ -58,188 +55,181 @@ header nav a {
 }
 
 .navbar-nav .dropdown-item:hover {
-    background-color: #555; /* Cor de fundo ao passar o mouse */
+    background-color: #555;
 }
 
-/* Remove o fundo padrão ao expandir o menu para garantir consistência visual */
 .navbar-toggler {
-    border: none; /* Remove borda padrão */
+    border: none;
 }
 
-/* Centraliza o botão do toggle no modo mobile */
 .navbar-toggler-icon {
     color: white;
-    margin: auto; /* Centraliza o ícone do toggler */
+    margin: auto;
+}
+/* Fim da seção Navbar */
+
+/* Estilos para a caixa de pesquisa */
+.search-container {
+    display: none;
+    position: absolute;
+    right: 80px;
+    margin:20px;
+    z-index: 1000;
+    margin-right: 10px; /* Espaço entre a caixa de texto e a lupa */
+
+}
+
+#searchInput {
+    width: 200px;
+    margin-right: 5px; /* Espaço entre a caixa de texto e a lupa */
+    margin-left: 5px; /* Adiciona 5px de espaço à esquerda da caixa de texto */
+
 }
 
 /* Certifica que o dropdown está bem posicionado */
 .dropdown-menu {
-    text-align: center; /* Centraliza os itens do dropdown */
+    text-align: center;
 }
 
 /* Estilos para os ícones de perfil e redes sociais */
 .socialIcons a, .icon-section a, .btn-learn-more, .btnnecessidades, .btn-to-top {
-    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" aos botões e links */
+    font-family: 'Ruda', sans-serif;
 }
 
 /* Estilos para as legendas, textos e ícones */
 .icon-section p, .text-container h2, .text-container p, .comunidades h2, .comunidades p {
-    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" aos textos das seções */
+    font-family: 'Ruda', sans-serif;
 }
 
 /* Define a fonte padrão para o site e remove as margens e preenchimentos padrões */
 body {
-    margin: 0; /* Remove margens padrão do navegador */
-    padding: 0; /* Remove preenchimento padrão do navegador */
+    margin: 0;
+    padding: 0;
     background-color: #FFFAFA !important;
 }
 
 /* Estilos para o logotipo no cabeçalho */
 header .logo img {
-    width: 60px; /* Aumente o tamanho da logo */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 60px;
+    height: auto;
 }
 
 /* Estilos para a seção de ícones no cabeçalho (pesquisa e perfil) */
 header .icons {
-    display: flex; /* Usa o layout flexbox para organizar os ícones em linha */
-    align-items: center; /* Centraliza verticalmente os itens */
-    gap: 10px; /* Define um espaçamento (gap) de 10px entre os ícones */
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-/* Estilos para os ícones individuais no cabeçalho */
 header .icons .icon {
-    font-size: 24px; /* Tamanho do ícone */
-    color: white; /* Cor padrão dos ícones */
-    cursor: pointer; /* Muda o cursor para uma mãozinha quando passar o mouse sobre o ícone */
-    transition: color 0.3s; /* Animação suave para a mudança de cor */
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
-/* Mudança de cor ao passar o mouse sobre o ícone */
 header .icons .icon:hover {
-    color: #ffa600; /* Cor que o ícone muda ao passar o mouse */
+    color: #ffa600;
 }
 
-/* Garantindo que o link do ícone de perfil não altere a aparência do cursor */
 header .icons a {
-    color: inherit; /* Herda a cor do ícone */
-    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit;
+    text-decoration: none;
 }
 
-/* Ajustando a aparência de todos os ícones de rede social */
+/* Footer Styles */
 .socialIcons a {
-    display: flex; /* Flex para centralizar o conteúdo */
-    justify-content: center; /* Centraliza os ícones dentro dos links */
-    align-items: center; /* Alinha verticalmente os ícones */
-    width: 40px; /* Define a largura do ícone */
-    height: 40px; /* Define a altura do ícone */
-    margin: 0 10px; /* Margem entre os ícones */
-    border-radius: 50%; /* Deixa os ícones circulares */
-    background-color: #fff; /* Cor de fundo dos ícones */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: background-color 0.3s;
 }
 
 .socialIcons a:hover {
-    background-color: #007BFF; /* Muda a cor de fundo ao passar o mouse */
-    color: white; /* Muda a cor do texto ao passar o mouse */
+    background-color: #007BFF;
+    color: white;
 }
 
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    margin-bottom: 0; /* Remove margens inferiores do header */
-}
-
-
-/* Garante que o carrossel ocupe a largura completa */
+/* Estilos para o carrossel */
 .carousel {
+    border-top: 2px solid #ffa600;
     position: relative;
-    margin-top: 0; /* Remove margens superiores do carrossel */
-    margin-top: 0; /* Remove margens superiores do carrossel */
+    margin-top: 0;
 }
 
-/* Define a altura e o estilo das imagens do carrossel */
 .carousel-item img {
-    width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
-    height: 400px; /* Altura fixa para uniformizar todas as imagens */
-    object-fit: cover; /* Ajusta a imagem para cobrir a área sem distorção */
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
-/* Define altura e distancia das frases do carrosel*/
 .carousel-caption {
-    left: 30px !important;     /* Posiciona a legenda na borda esquerda do container */
-    right: auto !important;    /* Reseta o alinhamento à direita */
-    bottom: 80px !important;   /* Ajusta a legenda mais para cima */
-    padding: 0 !important;     /* Remove o preenchimento interno da legenda */
-    margin: 0 !important;      /* Remove a margem externa da legenda */
+    left: 30px !important;
+    bottom: 80px !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .carousel-caption h5 {
-    font-size: 30px !important; /* Aumenta o tamanho da fonte da descrição */
+    font-size: 30px !important;
 }
 
 .carousel-caption p {
-    font-size: 20px !important; /* Aumenta o tamanho da fonte da descrição */
+    font-size: 20px !important;
 }
 
-
-/* Estilos para a seção de ícones abaixo da seção principal */
+/* Estilos para a seção de ícones */
 .icon-section {
-    display: flex; /* Usa o layout flexbox para alinhar os ícones em linha */
-    justify-content: space-around; /* Distribui os ícones igualmente ao longo da largura */
-    padding: 40px; /* Adiciona 40px de espaçamento interno ao redor da seção */
-    text-align: center; /* Centraliza o texto dentro de cada ícone */
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    text-align: center;
 }
 
-/* Estilos individuais para cada ícone dentro da seção de ícones */
 .icon-section div {
-    flex: 1; /* Faz com que cada ícone ocupe espaço proporcional igual dentro do flexbox */
+    flex: 1;
 }
 
-/* Estilos para as imagens dos ícones */
 .icon-section img {
-    width: 150px; /* Define a largura das imagens de ícones como 150px */
-    height: 150px; /* Define a altura das imagens de ícones como 150px */
-    border-radius: 50%; /* Deixa as bordas das imagens arredondadas para torná-las circulares */
-    object-fit: cover; /* Garante que a imagem se ajuste ao container circular sem distorções */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave atrás dos ícones */
-    transition: box-shadow 0.3s ease; /* Adiciona uma transição suave para a sombra */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
 }
 
-/* Efeito de hover para intensificar a sombra */
 .icon-section img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Intensifica a sombra ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-
-/* Estilos para as legendas dos ícones */
 .icon-section p {
-    margin-top: 10px; /* Adiciona uma margem superior de 10px entre a imagem e o texto */
+    margin-top: 10px;
     font-family: Arial, Helvetica !important;
 }
 
-.icon-section a{
-    display: inline-block; /* Faz o botão se comportar como um bloco em linha, permitindo aplicar dimensões e margens */
-    padding: 10px 20px; /* Define o preenchimento interno do botão: 10px nas partes superior/inferior e 20px nas laterais */
-    background-color: #ffa500; /* Define a cor de fundo do botão como laranja (#ffa500) */
-    color: white; /* Define a cor do texto do botão como branca */
-    border-radius: 50px; /* Define bordas completamente arredondadas ao redor do botão */
-    text-decoration: none; /* Remove a sublinhado padrão dos links */
-    font-weight: bold; /* Define o peso da fonte como negrito */
-    margin-top: 20px; /* Adiciona uma margem superior de 20px acima do botão */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona uma transição suave ao transformar e à sombra */
+.icon-section a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffa500;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.icon-section a:hover{
-    background-color: #e69500; /* Muda a cor de fundo do botão para um tom de laranja mais escuro (#e69500) quando o botão é hoverado */
-    transform: translateY(-5px); /* Move o botão 5px para cima */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais pronunciada para o efeito de levantar */
+.icon-section a:hover {
+    background-color: #e69500;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
-
 
 /* Conteúdo das fotos com o texto */
 /* A classe content-section define o layout de cada seção, como exibir o conteúdo (imagem e texto) em um layout flexível */
@@ -537,6 +527,7 @@ footer {
     display: none; /* Inicialmente escondido */
     position: absolute; /* Posiciona o menu abaixo do ícone */
     left: -140px; /* Alinha à esquerda do ícone com um pequeno deslocamento */
+    top: 20px; /* Ajuste este valor para mover o menu para baixo */
     background-color: black; /* Fundo preto para o dropdown */
     min-width: 160px; /* Largura mínima do dropdown */
     box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra para o dropdown */

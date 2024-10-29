@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
+/* Importa a fonte "Ruda" do Google Fonts com pesos que variam de 400 a 900 */
+
+/* Aplica a fonte "Ruda" ao body e a todos os textos e botões */
+body, h1, h2, h3, h4, h5, h6, p, a, button {
+    font-family: 'Ruda', sans-serif; /* Define a fonte "Ruda" como padrão */
+}
+
 
 /* Estilos Gerais */
 body {
@@ -14,7 +22,7 @@ header {
     display: flex; /* Usa o layout flexbox para organizar os itens */
     justify-content: space-between; /* Espaça os itens igualmente entre as extremidades */
     align-items: center; /* Centraliza os itens verticalmente no centro */
-    padding: 10px 20px; /* Padding para dar um bom espaço ao redor do conteúdo */
+    padding: 10px 20px; /* Padding para dar um bwom espaço ao redor do conteúdo */
     box-sizing: border-box; /* Garante que o padding seja considerado no tamanho total */
     font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" ao cabeçalho */
 }
@@ -378,5 +386,3 @@ footer {
     background-color: #111; /* Redefine a cor de fundo do footer (redundante, pois já está definido anteriormente) */
     clear: both; /* Garante que o footer não flutue dentro de outro container, forçando-o a aparecer abaixo de qualquer elemento flutuante */
 }
-
-

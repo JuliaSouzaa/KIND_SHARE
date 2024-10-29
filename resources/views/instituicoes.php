@@ -13,20 +13,6 @@
     <title>KIND SHARE</title>
 </head>
 <body>
-
-    <style>
-        .search-container {
-            display: none; /* Inicialmente oculta */
-            position: absolute; /* Remove da normal flow */
-            right: 80px; /* Ajuste para mais à esquerda */
-            top: 15px; /* Ajuste conforme necessário para a posição vertical */
-            z-index: 1000; /* Fica acima de outros elementos */
-        }
-        #searchInput {
-            width: 200px; /* Ajuste o tamanho conforme necessário */
-            margin-right: 5px; /* Espaço entre a caixa de texto e a lupa */
-        }
-    </style>
     
 <!-- Header -->
 <header>
@@ -77,6 +63,7 @@
         </a>
     </div>
 </header>
+
 <!-- Main Content -->
 <section class="institutions-section">
     <div class="intro">

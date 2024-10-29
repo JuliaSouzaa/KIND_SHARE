@@ -14,75 +14,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!-- LINK PARA FOOTER-->
     
     <title>KIND SHARE</title>
-
-    <style>
-      .search-container {
-          display: none; /* Inicialmente oculta */
-          position: absolute; /* Remove da normal flow */
-          right: 80px; /* Ajuste para mais à esquerda */
-          top: 15px; /* Ajuste conforme necessário para a posição vertical */
-          z-index: 1000; /* Fica acima de outros elementos */
-      }
-      #searchInput {
-          width: 200px; /* Ajuste o tamanho conforme necessário */
-          margin-right: 5px; /* Espaço entre a caixa de texto e a lupa */
-      }
-  </style>
     
 </head>
 <body>
 
-<!-- Header -->
-<header>
-    <div class="logo">
-        <img src="img/logo_preta.png" alt="Logo KIND SHARE">
-    </div>
-    
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                <a class="nav-link"  href="{{ route('welcome') }}">Ínicio</a>
-            
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="instituicaoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ONGS</a>
-                    <ul class="dropdown-menu" aria-labelledby="instituicaoDropdown">
-                        <li><a class="dropdown-item" href="/instuicoes">Instituição</a></li>
-                        <li><a class="dropdown-item" href="/doação">Doe Agora</a></li>
-                        <li><a class="dropdown-item" href="/lista_necessidades">Necessidades</a></li>
-                    </ul>
-                </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="/envolva-se">Envolva-se</a>
-                </li>
+@include('components.nav')
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">GUIA</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="/sobre">Sobre</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-
-    <div class="icons">
-        <div class="search-container" style="display: none;">
-            <input type="text" class="form-control" placeholder="Pesquisar..." id="searchInput">
-        </div>
-        <i class="fas fa-search icon" id="searchIcon"></i>
-        <a href="{{ route('login') }}">
-            <i class="fas fa-user icon" id="profileIcon"></i>
-        </a>
-    </div>
-</header>
 
 <!--Carrosel-->
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" >
