@@ -151,13 +151,22 @@
   <section class="conteudo">
     <div id="top">
 
-      <form action="enviar.php" method="post" enctype="multipart/form-data">
+    <form action="{{ route('doacao.store') }}" method="POST" enctype="multipart/form-data">
+      @csrf
         <h1>Doação de itens</h1>
         <p>Por favor, preencha o formulário para doar um item. Iremos certificar se o item está em boas condições!</p>
         <br>
         <input type="text" name="nome" placeholder="Nome">
         <input type="text" name="telefone" placeholder="Telefone">
         <input type="email" name="email" placeholder="E-mail">
+        <label for="instituicao">Escolha uma instituição</label>
+        <select name="instituicao" id="instituicao" required>
+        <option value="Coracoes unidos">Corações unidos</option>
+        <option value="Lira e Cia">Lira e Cia</option>
+        <option value="Vozes da comunidade">Vozes da comunidade</option>
+        <option value="Rede de esperança">Rede de esperança</option>
+        <option value="Amigos do bem">Amigos do bem</option>
+      </select>
         <label for="arquivo">Anexe um ou mais arquivos</label>
         <input type="file" name="arquivo[]" multiple>
         <textarea name="mensagem" cols="45" rows="5"
@@ -185,6 +194,7 @@
           searchContainer.style.display = "none"; // Oculta a caixa de pesquisa
           }
   });
+  
 </script>
 
   <!-- FOOTER -->

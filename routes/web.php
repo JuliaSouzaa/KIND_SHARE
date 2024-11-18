@@ -2,6 +2,23 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DoacaoController;
+use App\Http\Controllers\ContactController;
+
+
+
+Route::post('/doacao/store', [DoacaoController::class, 'store'])->name('doacao.store');
+
+Route::get('/doacao/download/{id}', [DoacaoController::class, 'download'])->name('doacao.download');
+
+Route::post('/contact/submit', [ContactController::class, 'submit'])->name('contact.submit');
+
+
+
+
+Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -95,6 +112,7 @@ Route::get('/vozes-da-comunidade', function () {
     return view('vozes-da-comunidade');
 });
 
+
 Route::get('/dashboard', function () {
     return view('dashboard');
     App::setLocale('pt_BR');
@@ -108,5 +126,5 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
 
+require __DIR__.'/auth.php';

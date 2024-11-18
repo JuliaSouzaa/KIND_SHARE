@@ -125,7 +125,14 @@
 <!-- ENTRAR EM CONTATO -->
 <section class="contact-section">
     <h2>Entre em Contato</h2>
-    <form action="#" method="post" class="contact-form">
+    @if (session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+
+    <form action="{{ route('contact.submit') }}" method="post" class="contact-form">
+        @csrf <!-- Adiciona um token CSRF para segurança -->
         <div class="form-group">
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" required>
@@ -143,6 +150,7 @@
 </section>
 
 
+
 <!-- Botão de voltar ao topo -->
 <a href="#" class="btn-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -153,7 +161,7 @@
     <div class="footerContainer"></div>
     <div class="socialIcons">
         <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.instagram.com/kindshare__tcc/"><i class="fa-brands fa-instagram"></i></a>
         <a href=""><i class="fa-brands fa-youtube"></i></a>
     </div>
     <div class="footerNav">
@@ -210,6 +218,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const heroSection = document.querySelector(".hero");
     heroSection.classList.add("visible");
 });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const alert = document.querySelector('.alert-success');
+        if (alert) {
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 5000); // 5000 ms = 5 segundos
+        }
+    });
 </script>
 
 
