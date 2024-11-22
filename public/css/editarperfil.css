@@ -1,250 +1,120 @@
-/* Aplica a fonte "Ruda" ao body e a todos os textos e botões */
-body, h1, h2, h3, h4, h5, h6, p, a, button {
-    font-family: 'Ruda', sans-serif; /* Define a fonte "Ruda" como padrão */
-}
-
-   /* Estilos para o cabeçalho (header) */
-   header {
-    background-color: black; /* Define a cor de fundo do cabeçalho */
-    color: white; /* Define a cor do texto no cabeçalho */
-    display: flex; /* Usa o layout flexbox para organizar os itens */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Centraliza os itens verticalmente no centro */
-    padding: 10px 20px; /* Padding para dar um bom espaço ao redor do conteúdo */
-    box-sizing: border-box; /* Garante que o padding seja considerado no tamanho total */
-    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" ao cabeçalho */
-    margin-bottom: 0; /* Remove margens inferiores do header */
-}
-
-/* Centraliza a navbar */
-.navbar {
-    width: 100%; /* Define que a navbar ocupe 100% da largura do container */
-    justify-content: center; /* Centraliza os itens de navegação */
-    background-color: transparent; /* Remove qualquer fundo padrão da navbar */
-    padding: 0;
-}
-
-/* Estilos para os links de navegação no cabeçalho */
-header nav a {
-    color: white; /* Define a cor dos links como branco */
-    margin: 0 10px; /* Adiciona uma margem horizontal de 10px entre os links */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    font-size: 1em; /* Tamanho da fonte dos links */
-    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" aos links */
-}
-
-.navbar-nav {
-    display: flex; /* Define que a lista de navegação deve ser um flex container */
-    justify-content: center; /* Centraliza os itens de navegação */
-    width: 100%; /* A lista de navegação ocupa 100% da largura disponível */
-}
-
-.navbar-nav .nav-link {
-    color: white !important;
-    padding: 0 15px; /* Adiciona espaço entre os links de navegação */
-}
-
-.navbar-nav .dropdown-menu {
-    background-color: #333; /* Fundo escuro no dropdown */
-}
-
-.navbar-nav .dropdown-item {
-    color: white !important;
-}
-
-.navbar-nav .dropdown-item:hover {
-    background-color: #555; /* Cor de fundo ao passar o mouse */
-}
-
-/* Remove o fundo padrão ao expandir o menu para garantir consistência visual */
-.navbar-toggler {
-    border: none; /* Remove borda padrão */
-}
-
-/* Centraliza o botão do toggle no modo mobile */
-.navbar-toggler-icon {
-    color: white;
-    margin: auto; /* Centraliza o ícone do toggler */
-}
-
-/* Certifica que o dropdown está bem posicionado */
-.dropdown-menu {
-    text-align: center; /* Centraliza os itens do dropdown */
-}
-
-/* Estilos do menu suspenso */
-.user-dropdown {
-    position: relative; /* Para que o dropdown se posicione corretamente */
-    }
-    
-    .dropdown-content {
-    display: none; /* Inicialmente escondido */
-    position: absolute; /* Posiciona o menu abaixo do ícone */
-    left: -140px; /* Alinha à esquerda do ícone com um pequeno deslocamento */
-    background-color: black; /* Fundo branco para o dropdown */
-    min-width: 160px; /* Largura mínima do dropdown */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra para o dropdown */
-    z-index: 1; /* Coloca o dropdown acima de outros elementos */
-    padding: 10px; /* Espaçamento interno do dropdown */
-    border-radius: 8px; /* Cantos arredondados */
-    }
-    
-    .dropdown-item {
-    background: none; /* Botão sem fundo */
-    border: none; /* Sem borda */
-    cursor: pointer; /* Cursor de ponteiro */
-    color: white; /* Cor do texto no dropdown */
-    text-decoration: none; /* Sem sublinhado nos links */
-    display: block; /* Cada item ocupa uma linha */
-    padding: 8px 0; /* Espaçamento entre os itens */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
-    }
-    
-    .dropdown-button {
-    background: none; /* Botão sem fundo */
-    border: none; /* Sem borda */
-    cursor: pointer; /* Cursor de ponteiro */
-    color: white; /* Cor do texto no dropdown */
-    text-decoration: none; /* Sem sublinhado nos links */
-    display: block; /* Cada item ocupa uma linha */
-    padding: 8px 0; /* Espaçamento entre os itens */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
-    }
-    
-    .dropdown-item:hover, .dropdown-button:hover {
-    background-color: #e69500;  /* Efeito ao passar o mouse */
-    }
-
-/* Estilos para os ícones de perfil e redes sociais */
-.socialIcons a, .icon-section a, .btn-learn-more, .btnnecessidades, .btn-to-top {
-    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" aos botões e links */
-}
-
-/* Estilos para as legendas, textos e ícones */
-.icon-section p, .text-container h2, .text-container p, .comunidades h2, .comunidades p {
-    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" aos textos das seções */
-}
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
+/* Importa a fonte "Ruda" do Google Fonts com pesos que variam de 400 a 900 */
 
 /* Define a fonte padrão para o site e remove as margens e preenchimentos padrões */
 body {
-    margin: 0; /* Remove margens padrão do navegador */
-    padding: 0; /* Remove preenchimento padrão do navegador */
+    margin: 0;
+    padding: 0;
     background-color: #FFFAFA !important;
 }
 
-/* Estilos para o logotipo no cabeçalho */
-header .logo img {
-    width: 60px; /* Aumente o tamanho da logo */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-/* Estilos para a seção de ícones no cabeçalho (pesquisa e perfil) */
-header .icons {
-    display: flex; /* Usa o layout flexbox para organizar os ícones em linha */
-    align-items: center; /* Centraliza verticalmente os itens */
-    gap: 10px; /* Define um espaçamento (gap) de 10px entre os ícones */
-}
-
-/* Estilos para os ícones individuais no cabeçalho */
-header .icons .icon {
-    font-size: 24px; /* Tamanho do ícone */
-    color: white; /* Cor padrão dos ícones */
-    cursor: pointer; /* Muda o cursor para uma mãozinha quando passar o mouse sobre o ícone */
-    transition: color 0.3s; /* Animação suave para a mudança de cor */
-}
-
-/* Mudança de cor ao passar o mouse sobre o ícone */
-header .icons .icon:hover {
-    color: #ffa600; /* Cor que o ícone muda ao passar o mouse */
-}
-
-/* Garantindo que o link do ícone de perfil não altere a aparência do cursor */
-header .icons a {
-    color: inherit; /* Herda a cor do ícone */
-    text-decoration: none; /* Remove o sublinhado do link */
-}
-
-/* Ajustando a aparência de todos os ícones de rede social */
-.socialIcons a {
-    display: flex; /* Flex para centralizar o conteúdo */
-    justify-content: center; /* Centraliza os ícones dentro dos links */
-    align-items: center; /* Alinha verticalmente os ícones */
-    width: 40px; /* Define a largura do ícone */
-    height: 40px; /* Define a altura do ícone */
-    margin: 0 10px; /* Margem entre os ícones */
-    border-radius: 50%; /* Deixa os ícones circulares */
-    background-color: #fff; /* Cor de fundo dos ícones */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
-}
-
-.socialIcons a:hover {
-    background-color: #007BFF; /* Muda a cor de fundo ao passar o mouse */
-    color: white; /* Muda a cor do texto ao passar o mouse */
-}
-
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    margin-bottom: 0; /* Remove margens inferiores do header */
-}
-
-
-/* Estilos gerais para o perfil */
-.main-container {
+/* Container principal */
+.py-12 {
+    border-top: 2px solid #ffa600;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
 }
 
+/* Estilos do cartão do formulário */
 .login-card {
-    width: 100%; /* Garantir que a largura do card seja responsiva */
-    max-width: 600px; /* Limitar a largura máxima para telas grandes */
-    margin: auto; /* Centralizar o card */
-    border-radius: 8px; /* Cantos arredondados */
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 650px; /* Aumentando a largura máxima */
+    margin-bottom: 20px; /* Espaço entre os cartões */
 }
 
-.card-body {
-    padding: 20px; /* Espaçamento interno do card */
+/* Título do formulário */
+h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.btn-login {
-    background-color: #4CAF50; /* Cor do botão */
-    color: white; /* Cor do texto do botão */
-    padding: 10px 15px; /* Espaçamento interno do botão */
-    border: none; /* Sem borda */
-    border-radius: 5px; /* Cantos arredondados */
-    cursor: pointer; /* Cursor de ponteiro */
-    transition: background-color 0.3s; /* Transição suave para cor de fundo */
+/* Estilo dos campos de entrada */
+input, select, textarea {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #ffa600;
+    background-color: #fafafa;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-.btn-login:hover {
-    background-color: #45a049; /* Cor do botão ao passar o mouse */
+/* Estilo de foco nos campos de entrada */
+input:focus, select:focus, textarea:focus {
+    border-color: #ff6600;
+    outline: none;
+    background-color: #fff;
 }
 
-.text-lg {
-    margin-top: 20px; /* Espaço acima dos títulos */
+/* Estilo para o botão */
+button[type="submit"] {
+    background-color: #ffa600;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
 }
 
-/* Estilos do formulário */
-.input-group {
-    margin-bottom: 15px; /* Espaçamento entre os grupos de input */
+button[type="submit"]:hover {
+    background-color: #e69500;
+    transform: translateY(-2px);
 }
 
-.input-group input {
-    border: 1px solid #ccc; /* Borda padrão */
-    border-radius: 5px; /* Cantos arredondados */
-    padding: 10px; /* Espaçamento interno do input */
-    width: 100%; /* Largura total */
+/* Estilo de links */
+a {
+    color: #ffa600;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.input-group input:focus {
-    border-color: #4CAF50; /* Cor da borda ao focar */
-    outline: none; /* Remover contorno padrão */
+a:hover {
+    color: #e69500;
+}
+
+/* Adicionar borda ao formulário */
+.login-card {
+    border: 2px solid #f4f4f4;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Ajuste para campos de texto e área de mensagem */
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Estilo para botões de voltar ao topo */
+.btn-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffa600;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 12px; 
+    display: none; 
+    z-index: 1000;
+    width: 50px;  
+    height: 50px; 
+    text-align: center;
+    line-height: 20px; 
 }
 
 /* Botão de voltar ao topo */
@@ -271,8 +141,8 @@ header {
     transition: 0.3s ease;
 }
 
-    /* FOOTER */
-* {
+   /* FOOTER */
+   * {
     padding: 0; /* Remove todo o preenchimento (padding) de todos os elementos */
     margin: 0; /* Remove toda a margem de todos os elementos */
     box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura e altura dos elementos */

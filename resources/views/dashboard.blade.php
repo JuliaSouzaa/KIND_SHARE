@@ -9,5 +9,5 @@
                 message.style.display = 'none';
             }, 3000); // 3 seconds
         };
-    </script>
+</script>
 </x-app-layout>

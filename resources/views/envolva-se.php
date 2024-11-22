@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kindshare</title>
+    <title>KIND SHARE</title>
     <link rel="stylesheet" href="css/envolvase.css">
+    <link rel="shortcut icon" href="img/logo_web.png" type="image/x-icon">
 </head>
 <body>
+
+@include('components.nav')
 
     <!-- LOGO E LINKS -->
     <div class="container">

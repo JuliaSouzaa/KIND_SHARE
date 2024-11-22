@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> <!-- Link para Font Awesome -->
 </head>
 <body>
@@ -59,7 +60,7 @@
                 <a class="dropdown-link" href="{{ route('profile.edit') }}">{{ Auth::user()->name }}</a> <!-- Link para o perfil -->
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
-                    <button type="submit" class="dropdown-button">Log Out</button> <!-- Botão de logout -->
+                    <button type="submit" class="dropdown-button">Sair</button> <!-- Botão de logout -->
                 </form>
             </div>
 </div>
