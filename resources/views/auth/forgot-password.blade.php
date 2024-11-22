@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
     <main class="main-container">
@@ -25,7 +26,7 @@
         
             
     <div class="mb-4 text-sm text-gray-600 dark:text-gray-400">
-        {{ __('Esqueceu sua senha? Não tem problema. Nós informe seu endereço de email e iremos enviar um link para reset de senha.') }}
+        {{ __('Esqueceu sua senha? Não tem problema. Informe seu endereço de email e iremos enviar um link para recuperar a senha.') }}
     </div>
     <div class="logo-container">
    

@@ -13,13 +13,8 @@
     <title>KIND SHARE</title>
 </head>
 <body>
-    
-<!-- Header -->
-<header>
  
 @include('components.nav')
-
-</header>
 
 <!-- Main Content -->
 <section class="institutions-section">
@@ -28,8 +23,8 @@
         <p>Explore as instituições que incentivam a sua participação.</p>
     </div>
     <div class="section-search-container">
-        <input type="text" class="form-control" placeholder="Pesquisar..." id="headerSearchInput">
-        <button id="searchButton">SEARCH</button>
+        <input type="text" class="form-control" placeholder="Digitar..." id="headerSearchInput">
+        <button id="searchButton">Pesquisar</button>
     </div>
 
 
@@ -129,25 +124,6 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 </script>
-
-<!-- Seleciona o ícone de perfil pelo ID -->
-<script>
-    document.getElementById('profileIcon').addEventListener('click', function() {
-        window.location.href = 'E-C.html';
-    });
-
-    // Exibe/oculta a caixa de pesquisa ao clicar na lupa
-    document.getElementById('searchIcon').addEventListener('click', function() {
-        const searchContainer = document.querySelector('.search-container');
-        if (searchContainer.style.display === "none" || searchContainer.style.display === "") {
-            searchContainer.style.display = "flex"; // Mostra a caixa de pesquisa
-            document.getElementById('searchInput').focus(); // Foca na caixa de texto
-        } else {
-            searchContainer.style.display = "none"; // Oculta a caixa de pesquisa
-        }
-    });
-</script>
-
 
 </body>
 </html>

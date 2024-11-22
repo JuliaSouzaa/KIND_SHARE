@@ -6,18 +6,11 @@
     
     <link rel="stylesheet" href="css/equipe.css">
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- SCRIPT DA NAV BAR-->
-    <style>@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');</style> <!-- LINK PARA CARROSEL-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- LINK PARA CARROSEL-->
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"> <!-- LINK PARA CARROSEL-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> <!-- LINK PARA CARROSEL-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!-- LINK PARA FOOTER-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Inclua o link para a biblioteca Font Awesome no seu HTML -->
-<!-- JavaScript do Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" />
   
     <link rel="shortcut icon" href="img/logo_web.png" type="image/x-icon">
 
@@ -40,55 +33,7 @@
 </head>
 <body>
     
-        <!-- Header NAV BAR -->
-<header>
-    <div class="logo">
-        <img src="img/logo_preta.png" alt="Logo KIND SHARE">
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Início</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="instituicaoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ONGS</a>
-                    <ul class="dropdown-menu" aria-labelledby="instituicaoDropdown">
-                        <li><a class="dropdown-item" href="/instituicoes">Instituição</a></li>
-                        <li><a class="dropdown-item" href="/doação">Doe Agora</a></li>
-                        <li><a class="dropdown-item" href="/lista_necessidades">Necessidades</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="/envolva-se">Envolva-se</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="guia.html">Guia</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="/sobre">Sobre</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="icons">
-        <div class="search-container">
-            <input type="text" class="form-control" placeholder="Pesquisar..." id="searchInput">
-        </div>
-        <i class="fas fa-search icon" id="searchIcon"></i>
-        <a href="bem-vindo.html">
-            <i class="fas fa-user icon" id="profileIcon"></i>
-        </a>
-    </div>
-</header>
+@include('components.nav')
 
 <!-- TEXTO SOBRE EQUIPE -->
 <div class="text-between">
@@ -194,25 +139,6 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 </script>
-
-<!-- Seleciona o ícone de perfil pelo ID -->
-<script>
-    document.getElementById('profileIcon').addEventListener('click', function() {
-        window.location.href = 'E-C.html';
-    });
-
-    // Exibe/oculta a caixa de pesquisa ao clicar na lupa
-    document.getElementById('searchIcon').addEventListener('click', function() {
-        const searchContainer = document.querySelector('.search-container');
-        if (searchContainer.style.display === "none" || searchContainer.style.display === "") {
-            searchContainer.style.display = "flex"; // Mostra a caixa de pesquisa
-            document.getElementById('searchInput').focus(); // Foca na caixa de texto
-        } else {
-            searchContainer.style.display = "none"; // Oculta a caixa de pesquisa
-        }
-    });
-</script>
-
 
 </body>
 </html>

@@ -54,68 +54,6 @@ body {
     background-color: #FFFAFA !important;
 }
 
-/* Estilos para o cabeçalho (header) */
-header {
-    background-color: black; /* Define a cor de fundo do cabeçalho */
-    color: white; /* Define a cor do texto no cabeçalho */
-    display: flex; /* Usa o layout flexbox para organizar os itens */
-    justify-content: space-between; /* Espaça os itens igualmente entre as extremidades */
-    align-items: center; /* Centraliza os itens verticalmente no centro */
-    padding: 10px 20px; /* Padding para dar um bom espaço ao redor do conteúdo */
-    box-sizing: border-box; /* Garante que o padding seja considerado no tamanho total */
-    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" aos textos das seções */
-}
-
-/* Estilos para o logotipo no cabeçalho */
-header .logo img {
-    width: 60px; /* Aumente o tamanho da logo */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-
-/* Estilos para a seção de ícones no cabeçalho (pesquisa e perfil) */
-header .icons {
-    display: flex; /* Usa o layout flexbox para organizar os ícones em linha */
-    align-items: center; /* Centraliza verticalmente os itens */
-    gap: 10px; /* Define um espaçamento (gap) de 10px entre os ícones */
-}
-
-/* Estilos para os ícones individuais no cabeçalho */
-header .icons .icon {
-    font-size: 24px; /* Tamanho do ícone */
-    color: white; /* Cor padrão dos ícones */
-    cursor: pointer; /* Muda o cursor para uma mãozinha quando passar o mouse sobre o ícone */
-    transition: color 0.3s; /* Animação suave para a mudança de cor */
-}
-
-/* Mudança de cor ao passar o mouse sobre o ícone */
-header .icons .icon:hover {
-    color: #f0a500; /* Cor que o ícone muda ao passar o mouse */
-}
-
-/* Garantindo que o link do ícone de perfil não altere a aparência do cursor */
-header .icons a {
-    color: inherit; /* Herda a cor do ícone */
-    text-decoration: none; /* Remove o sublinhado do link */
-}
-
-.navbar-nav .nav-link {
-    color: white !important;
-}
-
-.navbar-nav .dropdown-menu {
-    background-color: #333; /* Fundo escuro no dropdown */
-}
-
-.navbar-nav .dropdown-item {
-    color: white !important;
-}
-
-.navbar-nav .dropdown-item:hover {
-    background-color: #555; /* Cor de fundo ao passar o mouse */
-}
-
-
 
 /* PARTE DO FOOTER E NÃO TIRAR DAQUI*/
 /* Ajustando a aparência de todos os ícones de rede social */

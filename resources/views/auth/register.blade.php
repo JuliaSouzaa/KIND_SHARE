@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/cadastro.css">  <!-- CSS Customizado -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <title>Cadastro Kind Share</title>
+    <title>Cadastro</title>
 </head>
 <body>
     <main class="main-container">

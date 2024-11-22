@@ -6,37 +6,15 @@
 
     <link rel="stylesheet" href="css/sobre.css">
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- SCRIPT DA NAV BAR-->
-    <style>@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');</style> <!-- LINK PARA CARROSEL-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- LINK PARA CARROSEL-->
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"> <!-- LINK PARA CARROSEL-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> <!-- LINK PARA CARROSEL-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!-- LINK PARA FOOTER-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Inclua o link para a biblioteca Font Awesome no seu HTML -->
-<!-- JavaScript do Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" />
   
     <link rel="shortcut icon" href="img/logo_web.png" type="image/x-icon">
 
     <title>KIND SHARE</title>
-
-    <style>
-        .search-container {
-            display: none; /* Inicialmente oculta */
-            position: absolute; /* Remove da normal flow */
-            right: 80px; /* Ajuste para mais à esquerda */
-            top: 15px; /* Ajuste conforme necessário para a posição vertical */
-            z-index: 1000; /* Fica acima de outros elementos */
-        }
-        #searchInput {
-            width: 200px; /* Ajuste o tamanho conforme necessário */
-            margin-right: 5px; /* Espaço entre a caixa de texto e a lupa */
-        }
-    </style>
-
 </head>
 <body>
     
@@ -78,7 +56,14 @@
 <!-- ENTRAR EM CONTATO -->
 <section class="contact-section">
     <h2>Entre em Contato</h2>
-    <form action="#" method="post" class="contact-form">
+    @if (session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+
+    <form action="{{ route('contact.submit') }}" method="post" class="contact-form">
+        @csrf <!-- Adiciona um token CSRF para segurança -->
         <div class="form-group">
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" required>
@@ -96,6 +81,7 @@
 </section>
 
 
+
 <!-- Botão de voltar ao topo -->
 <a href="#" class="btn-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -106,7 +92,7 @@
     <div class="footerContainer"></div>
     <div class="socialIcons">
         <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.instagram.com/kindshare__tcc/"><i class="fa-brands fa-instagram"></i></a>
         <a href=""><i class="fa-brands fa-youtube"></i></a>
     </div>
     <div class="footerNav">
@@ -139,30 +125,22 @@
     });
 </script>
 
-<!-- Seleciona o ícone de perfil pelo ID -->
-<script>
-    document.getElementById('profileIcon').addEventListener('click', function() {
-        window.location.href = 'E-C.html';
-    });
-
-    // Exibe/oculta a caixa de pesquisa ao clicar na lupa
-    document.getElementById('searchIcon').addEventListener('click', function() {
-        const searchContainer = document.querySelector('.search-container');
-        if (searchContainer.style.display === "none" || searchContainer.style.display === "") {
-            searchContainer.style.display = "flex"; // Mostra a caixa de pesquisa
-            document.getElementById('searchInput').focus(); // Foca na caixa de texto
-        } else {
-            searchContainer.style.display = "none"; // Oculta a caixa de pesquisa
-        }
-    });
-</script>
-
 <!-- TEM HAVE COM A ROLAGEM DE CIMA PARA BAIXO DA TELA INICAL -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     const heroSection = document.querySelector(".hero");
     heroSection.classList.add("visible");
 });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const alert = document.querySelector('.alert-success');
+        if (alert) {
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 5000); // 5000 ms = 5 segundos
+        }
+    });
 </script>
 
 

@@ -80,6 +80,16 @@
         const dropdown = document.getElementById('dropdownMenu');
         dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
     }
+
+    document.getElementById('searchIcon').addEventListener('click', function() {
+        const searchContainer = document.querySelector('.search-container');
+        if (searchContainer.style.display === "none" || searchContainer.style.display === "") {
+            searchContainer.style.display = "flex"; // Mostra a caixa de pesquisa
+            document.getElementById('searchInput').focus(); // Foca na caixa de texto
+        } else {
+            searchContainer.style.display = "none"; // Oculta a caixa de pesquisa
+        }
+    });
 </script>
 
 </body>

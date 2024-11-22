@@ -18,79 +18,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
-    
-
     <title>KIND SHARE</title>
-
-    <style>
-        .search-container {
-            display: none; /* Inicialmente oculta */
-            position: absolute; /* Remove da normal flow */
-            right: 80px; /* Ajuste para mais à esquerda */
-            top: 15px; /* Ajuste conforme necessário para a posição vertical */
-            z-index: 1000; /* Fica acima de outros elementos */
-        }
-  
-        #searchInput {
-            width: 200px; /* Ajuste o tamanho conforme necessário */
-            margin-right: 5px; /* Espaço entre a caixa de texto e a lupa */
-        }
-    </style>
-
 
 </head>
 <body>
 
-<!-- Header -->
-<header>
-    <div class="logo">
-        <img src="img/logo_preta.png" alt="Logo KIND SHARE">
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Início</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="instituicaoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ONGS</a>
-                    <ul class="dropdown-menu" aria-labelledby="instituicaoDropdown">
-                        <li><a class="dropdown-item" href="/instituicoes">Instituição</a></li>
-                        <li><a class="dropdown-item" href="/doação">Doe Agora</a></li>
-                        <li><a class="dropdown-item" href="/lista_necessidades">Necessidades</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="/envolva-se">Envolva-se</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="guia.html">Guia</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="/sobre">Sobre</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="icons">
-        <div class="search-container">
-            <input type="text" class="form-control" placeholder="Pesquisar..." id="searchInput">
-        </div>
-        <i class="fas fa-search icon" id="searchIcon"></i>
-        <a href="bem-vindo.html">
-            <i class="fas fa-user icon" id="profileIcon"></i>
-        </a>
-    </div>
-</header>
-
+@include('components.nav')
 
 <!--Carrosel-->
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" >
@@ -117,11 +50,8 @@
 <!--Sobre a ONG -->
 <div class="comunidades">
     <div class="texto">
-        <h2>Lira e Cia</h2>
-        <p>Na <strong>Lira e Cia</strong> tem como missão promover a inclusão social e a educação de crianças e adolescentes em situação de vulnerabilidade. 
-            Através da música, arte e atividades culturais, buscamos desenvolver habilidades e fortalecer a autoestima dos jovens, proporcionando um ambiente 
-            de aprendizado e criatividade.
-            Acreditamos que cada criança tem o potencial de se tornar um agente de mudança em sua comunidade. Nossa visão é construir um futuro onde todos tenham acesso à educação de qualidade e oportunidades iguais, independentemente de sua origem.</p>
+        <h2>Vozes da Comunidade</h2>
+        <p>A <strong>Vozes da Comunidade</strong> é uma organização dedicada a amplificar as vozes de grupos marginalizados e promover a inclusão social. Acreditamos que cada história é importante e que a mudança começa quando as pessoas têm a oportunidade de se expressar. Por meio de workshops, eventos e campanhas de conscientização, trabalhamos para fortalecer a autonomia das comunidades e fomentar o diálogo. Junte-se a nós para construir um futuro onde todos têm a chance de ser ouvidos!</p>
 </div>
     
     <!-- Carrossel à direita com botão "Apadrinhar" abaixo -->
@@ -185,10 +115,10 @@
       <div class="col-md-4">
           <div class="card">
               <a href="/criança1(Lira-e-Cia)">
-                  <img src="img/fernanda (Lira-e-Cia).jpg" class="card-img-top" alt="Fernanda">
+                  <img src="img/maria (Vozes-Comunidade).jpg" class="card-img-top" alt="Isabela">
                   <div class="card-body">
-                      <h3 class="card-title">Fernanda</h3>
-                      <p class="card-text">12 anos</p>
+                      <h3 class="card-title">Maria</h3>
+                      <p class="card-text">8 anos</p>
                   </div>
               </a>
           </div>
@@ -196,9 +126,9 @@
       <div class="col-md-4">
           <div class="card">
               <a href="/criança2(Lira-e-Cia)">
-                  <img src="img/helena (Lira-e-Cia).jpg" class="card-img-top" alt="Helena">
+                  <img src="img/betania (Vozes-Comunidade).jpg" class="card-img-top" alt="Pedro">
                   <div class="card-body">
-                      <h3 class="card-title">Helena</h3>
+                      <h3 class="card-title">Betania</h3>
                       <p class="card-text">9 anos</p>
                   </div>
               </a>
@@ -207,10 +137,10 @@
       <div class="col-md-4">
           <div class="card">
               <a href="/criança3(Lira-e-Cia)">
-                  <img src="img/julieta (Lira-e-Cia).jpg" class="card-img-top" alt="Julieta">
+                  <img src="img/nicolli (Vozes-Comunidade).jpg" class="card-img-top" alt="Felipe">
                   <div class="card-body">
-                      <h3 class="card-title">Julieta</h3>
-                      <p class="card-text">13 anos</p>
+                      <h3 class="card-title">Nicolli</h3>
+                      <p class="card-text">10 anos</p>
                   </div>
               </a>
           </div>
@@ -271,25 +201,6 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 </script>
-
-<!-- Seleciona o ícone de perfil pelo ID -->
-<script>
-    document.getElementById('profileIcon').addEventListener('click', function() {
-        window.location.href = 'bem-vindo.html';
-    });
-
-    // Exibe/oculta a caixa de pesquisa ao clicar na lupa
-    document.getElementById('searchIcon').addEventListener('click', function() {
-        const searchContainer = document.querySelector('.search-container');
-        if (searchContainer.style.display === "none" || searchContainer.style.display === "") {
-            searchContainer.style.display = "flex"; // Mostra a caixa de pesquisa
-            document.getElementById('searchInput').focus(); // Foca na caixa de texto
-        } else {
-            searchContainer.style.display = "none"; // Oculta a caixa de pesquisa
-        }
-    });
-</script>
-
 
 </body>
 </html>

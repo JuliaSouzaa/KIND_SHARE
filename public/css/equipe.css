@@ -6,112 +6,6 @@ body, h1, h2, h3, h4, h5, h6, p, a, button {
     font-family: 'Ruda', sans-serif; /* Define a fonte "Ruda" como padrão */
 }
 
-/* Estilos para o cabeçalho (header) */
-header {
-    background-color: black; /* Define a cor de fundo do cabeçalho */
-    color: white; /* Define a cor do texto no cabeçalho */
-    display: flex; /* Usa o layout flexbox para organizar os itens */
-    justify-content: space-between; /* Espaça os itens igualmente entre as extremidades */
-    align-items: center; /* Centraliza os itens verticalmente no centro */
-    padding: 10px 20px; /* Padding para dar um bom espaço ao redor do conteúdo */
-    box-sizing: border-box; /* Garante que o padding seja considerado no tamanho total */
-    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" ao cabeçalho */
-}
-
-/* Estilos para os links de navegação no cabeçalho */
-header nav a {
-    color: white; /* Define a cor dos links como branco */
-    margin: 0 10px; /* Adiciona uma margem horizontal de 10px entre os links */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    font-size: 1em; /* Tamanho da fonte dos links */
-    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" aos links */
-}
-
-/* Estilos para os ícones de perfil e redes sociais */
-.socialIcons a, .icon-section a, .btn-learn-more, .btnnecessidades, .btn-to-top {
-    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" aos botões e links */
-}
-
-/* Estilos para as legendas, textos e ícones */
-.icon-section p, .text-container h2, .text-container p, .comunidades h2, .comunidades p {
-    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" aos textos das seções */
-}
-
-/* Define a fonte padrão para o site e remove as margens e preenchimentos padrões */
-body {
-    margin: 0; /* Remove margens padrão do navegador */
-    padding: 0; /* Remove preenchimento padrão do navegador */
-    background-color: #FFFAFA !important;
-}
-
-/* Estilos para o cabeçalho (header) */
-header {
-    background-color: black; /* Define a cor de fundo do cabeçalho */
-    color: white; /* Define a cor do texto no cabeçalho */
-    display: flex; /* Usa o layout flexbox para organizar os itens */
-    justify-content: space-between; /* Espaça os itens igualmente entre as extremidades */
-    align-items: center; /* Centraliza os itens verticalmente no centro */
-    padding: 10px 20px; /* Padding para dar um bom espaço ao redor do conteúdo */
-    box-sizing: border-box; /* Garante que o padding seja considerado no tamanho total */
-}
-
-/* Estilos para o logotipo no cabeçalho */
-header .logo img {
-    width: 60px; /* Aumente o tamanho da logo */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-/* Estilos para os links de navegação no cabeçalho */
-header nav a {
-    color: white; /* Define a cor dos links como branco */
-    margin: 0 10px; /* Adiciona uma margem horizontal de 10px entre os links */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    font-size: 1em; /* Tamanho da fonte dos links */
-}
-
-/* Estilos para a seção de ícones no cabeçalho (pesquisa e perfil) */
-header .icons {
-    display: flex; /* Usa o layout flexbox para organizar os ícones em linha */
-    align-items: center; /* Centraliza verticalmente os itens */
-    gap: 10px; /* Define um espaçamento (gap) de 10px entre os ícones */
-}
-
-/* Estilos para os ícones individuais no cabeçalho */
-header .icons .icon {
-    font-size: 24px; /* Tamanho do ícone */
-    color: white; /* Cor padrão dos ícones */
-    cursor: pointer; /* Muda o cursor para uma mãozinha quando passar o mouse sobre o ícone */
-    transition: color 0.3s; /* Animação suave para a mudança de cor */
-}
-
-/* Mudança de cor ao passar o mouse sobre o ícone */
-header .icons .icon:hover {
-    color: #ffa600; /* Cor que o ícone muda ao passar o mouse */
-}
-
-/* Garantindo que o link do ícone de perfil não altere a aparência do cursor */
-header .icons a {
-    color: inherit; /* Herda a cor do ícone */
-    text-decoration: none; /* Remove o sublinhado do link */
-}
-
-.navbar-nav .nav-link {
-    color: white !important;
-}
-
-.navbar-nav .dropdown-menu {
-    background-color: #333; /* Fundo escuro no dropdown */
-}
-
-.navbar-nav .dropdown-item {
-    color: white !important;
-}
-
-.navbar-nav .dropdown-item:hover {
-    background-color: #555; /* Cor de fundo ao passar o mouse */
-}
-
- /* FAZ PARTE DO FOOTER, MAS DEIXA ELE AQUI*/
 /* Ajustando a aparência de todos os ícones de rede social */
 .socialIcons a {
     display: flex; /* Flex para centralizar o conteúdo */
@@ -148,9 +42,6 @@ header .icons a {
     font-size: 1.2em; /* Tamanho da fonte do parágrafo */
     color: #666; /* Cor do texto do parágrafo */
 }
-
-
-
 
 /* FOTOS NOSSAS */
 .team-section {
@@ -217,21 +108,6 @@ header .icons a {
     font-size: 1.5em;
     color: #333;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Botão de voltar ao topo */
 .btn-to-top {

@@ -1,12 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
-/* Importa a fonte "Ruda" do Google Fonts com pesos que variam de 400 a 900 */
 
-/* Aplica a fonte "Ruda" ao body e a todos os textos e botões */
-body, h1, h2, h3, h4, h5, h6, p, a, button {
-    font-family: 'Ruda', sans-serif; /* Define a fonte "Ruda" como padrão */
-}
-
-body {
+/* Escopo isolado: Adicione uma classe pai para evitar conflito */
+.custom-page {
+    font-family: 'Ruda', sans-serif;
     background: linear-gradient(180deg, #ffffff, #ffbf48);
     display: flex;
     justify-content: center;
@@ -14,39 +10,40 @@ body {
     height: 100vh;
 }
 
-.container {
+/* Estilos específicos para elementos dentro do contêiner */
+.custom-page .container {
     text-align: center;
     max-width: 400px;
     width: 100%;
 }
 
-.profile {
+.custom-page .profile {
     margin-bottom: 20px;
 }
 
-.logo {
+.custom-page .logo {
     width: 100px;
     font-size: 30px;
 }
 
-h1 {
+.custom-page h1 {
     margin-top: 10px;
     font-size: 40px;
     color: #f0a500;
 }
 
-p {
+.custom-page p {
     font-size: 14px;
     color: #666;
 }
 
-.links {
+.custom-page .links {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.link-item {
+.custom-page .link-item {
     background-color: #f0a500; /* Cor de fundo do botão */
     padding: 15px;
     border-radius: 10px; /* Arredondar os cantos */
@@ -59,19 +56,18 @@ p {
 }
 
 /* Efeito ao passar o mouse */
-.link-item:hover {
+.custom-page .link-item:hover {
     background-color: #ffbf48; /* Cor de fundo ao passar o mouse */
     transform: translateY(-2px); /* Leve elevação do botão */
 }
 
 /* Efeito ao focar (por exemplo, quando a tecla Tab é usada) */
-.link-item:focus {
+.custom-page .link-item:focus {
     outline: none; /* Remove o contorno padrão */
     box-shadow: 0 0 5px rgba(255, 166, 0, 0.8); /* Sombra ao focar */
 }
 
-
-.icon {
+.custom-page .icon {
     width: 30px;
     height: 30px;
     margin-right: 10px;

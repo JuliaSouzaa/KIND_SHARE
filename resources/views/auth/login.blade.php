@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Kind Share</title>
+    <title>Login</title>
     <!-- CSS Customizado -->
     <link rel="stylesheet" href="css/entrar.css">
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="shortcut icon" href="img/logo_web.png" type="image/x-icon">
+
 </head>
 <body>
     <main class="main-container">
