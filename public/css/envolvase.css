@@ -2,6 +2,7 @@
 
 /* Escopo isolado: Adicione uma classe pai para evitar conflito */
 .custom-page {
+    border-top: 2px solid #ffa600;
     font-family: 'Ruda', sans-serif;
     background: linear-gradient(180deg, #ffffff, #ffbf48);
     display: flex;

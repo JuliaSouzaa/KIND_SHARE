@@ -18,27 +18,14 @@
         
     <title>KIND SHARE</title>
 
-    <style>
-        .search-container {
-            display: none; /* Inicialmente oculta */
-            position: absolute; /* Remove da normal flow */
-            right: 80px; /* Ajuste para mais à esquerda */
-            top: 15px; /* Ajuste conforme necessário para a posição vertical */
-            z-index: 1000; /* Fica acima de outros elementos */
-        }
-  
-        #searchInput {
-            width: 200px; /* Ajuste o tamanho conforme necessário */
-            margin-right: 5px; /* Espaço entre a caixa de texto e a lupa */
-        }
-    </style>
-
 </head>
 <body>
 
 @include('components.nav')
 
     <!-- Conteúdo principal: Opção de Pagamento e Retirada -->
+    
+<div class="content">
     <div class="container mt-5 pt-5">
         <div id="secondary_title_container" class="text-center mb-4">
             <h2 id="secondary_titlesecondary_title">Selecione o tipo de doação:</h2>
@@ -82,7 +69,7 @@
             </div>
         </section>
     </div>
-
+</div>
     <!-- FOOTER -->
     <footer class="text-center mt-5">
         <div class="footerContainer mb-3">
@@ -125,24 +112,6 @@
     document.querySelector('.btn-to-top').addEventListener('click', function(event) {
         event.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-</script>
-
-<!-- Seleciona o ícone de perfil pelo ID -->
-<script>
-    document.getElementById('profileIcon').addEventListener('click', function() {
-        window.location.href = 'E-C.html';
-    });
-    
-    // Exibe/oculta a caixa de pesquisa ao clicar na lupa
-    document.getElementById('searchIcon').addEventListener('click', function() {
-        const searchContainer = document.querySelector('.search-container');
-        if (searchContainer.style.display === "none" || searchContainer.style.display === "") {
-            searchContainer.style.display = "flex"; // Mostra a caixa de pesquisa
-            document.getElementById('searchInput').focus(); // Foca na caixa de texto
-        } else {
-            searchContainer.style.display = "none"; // Oculta a caixa de pesquisa
-            }
     });
 </script>
 

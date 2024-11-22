@@ -18,6 +18,11 @@ header {
     font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" ao cabeçalho */
 }
 
+/* Adiciona a borda logo abaixo do cabeçalho */
+.content {
+    border-top: 2px solid #ffa600; /* Adiciona a borda dourada de 2px */
+}
+
 /* Estilos para os links de navegação no cabeçalho */
 header nav a {
     color: white; /* Define a cor dos links como branco */
@@ -148,8 +153,6 @@ header .icons a {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important; /* Adiciona uma sombra mais pronunciada para o efeito de levantar */
   }
 
-
-
 /* Estilo das caixas de doação */
 .box {
     background-color: #fff; /* Fundo branco */
@@ -174,29 +177,6 @@ header .icons a {
     display: block;  /* Define a imagem como um elemento de bloco, permitindo que as propriedades de margem sejam aplicadas corretamente.*/
     margin: 0 auto; /* Deixa a imagem no centro*/
 }
-
-/*BOTAO CONFIRA*/
-/*.botaos {
-    display: inline-block !important;
-    padding: 10px 20px !important; /* Largura & Tamanho*/
-/*    background-color: #ffa500 !important;
-    color: white !important;
-    font-size: 20px;  /* Tamanho da Fonte */
- /*   border-radius: 50px !important;
-    text-decoration: none !important;
-    font-weight: bold !important;
-    margin-top: 20px !important;
-    transition: transform 0.3s ease, box-shadow 0.3s ease !important; /* Adiciona uma transição suave ao transformar e à sombra */
- /*   border: none !important; 
-    font-family: 'Ruda', sans-serif !important;
-}
-
-.botaos:hover {
-    background-color: #e69500 !important; /* Muda a cor de fundo no hover */
-/*    transform: translateY(-5px) !important; /* Move o botão 5px para cima */
-/*    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important; /* Adiciona uma sombra mais pronunciada para o efeito de levantar}
-
-
 
 
 /* Botão de voltar ao topo */
