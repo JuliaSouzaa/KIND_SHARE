@@ -18,25 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
-    
-
     <title>KIND SHARE</title>
-
-    <style>
-        .search-container {
-            display: none; /* Inicialmente oculta */
-            position: absolute; /* Remove da normal flow */
-            right: 80px; /* Ajuste para mais à esquerda */
-            top: 15px; /* Ajuste conforme necessário para a posição vertical */
-            z-index: 1000; /* Fica acima de outros elementos */
-        }
-  
-        #searchInput {
-            width: 200px; /* Ajuste o tamanho conforme necessário */
-            margin-right: 5px; /* Espaço entre a caixa de texto e a lupa */
-        }
-    </style>
-
 
 </head>
 <body>
@@ -135,9 +117,9 @@
         </div>
         
         <!-- Botão abaixo do carrossel -->
-        <div class="botao-imagem">
+        <a class="botao-imagem" href="/doação">
             <button>QUERO DOAR!!</button>
-        </div>
+        </a>
     </div>
 </div>
 
@@ -183,7 +165,7 @@
   <div class="row">
       <div class="col-md-4">
           <div class="card">
-              <a href="/criança1(amigos-do-bem)">
+              <a href="{{ url('dashboard/criança1(amigos-do-bem)') }}" @guest onclick="redirectToLogin(event)" @endguest>
                   <img src="img/ana (Amigos-do-Bem).jpg" class="card-img-top" alt="ana">
                   <div class="card-body">
                       <h3 class="card-title">Ana</h3>
@@ -194,7 +176,7 @@
       </div>
       <div class="col-md-4">
           <div class="card">
-              <a href="/criança3(amigos-do-bem)">
+              <a href="{{ url('dashboard/criança2(amigos-do-bem)') }}" @guest onclick="redirectToLogin(event)" @endguest>
                   <img src="img/julia (Amigos-do-Bem).jpg" class="card-img-top" alt="julia">
                   <div class="card-body">
                       <h3 class="card-title">Julia</h3>
@@ -205,8 +187,8 @@
       </div>
       <div class="col-md-4">
           <div class="card">
-              <a href="/criança2(amigos-do-bem)">
-                  <img src="img/eloá (Amigos-do-Bem).jpg" class="card-img-top" alt="eloa">
+              <a href="{{ url('dashboard/criança3(amigos-do-bem)') }}" @guest onclick="redirectToLogin(event)" @endguest>
+                  <img src="img/eloá (Amigos-do-Bem).jpg" class="card-img-top" alt="eloa" >
                   <div class="card-body">
                       <h3 class="card-title">Eloá</h3>
                       <p class="card-text">6 anos</p>
@@ -223,8 +205,10 @@
 
 
 <!-- Botão abaixo das imagens -->
+ 
 <div class="container ver-mais">
-    <a href="/apadrinheAmi" class="btn btn-link">Apadrinhe Já</a>
+    <a href="{{ url('dashboard/apadrinheAmi') }}" class="btn btn-link" @guest onclick="redirectToLogin(event)" @endguest>
+    Apadrinhe Já</a>
 </div>
 
 <br><br>

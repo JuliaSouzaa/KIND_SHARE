@@ -68,9 +68,9 @@
         </div>
         
         <!-- Botão abaixo do carrossel -->
-        <div class="botao-imagem">
+        <a class="botao-imagem" href="/doação">
             <button>QUERO DOAR!!</button>
-        </div>
+        </a>
     </div>
 </div>
 
@@ -116,7 +116,7 @@
   <div class="row">
       <div class="col-md-4">
           <div class="card">
-              <a href="/criança1(vozes-da-comunidade)">
+              <a href="{{ url('dashboard/criança1(vozes-da-comunidade)') }}" @guest onclick="redirectToLogin(event)" @endguest>
                   <img src="img/maria (Vozes-Comunidade).jpg" class="card-img-top" alt="Isabela">
                   <div class="card-body">
                       <h3 class="card-title">Maria</h3>
@@ -127,7 +127,7 @@
       </div>
       <div class="col-md-4">
           <div class="card">
-              <a href="/criança2(vozes-da-comunidade)">
+              <a href="{{ url('dashboard/criança2(vozes-da-comunidade)') }}" @guest onclick="redirectToLogin(event)" @endguest>
                   <img src="img/betania (Vozes-Comunidade).jpg" class="card-img-top" alt="Pedro">
                   <div class="card-body">
                       <h3 class="card-title">Betania</h3>
@@ -138,7 +138,7 @@
       </div>
       <div class="col-md-4">
           <div class="card">
-              <a href="/criança3(vozes-da-comunidade)">
+              <a href="{{ url('dashboard/criança3(vozes-da-comunidade)') }}" @guest onclick="redirectToLogin(event)" @endguest>
                   <img src="img/nicolli (Vozes-Comunidade).jpg" class="card-img-top" alt="Felipe">
                   <div class="card-body">
                       <h3 class="card-title">Nicolli</h3>
@@ -155,8 +155,10 @@
 
 <!-- Botão abaixo das imagens -->
 <div class="container ver-mais">
-    <a href="/apadrinheComu" class="btn btn-link">Apadrinhe Já</a>
+    <a href="{{ url('dashboard/apadrinheComu') }}" class="btn btn-link" @guest onclick="redirectToLogin(event)" @endguest>
+    Apadrinhe Já</a>
 </div>
+
 <br><br>
 
   <!-- Botão de voltar ao topo -->

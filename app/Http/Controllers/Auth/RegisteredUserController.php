@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Illuminate\View\View;
+use Carbon\Carbon;
+
 
 class RegisteredUserController extends Controller
 {
@@ -33,7 +35,7 @@ class RegisteredUserController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
             'cpf' => ['required', 'string', 'max:11', 'unique:'.User::class],
-            'nasc' => ['required','date'],
+            'nasc' => ['required','date', 'before:'. Carbon::now()->subYears(18)->toDateString(), ], // Garante que o usuário tem pelo menos 18 anos 
             'phone' => ['required','string'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);

@@ -61,10 +61,9 @@
             <button class="carrossel-btn next" onclick="moveSlide(1)">&#10095;</button>
         </div>
         
-        <!-- Botão abaixo do carrossel -->
-        <div class="botao-imagem">
+        <a class="botao-imagem" href="/doação">
             <button>QUERO DOAR!!</button>
-        </div>
+        </a>
     </div>
 </div>
 
@@ -110,7 +109,7 @@
   <div class="row">
       <div class="col-md-4">
           <div class="card">
-              <a href="/criança1(rede-de-esperanca)">
+              <a href="{{ url('dashboard/criança1(rede-de-esperanca)') }}" @guest onclick="redirectToLogin(event)" @endguest>
                   <img src="img/joao (Rede-Esperança).jpg" class="card-img-top" alt="Isabela">
                   <div class="card-body">
                       <h3 class="card-title">João</h3>
@@ -121,7 +120,7 @@
       </div>
       <div class="col-md-4">
           <div class="card">
-              <a href="/criança2(rede-de-esperanca)">
+              <a href="{{ url('dashboard/criança2(rede-de-esperanca)') }}" @guest onclick="redirectToLogin(event)" @endguest>
                   <img src="img/pedro (Rede-Esperança).jpg" class="card-img-top" alt="Pedro">
                   <div class="card-body">
                       <h3 class="card-title">Pedro</h3>
@@ -132,7 +131,7 @@
       </div>
       <div class="col-md-4">
           <div class="card">
-              <a href="/criança3(rede-de-esperanca)">
+              <a href="{{ url('dashboard/criança3(rede-de-esperanca)') }}" @guest onclick="redirectToLogin(event)" @endguest>
                   <img src="img/kaique (Rede-Esperança).jpg" class="card-img-top" alt="Felipe">
                   <div class="card-body">
                       <h3 class="card-title">Kaique</h3>
@@ -149,7 +148,8 @@
 
 <!-- Botão abaixo das imagens -->
 <div class="container ver-mais">
-    <a href="/apadrinheRede" class="btn btn-link">Apadrinhe Já</a>
+    <a href="{{ url('dashboard/apadrinheRede') }}" class="btn btn-link" @guest onclick="redirectToLogin(event)" @endguest>
+    Apadrinhe Já</a>
 </div>
 
 <br><br>

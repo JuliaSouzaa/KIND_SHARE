@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/crianças.css">
+    <link rel="stylesheet" href="{{ asset('css/crianças.css') }}">
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- SCRIPT DA NAV BAR-->
     <style>@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');</style>
@@ -31,54 +31,7 @@
 <body>
 
 <!-- Header -->
-<header>
-    <div class="logo">
-        <img src="img/logo_preta.png" alt="Logo KIND SHARE">
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Início</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="instituicaoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ONGS</a>
-                    <ul class="dropdown-menu" aria-labelledby="instituicaoDropdown">
-                        <li><a class="dropdown-item" href="instituicoes.html">Instituição</a></li>
-                        <li><a class="dropdown-item" href="doação.html">Doe Agora</a></li>
-                        <li><a class="dropdown-item" href="lista_necessidades.html">Necessidades</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="/envolva-se">Envolva-se</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="guia.html">Guia</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="sobre.html">Sobre</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="icons">
-        <div class="search-container">
-            <input type="text" class="form-control" placeholder="Pesquisar..." id="searchInput">
-        </div>
-        <i class="fas fa-search icon" id="searchIcon"></i>
-        <a href="bem-vindo.html">
-            <i class="fas fa-user icon" id="profileIcon"></i>
-        </a>
-    </div>
-</header>
+@include('components.nav')
 
     <!-- Perfil da criança -->
     <div class="comunidades">
@@ -88,7 +41,7 @@
         </div>
         <!-- Imagem à direita -->
         <div class="imagem-comunidade">
-            <img src="img/ana (Amigos-do-Bem).jpg" alt="Imagem da Fernanda">
+            <img src="{{ asset('img/ana (Amigos-do-Bem).jpg') }}" alt="Imagem da Fernanda">
         </div>
     </div>
 
@@ -97,16 +50,16 @@
         <h2>Conheça as Outras Crianças</h2>
         <div class="cards">
             <div class="card">
-                <a href="/criança2(amigos-do-bem)">
-                    <img src="img/eloá (Amigos-do-Bem).jpg" alt="Helena">
+                <a href="{{ url('dashboard/criança2(amigos-do-bem)') }} ">
+                    <img src="{{ asset('img/eloá (Amigos-do-Bem).jpg') }}" alt="Helena">
                     <h3>Eloá</h3>
                     <p>6 anos</p>
                 </a>
             </div>
 
             <div class="card">
-                <a href="/criança3(amigos-do-bem)">
-                    <img src="img/julia (Amigos-do-Bem).jpg" alt="julieta">
+                <a href="{{ url('dashboard/criança3(amigos-do-bem)') }}">
+                    <img src="{{ asset('img/julia (Amigos-do-Bem).jpg') }}" alt="julieta">
                     <h3>Julia</h3>
                     <p>10 anos</p>
                 </a>

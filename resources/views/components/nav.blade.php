@@ -35,16 +35,13 @@
                     ONGS
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="instituicaoDropdown">
-                    <li><a class="dropdown-item" href="{{ url('dashboard/instituicoes') }}" 
-                           @guest onclick="redirectToLogin(event)" @endguest>
+                    <li><a class="dropdown-item" href="{{ url('/instituicoes') }}">
                         Instituição
                     </a></li>
-                    <li><a class="dropdown-item" href="{{ url('dashboard/doação') }}" 
-                           @guest onclick="redirectToLogin(event)" @endguest>
+                    <li><a class="dropdown-item" href="{{ url('/doação') }}">
                         Doe Agora
                     </a></li>
-                    <li><a class="dropdown-item" href="{{ url('dashboard/lista_necessidades') }}" 
-                           @guest onclick="redirectToLogin(event)" @endguest>
+                    <li><a class="dropdown-item" href="{{ url('/lista_necessidades') }}">
                         Necessidades
                     </a></li>
                 </ul>

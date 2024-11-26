@@ -12,11 +12,22 @@ use App\Models\User;
 
 class ProfileController extends Controller
 {
+    
     /**
      * Display the user's profile form.
      */
     public function show()
     {
+
+            // Obtém o usuário atualmente autenticado
+    $user = Auth::user();
+
+    // Verifique se a view 'profile' existe
+    if (view()->exists('profile')) {
+        return view('profile', [
+            'user' => $user, // Passa o usuário autenticado para a view
+        ]);
+    }
         // Verifique se a view existe
         if (view()->exists('profile')) {
             return view('profile');
@@ -25,6 +36,7 @@ class ProfileController extends Controller
         // Se não existir, redirecione para a view 'welcome'
         return view('welcome');
     }
+    
     public function edit(Request $request): View
     {
         return view('profile.edit', [
