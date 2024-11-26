@@ -43,7 +43,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Início</a>
+                    <a class="nav-link" href="/inicio">Início</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="instituicaoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ONGS</a>
@@ -55,7 +55,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/envolva-se">Envolva-se</a>
+                    <a class="nav-link" href="envolva-se.html">Envolva-se</a>
                 </li>
 
                 <li class="nav-item">
@@ -63,7 +63,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/sobre">Sobre</a>
+                    <a class="nav-link" href="sobre.html">Sobre</a>
                 </li>
             </ul>
         </div>
@@ -83,13 +83,13 @@
     <!-- Perfil da criança -->
     <div class="comunidades">
         <div class="texto">
-            <h2>Conheça a Fernanda!</h2>
-            <p>Fernanda tem 12, é uma garota sonhadora, cheia de imaginação e criatividade. Ela adora contar histórias e se perder em livros que a levam a mundos mágicos. Com um coração gentil, Fernanda é sensível às emoções dos outros e sempre busca ajudar quem está ao seu redor. Ela sonha em ter uma família que a encoraje a explorar suas paixões e a abraçar suas ideias. Com Fernanda, cada dia pode ser uma nova aventura cheia de descobertas!</p>
+            <h2>Conheça a Betania!</h2>
+            <p>Betania tem 9 anos, tem um jeito especial de ver o mundo: com muita atenção aos detalhes. Gosta de passar o tempo cuidando do jardim com os amigos, observando as borboletas que vêm visitar as flores. Sempre inventa histórias sobre o que as borboletas fazem quando não estão voando, deixando todos ao seu redor fascinados.</p>
         </div>
+
         <!-- Imagem à direita -->
         <div class="imagem-comunidade">
-            <img src="img/fernanda (Lira-e-Cia).jpg" alt="Imagem da Fernanda">
-            
+            <img src="img/betania (Vozes-Comunidade).jpg" alt="Imagem da Fernanda">
         </div>
     </div>
 
@@ -98,18 +98,18 @@
         <h2>Conheça as Outras Crianças</h2>
         <div class="cards">
             <div class="card">
-                <a href="/criança2(Lira-e-Cia)">
-                    <img src="img/helena (Lira-e-Cia).jpg" alt="Helena">
-                    <h3>Helena</h3>
-                    <p>9 anos</p>
+                <a href="/criança1(vozes-da-comunidade)">
+                    <img src="img/maria (Vozes-Comunidade).jpg" alt="Helena">
+                    <h3>maria</h3>
+                    <p>8 anos</p>
                 </a>
             </div>
 
             <div class="card">
-                <a href="/criança3(Lira-e-Cia)">
-                    <img src="img/julieta (Lira-e-Cia).jpg" alt="julieta">
-                    <h3>Julieta</h3>
-                    <p>13 anos</p>
+                <a href="/criança3(vozes-da-comunidade)">
+                    <img src="img/nicolli (Vozes-Comunidade).jpg" alt="julieta">
+                    <h3>Nicolli</h3>
+                    <p>10 anos</p>
                 </a>
             </div>
         </div>
@@ -137,9 +137,9 @@
         </div>
         <div class="footerNav">
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/sobre">Sobre</a></li>
-                <li><a href="/equipe">Quem Somos</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Quem Somos</a></li>
             </ul>
         </div>
         <div class="footerBottom">

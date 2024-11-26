@@ -179,7 +179,9 @@
 <br><br>
 <!-- Seção "Conheça as Outras Crianças" -->
 <div class="container outras-criancas">
-  <h2>Conheça As Outras Crianças</h2>
+  <h2>Conheça e Apadrinhe Outras Crianças</h2>
+  <p>Com apenas R$ 100,00 mensais, você contribui para a transformação social e permite que nossas crianças continuem sonhando.</p>
+  <br>
   <div class="row">
       <div class="col-md-4">
           <div class="card">
@@ -214,6 +216,8 @@
               </a>
           </div>
       </div>
+</div>
+</div>
   </div>
 </div>
 
@@ -222,8 +226,9 @@
 
 <!-- Botão abaixo das imagens -->
 <div class="container ver-mais">
-  <button class="btn btn-primary">Veja Mais!</button>
+    <a href="/apadrinhe" class="btn btn-link">Apadrinhe Já</a>
 </div>
+
 
 <br><br>
 

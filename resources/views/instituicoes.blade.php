@@ -13,7 +13,7 @@
     <title>KIND SHARE</title>
 </head>
 <body>
- 
+
 @include('components.nav')
 
 <!-- Main Content -->
@@ -22,12 +22,42 @@
         <h1>Bem-vindo à seção de Instituições</h1>
         <p>Explore as instituições que incentivam a sua participação.</p>
     </div>
+
+    <!-- Barra de Pesquisa -->
     <div class="section-search-container">
-        <input type="text" class="form-control" placeholder="Digitar..." id="headerSearchInput">
-        <button id="searchButton">Pesquisar</button>
-    </div>
+    <input type="text" class="form-control" placeholder="Digite para buscar..." id="headerSearchInput">
+    <button id="searchButton" class="btn btn-primary">Pesquisar</button>
+</div>
 
 
+<div class="categories">
+    <h2>Categorias</h2>
+    <div class="category-cards">
+        <!-- Cartões de instituições -->
+        <div class="category-card" data-name="Corações Unidos">
+            <img src="img/ong1.png" alt="Corações Unidos">
+            <p><a href="/coracao_unido" class="custom-button">Corações Unidos</a></p>
+        </div>
+        <div class="category-card" data-name="Lira e Cia">
+            <img src="img/ong2.png" alt="Lira e Cia">
+            <p><a href="/lira-e-cia" class="custom-button">Lira e Cia</a></p>
+        </div>
+        <div class="category-card" data-name="Vozes da Comunidade">
+            <img src="img/ong3.png" alt="Vozes da Comunidade">
+            <p><a href="/vozes-da-comunidade" class="custom-button">Vozes da Comunidade</a></p>
+        </div>
+        <div class="category-card" data-name="Rede de Esperança">
+            <img src="img/ong4.png" alt="Rede de Esperança">
+            <p><a href="/rede-de-esperanca" class="custom-button">Rede de Esperança</a></p>
+        </div>
+        <div class="category-card" data-name="Amigos do Bem">
+            <img src="img/ong5.png" alt="Amigos do Bem">
+            <p><a href="/amigos-do-bem" class="custom-button">Amigos do Bem</a></p>
+        </div>
+
+        <!-- Mensagem de erro -->
+        <div id="noResultsMessage" style="display: none; text-align: center;">
+            <p>Nenhuma instituição encontrada.</p>
     <div class="categories">
         <h2>Categorias</h2>
         <div class="category-cards">
@@ -53,14 +83,16 @@
           </div>
 
         </div>
-      </div>
+    </div>
+</div>
+
 </section>
 
 <!-- Botão de voltar ao topo -->
 <a href="#" class="btn-to-top">
     <i class="fa-solid fa-arrow-up"></i>
 </a>
-  
+
 <!-- FOOTER -->
 <footer>
     <div class="footerContainer"></div>
@@ -82,19 +114,62 @@
 </footer>
 
 <!-- Scripts -->
+    
 <script>
-    window.onscroll = function() {
-        let btnToTop = document.querySelector('.btn-to-top');
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            btnToTop.style.display = "block";
-        } else {
-            btnToTop.style.display = "none";
-        }
-    };
+    function filtrarInstituicoes() {
+        const query = document.getElementById('headerSearchInput').value.toLowerCase(); // Texto digitado
+        const cards = document.querySelectorAll('.category-card'); // Todos os cartões
+        let anyVisible = false; // Variável para verificar se há algum card visível
 
-    document.querySelector('.btn-to-top').addEventListener('click', function(event) {
-        event.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        cards.forEach(card => {
+            const name = card.getAttribute('data-name').toLowerCase(); // Nome da instituição
+
+            if (name.includes(query)) {
+                card.style.display = 'block'; // Mostra o card
+                anyVisible = true; // Marca que pelo menos um card está visível
+            } else {
+                card.style.display = 'none'; // Esconde o card
+            }
+        });
+
+        // Exibe ou esconde a mensagem de erro com base nos resultados
+        const noResultsMessage = document.getElementById('noResultsMessage');
+        if (anyVisible) {
+            noResultsMessage.style.display = 'none'; // Esconde a mensagem de erro
+        } else {
+            noResultsMessage.style.display = 'block'; // Exibe a mensagem de erro
+        }
+    }
+
+    document.getElementById('headerSearchInput').addEventListener('input', filtrarInstituicoes);
+    document.getElementById('searchButton').addEventListener('click', filtrarInstituicoes);
+</script>
+
+
+<script>
+    // Função de busca (compartilhada para input e botão)
+    function filtrarInstituicoes() {
+        const query = document.getElementById('headerSearchInput').value.toLowerCase(); // Texto digitado em minúsculas
+        const cards = document.querySelectorAll('.category-card'); // Seleciona todos os cards
+
+        cards.forEach(card => {
+            const name = card.getAttribute('data-name').toLowerCase(); // Nome da instituição em minúsculas
+
+            // Verifica se o nome inclui o texto digitado
+            if (name.includes(query)) {
+                card.style.display = 'block'; // Mostra o card se corresponde à pesquisa
+            } else {
+                card.style.display = 'none'; // Esconde o card se não corresponde
+            }
+        });
+    }
+
+    // Evento para digitação no input
+    document.getElementById('headerSearchInput').addEventListener('input', filtrarInstituicoes);
+
+    // Evento para clique no botão
+    document.getElementById('searchButton').addEventListener('click', function () {
+        filtrarInstituicoes();
     });
 </script>
 

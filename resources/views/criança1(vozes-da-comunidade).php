@@ -43,14 +43,14 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Início</a>
+                    <a class="nav-link" href="inicio.html">Início</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="instituicaoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ONGS</a>
                     <ul class="dropdown-menu" aria-labelledby="instituicaoDropdown">
-                        <li><a class="dropdown-item" href="/instituicoes">Instituição</a></li>
-                        <li><a class="dropdown-item" href="/doação">Doe Agora</a></li>
-                        <li><a class="dropdown-item" href="/lista_necessidades">Necessidades</a></li>
+                        <li><a class="dropdown-item" href="instituicoes.html">Instituição</a></li>
+                        <li><a class="dropdown-item" href="doação.html">Doe Agora</a></li>
+                        <li><a class="dropdown-item" href="lista_necessidades.html">Necessidades</a></li>
                     </ul>
                 </li>
 
@@ -83,13 +83,12 @@
     <!-- Perfil da criança -->
     <div class="comunidades">
         <div class="texto">
-            <h2>Conheça a Fernanda!</h2>
-            <p>Fernanda tem 12, é uma garota sonhadora, cheia de imaginação e criatividade. Ela adora contar histórias e se perder em livros que a levam a mundos mágicos. Com um coração gentil, Fernanda é sensível às emoções dos outros e sempre busca ajudar quem está ao seu redor. Ela sonha em ter uma família que a encoraje a explorar suas paixões e a abraçar suas ideias. Com Fernanda, cada dia pode ser uma nova aventura cheia de descobertas!</p>
+            <h2>Conheça a Maria!</h2>
+            <p>Maria tem 8 anos, é uma garota cheia de vida que adora o som dos pássaros pela manhã. Com uma personalidade curiosa, está sempre fazendo perguntas sobre o universo e as estrelas. Seu passatempo favorito é criar pulseiras coloridas para presentear as pessoas que ama. Ela acredita que cada cor carrega uma emoção especial.</p>
         </div>
         <!-- Imagem à direita -->
         <div class="imagem-comunidade">
-            <img src="img/fernanda (Lira-e-Cia).jpg" alt="Imagem da Fernanda">
-            
+            <img src="img/maria (Vozes-Comunidade).jpg" alt="Imagem da Fernanda">
         </div>
     </div>
 
@@ -98,18 +97,18 @@
         <h2>Conheça as Outras Crianças</h2>
         <div class="cards">
             <div class="card">
-                <a href="/criança2(Lira-e-Cia)">
-                    <img src="img/helena (Lira-e-Cia).jpg" alt="Helena">
-                    <h3>Helena</h3>
+                <a href="/criança2(vozes-da-comunidade)">
+                    <img src="img/betania (Vozes-Comunidade).jpg" alt="Helena">
+                    <h3>Betania</h3>
                     <p>9 anos</p>
                 </a>
             </div>
 
             <div class="card">
-                <a href="/criança3(Lira-e-Cia)">
-                    <img src="img/julieta (Lira-e-Cia).jpg" alt="julieta">
-                    <h3>Julieta</h3>
-                    <p>13 anos</p>
+                <a href="/criança3(vozes-da-comunidade)">
+                    <img src="img/nicolli (Vozes-Comunidade).jpg" alt="julieta">
+                    <h3>Nicolli</h3>
+                    <p>10 anos</p>
                 </a>
             </div>
         </div>
@@ -138,8 +137,8 @@
         <div class="footerNav">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/sobre">Sobre</a></li>
-                <li><a href="/equipe">Quem Somos</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Quem Somos</a></li>
             </ul>
         </div>
         <div class="footerBottom">

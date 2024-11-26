@@ -43,19 +43,19 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Início</a>
+                    <a class="nav-link" href="inicio.html">Início</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="instituicaoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ONGS</a>
                     <ul class="dropdown-menu" aria-labelledby="instituicaoDropdown">
-                        <li><a class="dropdown-item" href="/instituicoes">Instituição</a></li>
-                        <li><a class="dropdown-item" href="/doação">Doe Agora</a></li>
-                        <li><a class="dropdown-item" href="/lista_necessidades">Necessidades</a></li>
+                        <li><a class="dropdown-item" href="instituicoes.html">Instituição</a></li>
+                        <li><a class="dropdown-item" href="doação.html">Doe Agora</a></li>
+                        <li><a class="dropdown-item" href="lista_necessidades.html">Necessidades</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/envolva-se">Envolva-se</a>
+                    <a class="nav-link" href="envolva-se.html">Envolva-se</a>
                 </li>
 
                 <li class="nav-item">
@@ -63,7 +63,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/sobre">Sobre</a>
+                    <a class="nav-link" href="sobre.html">Sobre</a>
                 </li>
             </ul>
         </div>
@@ -83,13 +83,13 @@
     <!-- Perfil da criança -->
     <div class="comunidades">
         <div class="texto">
-            <h2>Conheça a Fernanda!</h2>
-            <p>Fernanda tem 12, é uma garota sonhadora, cheia de imaginação e criatividade. Ela adora contar histórias e se perder em livros que a levam a mundos mágicos. Com um coração gentil, Fernanda é sensível às emoções dos outros e sempre busca ajudar quem está ao seu redor. Ela sonha em ter uma família que a encoraje a explorar suas paixões e a abraçar suas ideias. Com Fernanda, cada dia pode ser uma nova aventura cheia de descobertas!</p>
+            <h2>Conheça a Nicolli!</h2>
+            <p>Nicolli tem 10 anos, é apaixonada por astronomia e ama olhar as estrelas à noite. Ela costuma dizer que quer ser astronauta para explorar planetas desconhecidos. Além disso, Nicolli é ótima em criar jogos para brincar com os amigos, usando apenas papel e caneta. Sua criatividade não tem limites!</p>
         </div>
+
         <!-- Imagem à direita -->
         <div class="imagem-comunidade">
-            <img src="img/fernanda (Lira-e-Cia).jpg" alt="Imagem da Fernanda">
-            
+            <img src="img/nicolli (Vozes-Comunidade).jpg" alt="Imagem da Fernanda">
         </div>
     </div>
 
@@ -98,18 +98,18 @@
         <h2>Conheça as Outras Crianças</h2>
         <div class="cards">
             <div class="card">
-                <a href="/criança2(Lira-e-Cia)">
-                    <img src="img/helena (Lira-e-Cia).jpg" alt="Helena">
-                    <h3>Helena</h3>
-                    <p>9 anos</p>
+                <a href="/criança1(vozes-da-comunidade)">
+                    <img src="img/maria (Vozes-Comunidade).jpg" alt="Helena">
+                    <h3>maria</h3>
+                    <p>8 anos</p>
                 </a>
             </div>
 
             <div class="card">
-                <a href="/criança3(Lira-e-Cia)">
-                    <img src="img/julieta (Lira-e-Cia).jpg" alt="julieta">
-                    <h3>Julieta</h3>
-                    <p>13 anos</p>
+                <a href="/criança2(vozes-da-comunidade)">
+                    <img src="img/betania (Vozes-Comunidade).jpg" alt="julieta">
+                    <h3>Betania</h3>
+                    <p>9 anos</p>
                 </a>
             </div>
         </div>
@@ -137,9 +137,9 @@
         </div>
         <div class="footerNav">
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/sobre">Sobre</a></li>
-                <li><a href="/equipe">Quem Somos</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Quem Somos</a></li>
             </ul>
         </div>
         <div class="footerBottom">
@@ -168,7 +168,7 @@
     <!-- Seleciona o ícone de perfil pelo ID -->
 <script>
     document.getElementById('profileIcon').addEventListener('click', function() {
-        window.location.href = 'E-C.html';
+        window.location.href = 'bem-vindo.html';
     });
 
     // Exibe/oculta a caixa de pesquisa ao clicar na lupa

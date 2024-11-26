@@ -59,7 +59,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="guia.html">Guia</a>
+                    <a class="nav-link" href="/guia">Guia</a>
                 </li>
 
                 <li class="nav-item">
@@ -83,13 +83,12 @@
     <!-- Perfil da criança -->
     <div class="comunidades">
         <div class="texto">
-            <h2>Conheça a Fernanda!</h2>
-            <p>Fernanda tem 12, é uma garota sonhadora, cheia de imaginação e criatividade. Ela adora contar histórias e se perder em livros que a levam a mundos mágicos. Com um coração gentil, Fernanda é sensível às emoções dos outros e sempre busca ajudar quem está ao seu redor. Ela sonha em ter uma família que a encoraje a explorar suas paixões e a abraçar suas ideias. Com Fernanda, cada dia pode ser uma nova aventura cheia de descobertas!</p>
+            <h2>Conheça a Julieta!</h2>
+            <p>Julieta, com seus 13 anos, é uma menina cheia de energia e curiosidade. Ela adora explorar a natureza, passando horas observando insetos e plantas no jardim. Além disso, Fernanda tem um talento especial para a música; ela toca violão e está aprendendo a tocar piano. Sua paixão pela música a leva a criar suas próprias canções, que ela compartilha com amigos e familiares.</p>
         </div>
         <!-- Imagem à direita -->
         <div class="imagem-comunidade">
-            <img src="img/fernanda (Lira-e-Cia).jpg" alt="Imagem da Fernanda">
-            
+            <img src="img/julieta (Lira-e-Cia).jpg" alt="Imagem da Fernanda">
         </div>
     </div>
 
@@ -98,16 +97,16 @@
         <h2>Conheça as Outras Crianças</h2>
         <div class="cards">
             <div class="card">
-                <a href="/criança2(Lira-e-Cia)">
-                    <img src="img/helena (Lira-e-Cia).jpg" alt="Helena">
-                    <h3>Helena</h3>
-                    <p>9 anos</p>
+                <a href="/criança1(Lira-e-Cia)">
+                    <img src="img/fernanda (Lira-e-Cia).jpg" alt="fernanda">
+                    <h3>Fernanda</h3>
+                    <p>12 anos</p>
                 </a>
             </div>
 
             <div class="card">
-                <a href="/criança3(Lira-e-Cia)">
-                    <img src="img/julieta (Lira-e-Cia).jpg" alt="julieta">
+                <a href="/criança2(Lira-e-Cia)">
+                    <img src="img/helena (Lira-e-Cia).jpg" alt="julieta">
                     <h3>Julieta</h3>
                     <p>13 anos</p>
                 </a>
@@ -137,9 +136,9 @@
         </div>
         <div class="footerNav">
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/sobre">Sobre</a></li>
-                <li><a href="/equipe">Quem Somos</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Quem Somos</a></li>
             </ul>
         </div>
         <div class="footerBottom">

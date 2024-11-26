@@ -324,3 +324,13 @@ footer {
     background-color: #111; /* Redefine a cor de fundo do footer (redundante, pois já está definido anteriormente) */
     clear: both; /* Garante que o footer não flutue dentro de outro container, forçando-o a aparecer abaixo de qualquer elemento flutuante */
 }
+
+#noResultsMessage {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}

@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
+/* Importa a fonte "Ruda" do Google Fonts com pesos variando de 400 a 900 */
+
+/* Resetando margens e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cor de fundo da página */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5ca85;
+  font-family: 'Ruda', sans-serif;
+}
+
+/* Estilo para o container principal */
+.container {
+  background-color: #f4f4f4c3;
+  padding: 60px;
+  width: 700px;
+  border-radius: 100px 0 100px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+}
+
+/* Título da página */
+h2 {
+  font-size: 2em;
+  color: #ffa63f;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Alerta de instruções (com chave Pix) */
+.alert {
+  background-color: #f3daad;
+  border: 1px solid #fcc465;
+  color: #ffa63f;
+  font-size: 1.2em;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Estilo do texto da chave Pix */
+strong {
+  font-size: 1.3em;
+  color: #ffa63f;
+  word-break: break-all;
+}
+
+/* Estilo para a chave Pix */
+.text-center p {
+  font-size: 1.5em;
+  color: #34495e;
+  margin-top: 15px;
+  letter-spacing: 0.5px;
+}
+
+/* Estilo para os links */
+a {
+  text-decoration: none;
+}
+
+/* Contêiner para os botões */
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Distribui os botões ao longo do contêiner */
+  gap: 20px; /* Adiciona espaçamento entre os botões */
+  margin-top: 30px; /* Espaçamento adicional entre os botões e a chave Pix */
+  align-items: center; /* Alinha os botões no centro */
+}
+
+/* Estilo dos botões */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Botão primário (Finalizar) */
+.btn-primary {
+  background-color: #f0a500;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-family: 'Ruda', sans-serif;
+}
+
+/* Efeito de hover para o botão primário */
+.btn-primary:hover {
+  background-color: #d8a435;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão secundário (Voltar) */
+.btn-secondary {
+  background-color: #f0a500;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-family: 'Ruda', sans-serif;
+}
+
+/* Efeito de hover para o botão secundário */
+.btn-secondary:hover {
+  background-color: #d8a435;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Adicionando a responsividade */
+@media (max-width: 576px) {
+  .container {
+      padding: 20px;
+  }
+
+  h2 {
+      font-size: 1.8em;
+  }
+
+  .alert {
+      font-size: 1.1em;
+  }
+
+  .btn {
+      font-size: 1em;
+  }
+
+  /* Alterando a disposição dos botões em telas pequenas */
+  .button-container {
+      flex-direction: column; /* Empilha os botões verticalmente em telas pequenas */
+      gap: 10px; /* Menor espaço entre os botões */
+  }
+}

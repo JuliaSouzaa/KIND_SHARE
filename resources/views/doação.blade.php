@@ -33,7 +33,7 @@
 
         <!-- Box 1: Opção de Pagamento -->
         <div class="col-md-12 mb-4 text-center">
-            <a href="{{ url('dashboard/pagamento0') }}" class="btn btn-primary btn-lg w-100"> Opção de Pagamento </a>
+            <a href="#" class="btn btn-primary btn-lg w-100"> Opção de Pagamento </a>
             <p style="font-size: 20px;">Contribua com a quantia que for de sua preferência.</p>
         </div>
 
@@ -55,19 +55,16 @@
                                     <br> A primeira opção é a contribuição financeira, onde você pode optar entre Pix, cartão de Débito ou Crédito. 
                                     <br> A segunda opção é a doação de itens. Para isso, preencha os campos do formulário e, após avaliarmos as condições dos itens. Você receberá um e-mail confirmando se a doação pode ser entregue à instituição.</p>
 
-                                <img src="{{ asset('img/duvida(doacao).png') }}" alt="cliente" class="img-fluid" />
+                                <img src="img/duvida(doacao).png" alt="cliente" class="img-fluid" />
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--
-                <div class="text-center">
-                    <button class="botaos" id="scrollToTopBtn">Confira</button>
-                </div>
-                -->
             </div>
-        </section>
+        </div>
     </div>
+</section>
+
 </div>
     <!-- FOOTER -->
     <footer class="text-center mt-5">
@@ -79,7 +76,7 @@
             </div>
             <div class="footerNav">
                 <ul class="list-inline">
-                    <li class="list-inline-item"><a href="">Home</a></li>
+                    <li class="list-inline-item"><a href="/">Home</a></li>
                     <li class="list-inline-item"><a href="">Sobre</a></li>
                     <li class="list-inline-item"><a href="">Quem Somos</a></li>
                 </ul>

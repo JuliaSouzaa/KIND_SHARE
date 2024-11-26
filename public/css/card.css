@@ -1,0 +1,112 @@
+/* Estilo Global */
+body {
+    background: linear-gradient(135deg, #ffce74ef, #ffcb6bef); /* Gradiente profissional */
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-size: 1.2rem;
+    color: #f8f9fa;
+    margin-bottom: 1.5rem;
+}
+
+/* Formulário */
+form {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px;
+    border-radius: 100px 0 100px 0;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+form .form-control {
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+form .form-control:focus {
+    border-color: #000000;
+    box-shadow: 0 0 10px rgba(37, 117, 252, 0.3);
+}
+
+/* Botão */
+button {
+    background: #000000;
+    border: none;
+    font-weight: 600;
+    padding: 15px 0;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background: #000000;
+}
+
+/* Visual do Cartão */
+.card {
+    background: #333;
+    border-radius: 20px;
+    border: none;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.card p.h4 {
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.chip img {
+    width: 50px;
+    margin: 0 auto;
+}
+
+.card .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card p.h5 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #f8f9fa;
+}

@@ -48,14 +48,14 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="instituicaoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ONGS</a>
                     <ul class="dropdown-menu" aria-labelledby="instituicaoDropdown">
-                        <li><a class="dropdown-item" href="/instituicoes">Instituição</a></li>
-                        <li><a class="dropdown-item" href="/doação">Doe Agora</a></li>
-                        <li><a class="dropdown-item" href="/lista_necessidades">Necessidades</a></li>
+                        <li><a class="dropdown-item" href="instituicoes.html">Instituição</a></li>
+                        <li><a class="dropdown-item" href="doação.html">Doe Agora</a></li>
+                        <li><a class="dropdown-item" href="lista_necessidades.html">Necessidades</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/envolva-se">Envolva-se</a>
+                    <a class="nav-link" href="envolva-se.html">Envolva-se</a>
                 </li>
 
                 <li class="nav-item">
@@ -63,7 +63,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/sobre">Sobre</a>
+                    <a class="nav-link" href="sobre.html">Sobre</a>
                 </li>
             </ul>
         </div>
@@ -83,13 +83,12 @@
     <!-- Perfil da criança -->
     <div class="comunidades">
         <div class="texto">
-            <h2>Conheça a Fernanda!</h2>
-            <p>Fernanda tem 12, é uma garota sonhadora, cheia de imaginação e criatividade. Ela adora contar histórias e se perder em livros que a levam a mundos mágicos. Com um coração gentil, Fernanda é sensível às emoções dos outros e sempre busca ajudar quem está ao seu redor. Ela sonha em ter uma família que a encoraje a explorar suas paixões e a abraçar suas ideias. Com Fernanda, cada dia pode ser uma nova aventura cheia de descobertas!</p>
+            <h2>Conheça a Kaique!</h2>
+            <p>Kaique tem 4 anos, é um menino carinhoso e muito curioso. Ele adora brincar de explorador, transformando o quintal em uma floresta cheia de aventuras. Com sua lanterna de brinquedo e um mapa imaginário, inventa histórias sobre encontrar tesouros escondidos. Ele tem uma risada contagiante que encanta a todos.</p>
         </div>
         <!-- Imagem à direita -->
         <div class="imagem-comunidade">
-            <img src="img/fernanda (Lira-e-Cia).jpg" alt="Imagem da Fernanda">
-            
+            <img src="img/kaique (Rede-Esperança).jpg" alt="Imagem da Fernanda">
         </div>
     </div>
 
@@ -98,18 +97,18 @@
         <h2>Conheça as Outras Crianças</h2>
         <div class="cards">
             <div class="card">
-                <a href="/criança2(Lira-e-Cia)">
-                    <img src="img/helena (Lira-e-Cia).jpg" alt="Helena">
-                    <h3>Helena</h3>
-                    <p>9 anos</p>
+                <a href="/criança1(rede-de-esperanca)">
+                    <img src="img/joao (Rede-Esperança).jpg" alt="Helena">
+                    <h3>joao</h3>
+                    <p>11 anos</p>
                 </a>
             </div>
 
             <div class="card">
-                <a href="/criança3(Lira-e-Cia)">
-                    <img src="img/julieta (Lira-e-Cia).jpg" alt="julieta">
-                    <h3>Julieta</h3>
-                    <p>13 anos</p>
+                <a href="/criança2(rede-de-esperanca)">
+                    <img src="img/pedro (Rede-Esperança).jpg" alt="julieta">
+                    <h3>Pedro</h3>
+                    <p>5 anos</p>
                 </a>
             </div>
         </div>
@@ -137,9 +136,9 @@
         </div>
         <div class="footerNav">
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/sobre">Sobre</a></li>
-                <li><a href="/equipe">Quem Somos</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Quem Somos</a></li>
             </ul>
         </div>
         <div class="footerBottom">
@@ -168,7 +167,7 @@
     <!-- Seleciona o ícone de perfil pelo ID -->
 <script>
     document.getElementById('profileIcon').addEventListener('click', function() {
-        window.location.href = 'E-C.html';
+        window.location.href = 'bem-vindo.html';
     });
 
     // Exibe/oculta a caixa de pesquisa ao clicar na lupa

@@ -156,7 +156,7 @@
 
 <!-- Botão abaixo das imagens -->
 <div class="container ver-mais">
-  <button class="btn btn-primary">Veja Mais!</button>
+    <a href="/apadrinheLIRA" class="btn btn-link">Apadrinhe Já</a>
 </div>
 
 <br><br>
