@@ -184,6 +184,30 @@ header .icons a {
     background-color: #e69500;
 }
 
+.card a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #0000FF; /* Mantém a cor azul padrão ou ajuste para outra cor de sua escolha */
+    font-weight: bold; /* Deixa o texto mais destacado, se desejar */
+    transition: color 0.3s ease; /* Adiciona uma transição suave na mudança de cor */
+}
+
+.card a:hover {
+    color: #e69500; /* Cor ao passar o mouse, ajuste conforme necessário */
+}
+
+.card a:focus, 
+.card a:active {
+    color: #0000FF; /* Mantém a cor original ao clicar */
+    outline: none; /* Remove o contorno padrão de foco */
+}
+
+
+
+
+
+
+
+
 /* Estilos para a seção "Conheça as Outras Crianças" */
 .outras-criancas {
     padding: 40px; /* Espaço ao redor da seção */
@@ -216,6 +240,10 @@ header .icons a {
     width: 100%; /* Ocupa toda a largura disponível */
     margin: 10px; /* Espaço ao redor dos cartões */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para transformações e sombras */
+    height: 450px; /* Altura fixa para todos os cartões */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Garante que o conteúdo dentro fique bem distribuído */
 }
 
 /* Efeito ao passar o mouse sobre o cartão */
@@ -226,8 +254,10 @@ header .icons a {
 
 .card img {
     max-width: 100%; /* Ajusta a imagem para não ultrapassar os limites do cartão */
-    height: auto;
+    height: 200px;
     border-bottom: 2px solid #f8cf47; /* Linha de separação abaixo da imagem */
+    width: 100%; /* A imagem ocupa toda a largura do cartão */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorções */
 }
 
 .card h3 {

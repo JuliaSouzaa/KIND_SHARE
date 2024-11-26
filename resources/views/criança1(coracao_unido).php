@@ -89,9 +89,7 @@
         <div class="imagem-comunidade">
             <img src="img/isabela (coracao_undio).jpg" alt="Imagem da Isabela">
             <!-- Botão abaixo da imagem -->
-            <div class="botao-imagem">
-                <button>Apadrinhar</button>
-            </div>
+            
         </div>
     </div>
 
@@ -100,7 +98,7 @@
         <h2>Conheça as Outras Crianças</h2>
         <div class="cards">
             <div class="card">
-                <a href="criança2(coracao_unido).html">
+                <a href="/criança2(coracao_unido)">
                     <img src="img/pedro (coracao_unido).jpg" alt="Pedro">
                     <h3>Pedro</h3>
                     <p>12 anos</p>
@@ -108,7 +106,7 @@
             </div>
 
             <div class="card">
-                <a href="criança3(coracao_unido).html">
+                <a href="/criança3(coracao_unido)">
                     <img src="img/felipe (coracao_unido).jpg" alt="Felipe">
                     <h3>Felipe</h3>
                     <p>10 anos</p>

@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
+/* Importa a fonte "Ruda" do Google Fonts com pesos variando de 400 a 900 */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ruda', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5ca85;
+}
+
+.modal {
+    background-color: #f4f4f4c3;
+    padding: 50px;
+    width: 700px;
+    border-radius: 100px 0 100px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    flex: 1; /* Ocupa todo o espaço horizontal disponível */
+}
+
+.back-button {
+    background: transparent; /* Remove o fundo do botão */
+    border: none; /* Remove a borda do botão */
+    cursor: pointer; /* Adiciona o cursor de ponteiro */
+    position: absolute; /* Posicionamento absoluto */
+    left: 70px; /* Alinhado à esquerda dentro do modal */
+    top: 65px; /* Posicionado um pouco abaixo */
+    font-size: 24px; /* Ajusta o tamanho do ícone */
+}
+
+
+.back-button:hover i {
+    color: #f0a550; /* Muda a cor ao passar o mouse */
+    transform: scale(1.1); /* Aumenta um pouco o ícone ao passar o mouse */
+}
+
+.close {
+    background: transparent; /* Remove o fundo do botão */
+    border: none; /* Remove a borda do botão */
+    cursor: pointer; /* Adiciona o cursor de ponteiro */
+    font-size: 35px; /* Ajusta o tamanho do ícone */
+}
+
+.close i {
+    transition: color 0.3s ease, transform 0.3s ease; /* Transição suave para o ícone de fechar */
+}
+
+.close:hover {
+    color: #f0a550; /* Muda a cor ao passar o mouse */
+    transform: scale(1.1); /* Aumenta um pouco o ícone ao passar o mouse */
+}
+
+.modal-body .value-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.value-btn {
+    background-color: #e5a200;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.value-btn:hover {
+    background-color: #cc8f00;
+}
+
+.value-btn.selected {
+    background-color: #f0a4009b !important; /* Cor quando selecionado */
+    color: white; /* Cor do texto quando selecionado */
+}
+
+
+.other-value {
+    display: flex; /* Usar flexbox para centralizar */
+    flex-direction: column; /* Alinha os itens na coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-top: 10px;
+}
+
+.input-value {
+    display: none; /* Inicialmente escondido */
+    margin-top: 10px;
+    width: calc(100% - 22px); /* Ajusta a largura para ocupar todo o espaço disponível */
+    padding: 10px; /* Aumenta o preenchimento interno */
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+    border: 1px solid #f0a500; /* Adiciona uma borda ao campo */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center;
+}
+
+.divider {
+    margin: 20px 0; /* Adiciona espaço ao redor do divisor */
+}
+
+.full-width {
+    width: 100%;
+}
+
+.divider {
+    border: none;
+    border-bottom: 1px solid #e5a200;
+    margin: 15px 0;
+}
+
+.next-btn {
+    background-color: #f0a500;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona uma transição suave ao transformar e à sombra */
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: "Ruda", sans-serif; /* Define a fonte principal do corpo */
+    padding: 10px 20px;
+}
+
+.next-btn:hover {
+    background-color: #d8a435;
+    transform: translateY(-3px);
+}
+
+.btn-next:active {
+    background-color: #3535359b;
+    transform: translateY(1px);
+  }
+
+.footer-text {
+    margin: 5px 0; /* Reduz a margem superior e inferior */
+    font-size: 14px;
+}
+
+
+.footer-text a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}

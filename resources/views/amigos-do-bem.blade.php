@@ -177,51 +177,57 @@
 
 <!-- Seção "Conheça as Outras Crianças" -->
 <div class="container outras-criancas">
-  <h2>Conheça As Outras Crianças</h2>
+  <h2>Conheça e Apadrinhe Outras Crianças</h2>
+  <p>Com apenas R$ 100,00 mensais, você contribui para a transformação social e permite que nossas crianças continuem sonhando.</p>
+  <br>
   <div class="row">
       <div class="col-md-4">
           <div class="card">
-              <a href="/criança1(Lira-e-Cia)">
-                  <img src="img/ana (Amigos-do-Bem).jpg" class="card-img-top" alt="Isabela">
+              <a href="/criança1(amigos-do-bem)">
+                  <img src="img/ana (Amigos-do-Bem).jpg" class="card-img-top" alt="ana">
                   <div class="card-body">
-                      <h3 class="card-title">Fernanda</h3>
-                      <p class="card-text">12 anos</p>
+                      <h3 class="card-title">Ana</h3>
+                      <p class="card-text">7 anos</p>
                   </div>
               </a>
           </div>
       </div>
       <div class="col-md-4">
           <div class="card">
-              <a href="/criança2(Lira-e-Cia)">
-                  <img src="img/julia (Amigos-do-Bem).jpg" class="card-img-top" alt="Pedro">
+              <a href="/criança3(amigos-do-bem)">
+                  <img src="img/julia (Amigos-do-Bem).jpg" class="card-img-top" alt="julia">
                   <div class="card-body">
-                      <h3 class="card-title">Helena</h3>
-                      <p class="card-text">9 anos</p>
+                      <h3 class="card-title">Julia</h3>
+                      <p class="card-text">10 anos</p>
                   </div>
               </a>
           </div>
       </div>
       <div class="col-md-4">
           <div class="card">
-              <a href="/criança3(Lira-e-Cia)">
-                  <img src="img/eloá (Amigos-do-Bem).jpg" class="card-img-top" alt="Felipe">
+              <a href="/criança2(amigos-do-bem)">
+                  <img src="img/eloá (Amigos-do-Bem).jpg" class="card-img-top" alt="eloa">
                   <div class="card-body">
-                      <h3 class="card-title">Julieta</h3>
-                      <p class="card-text">13 anos</p>
+                      <h3 class="card-title">Eloá</h3>
+                      <p class="card-text">6 anos</p>
                   </div>
               </a>
           </div>
       </div>
+</div>
+</div>
   </div>
 </div>
 
-<br><br><br>
+<br>
 
 
 <!-- Botão abaixo das imagens -->
 <div class="container ver-mais">
-  <button class="btn btn-primary">Veja Mais!</button>
+    <a href="/apadrinheAmi" class="btn btn-link">Apadrinhe Já</a>
 </div>
+
+<br><br>
 
 <br><br>
 

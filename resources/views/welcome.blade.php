@@ -76,36 +76,36 @@
 <!-- Bloco de informação com imagem e texto -->
 <div class="content-section">
     <div class="image-container">
-      <img src="img/foto1.jpg" alt="Criança comendo 1">
+        <img src="img/inicio1.jpg" alt="Criança comendo 1">
     </div>
     <div class="text-container">
-      <h2>Uma infância saudável</h2>
-      <p>Na mesa, uma criança se concentra em sua refeição. O prato contém arroz, feijão, carne e salada, uma combinação equilibrada de nutrientes essenciais. O ambiente sugere uma refeição compartilhada, talvez em uma escola ou centro comunitário.</p>
-      <a href="#" class="btn-learn-more">Saiba Mais</a>
+        <h2>Uma infância saudável</h2>
+        <p>Na mesa, uma criança se concentra em sua refeição. O prato contém arroz, feijão, carne e salada, uma combinação equilibrada de nutrientes essenciais. O ambiente sugere uma refeição compartilhada, talvez em uma escola ou centro comunitário.</p>
+        <a href="https://www.cren.org.br/" class="btn-learn-more">Saiba Mais</a>
     </div>
-  </div>
-  
-  <div class="content-section">
+</div>
+
+<div class="content-section">
     <div class="image-container">
-      <img src="img/foto2.jpg" alt="Criança comendo 2">
+        <img src="img/inicio2.jpg" alt="Criança comendo 2">
     </div>
     <div class="text-container">
-      <h2>Educação nutricional</h2>
-      <p>Crianças aprendendo sobre a importância da alimentação saudável. As refeições balanceadas são fundamentais para o desenvolvimento físico e cognitivo delas.</p>
-      <a href="#" class="btn-learn-more">Saiba Mais</a>
+        <h2>Organização na alimentação</h2>
+        <p>A organização na alimentação é uma prática essencial para manter um estilo de vida saudável e equilibrado. Planejar as refeições com antecedência não só economiza tempo e reduz o estresse, como também garante que escolhas mais saudáveis sejam feitas diariamente.</p>
+        <a href="https://ge.globo.com/eu-atleta/nutricao/guia/2023/01/16/c-10-dicas-para-planejar-e-organizar-a-sua-alimentacao-da-semana.ghtml" class="btn-learn-more">Saiba Mais</a>
     </div>
-  </div>
-  
-  <div class="content-section">
+</div>
+
+<div class="content-section">
     <div class="image-container">
-      <img src="img/foto3.jpg" alt="Criança comendo 3">
+        <img src="img/inicio3.jpg" alt="Criança comendo 3">
     </div>
     <div class="text-container">
-      <h2>Alimentação consciente</h2>
-      <p>Promover uma alimentação consciente ajuda as crianças a entenderem a importância de escolhas saudáveis e seu impacto em suas vidas e no meio ambiente.</p>
-      <a href="#" class="btn-learn-more">Saiba Mais</a>
+        <h2>Brincadeira na infância.</h2>
+        <p>Brincar na infância vai muito além da diversão – é uma parte essencial do crescimento e desenvolvimento das crianças. As brincadeiras oferecem oportunidades ricas para a criatividade, interação social, aprendizado e desenvolvimento emocional. Ao brincar, as crianças exploram o mundo ao seu redor, desenvolvem habilidades motoras, criam laços com seus pares e aprendem a resolver problemas de maneira espontânea.</p>
+        <a href="https://redecruzada.org.br/10-brincadeiras-educativas-para-fazer-com-as-criancas-em-casa/?gad_source=1&gclid=CjwKCAiA3ZC6BhBaEiwAeqfvyjIjYVClLr5CK5vskRNsE5PzM8kKyClnz-xPBoFQNN1AFRy735O7HRoC5LYQAvD_BwE" class="btn-learn-more">Saiba Mais</a>
     </div>
-  </div>
+</div>
 
   <!-- lista de Necessidades -->
   <section class="comunidades">

@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
 /* Importa a fonte "Ruda" do Google Fonts com pesos variando de 400 a 900 */
-
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
 /* Aplica a fonte "Ruda" ao body e a todos os textos e botões */
 body, h1, h2, h3, h4, h5, h6, p, a, button {
     font-family: 'Ruda', sans-serif; /* Define a fonte "Ruda" como padrão para o site */
@@ -16,11 +15,6 @@ header {
     padding: 10px 20px; /* Adiciona padding ao redor do conteúdo do cabeçalho */
     box-sizing: border-box; /* Inclui o padding no cálculo da largura/altura do cabeçalho */
     font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" ao cabeçalho */
-}
-
-/* Adiciona a borda logo abaixo do cabeçalho */
-.content {
-    border-top: 2px solid #ffa600; /* Adiciona a borda dourada de 2px */
 }
 
 /* Estilos para os links de navegação no cabeçalho */
@@ -81,6 +75,23 @@ header .icons a {
     text-decoration: none; /* Remove o sublinhado do link */
 }
 
+.navbar-nav .nav-link {
+    color: white !important; /* Força a cor branca para os links de navegação no navbar */
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #333; /* Fundo escuro no dropdown */
+}
+
+.navbar-nav .dropdown-item {
+    color: white !important; /* Força a cor branca para os itens do dropdown */
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+
+/* PARTE DO FOOTER NAO TIRAR DAQUI */
 /* Ajusta a aparência de todos os ícones de redes sociais */
 .socialIcons a {
     display: flex; /* Flexbox para centralizar os ícones */
@@ -105,45 +116,45 @@ header .icons a {
     padding: 15px !important; /* Adiciona padding interno aos botões */
     font-size: 35px !important; /* Define o tamanho da fonte dos botões */
     border-radius: 0px !important; /* Define bordas arredondadas */
-    transition: background-color 0.3s, transform 0.3s !important; /* Suave transição ao alterar cor e tamanho */
-    font-family: 'Ruda', sans-serif !important;
+    transition: background-color 0.3s, transform 0.3s !important; /* Suave transição para a mudança de cor e efeito de transformação */
+    font-family: 'Ruda', sans-serif !important; /* Aplica a fonte "Ruda" aos botões */
 }
 
 /* Estilo para botões primários */
 .btn-primary {
-    display: inline-block !important;
-    padding: 30px 70px !important;
-    background-color: #ffa500 !important;
-    color: white !important;
-    border-radius: 50px !important;
-    text-decoration: none !important;
-    font-weight: bold !important;
-    margin-top: 20px !important;
-    transition: transform 0.3s ease, box-shadow 0.3s ease !important; /* Adiciona uma transição suave ao transformar e à sombra */
-    border: none !important; 
-    font-family: 'Ruda', sans-serif !important;
-  }
+    display: inline-block !important; /* Exibe o botão como um bloco em linha */
+    padding: 30px 70px !important; /* Define o padding do botão */
+    background-color: #ffa500 !important; /* Cor de fundo laranja */
+    color: white !important; /* Cor do texto do botão */
+    border-radius: 50px !important; /* Bordas arredondadas */
+    text-decoration: none !important; /* Remove o sublinhado do link */
+    font-weight: bold !important; /* Define o peso da fonte como negrito */
+    margin-top: 20px !important; /* Margem superior */
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important; /* Transição suave para o efeito de hover */
+    border: none !important; /* Remove a borda */
+    font-family: 'Ruda', sans-serif !important; /* Aplica a fonte "Ruda" */
+}
 
 /* Efeito hover para botões primários */
 .btn-primary:hover {
     background-color: #e69500 !important; /* Muda a cor de fundo no hover */
     transform: translateY(-5px) !important; /* Move o botão 5px para cima */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important; /* Adiciona uma sombra mais pronunciada para o efeito de levantar */
-  }
+}
 
 /* Estilo para botões de sucesso */
 .btn-success {
-    display: inline-block !important;
-    padding: 30px 70px !important;
-    background-color: #ffa500 !important;
-    color: white !important;
-    border-radius: 50px !important;
-    text-decoration: none !important;
-    font-weight: bold !important;
-    margin-top: 20px !important;
-    transition: transform 0.3s ease, box-shadow 0.3s ease !important; /* Adiciona uma transição suave ao transformar e à sombra */
-    border: none !important; 
-    font-family: 'Ruda', sans-serif !important;
+    display: inline-block !important; /* Exibe o botão como um bloco em linha */
+    padding: 30px 70px !important; /* Define o padding do botão */
+    background-color: #ffa500 !important; /* Cor de fundo laranja */
+    color: white !important; /* Cor do texto do botão */
+    border-radius: 50px !important; /* Bordas arredondadas */
+    text-decoration: none !important; /* Remove o sublinhado do link */
+    font-weight: bold !important; /* Define o peso da fonte como negrito */
+    margin-top: 20px !important; /* Margem superior */
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important; /* Transição suave para o efeito de hover */
+    border: none !important; /* Remove a borda */
+    font-family: 'Ruda', sans-serif !important; /* Aplica a fonte "Ruda" */
 }
 
 /* Efeito hover para botões de sucesso */
@@ -151,33 +162,42 @@ header .icons a {
     background-color: #e69500 !important; /* Muda a cor de fundo no hover */
     transform: translateY(-5px) !important; /* Move o botão 5px para cima */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important; /* Adiciona uma sombra mais pronunciada para o efeito de levantar */
-  }
-
-/* Estilo das caixas de doação */
-.box {
-    background-color: #fff; /* Fundo branco */
-    padding: 20px; /* Padding interno */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
 }
 
-/* Estilo da seção de dúvidas */
-.section_container {
-    background-color: #e9ecef; /* Fundo cinza claro */
-    padding: 20px; /* Padding interno */
-    border-radius: 8px; /* Bordas arredondadas */
-    margin-top: 30px; /* Margem superior */
+/* Estilos para os links com hover */
+a:hover {
+    color: #ff9900; /* Altera a cor do link ao passar o mouse */
+    text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse */
 }
 
-/* Tornar imagens responsivas */
-.client__card img {
-    max-width: 90%; /* Define a largura máxima como 100% do container */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Bordas arredondadas */
-    display: block;  /* Define a imagem como um elemento de bloco, permitindo que as propriedades de margem sejam aplicadas corretamente.*/
-    margin: 0 auto; /* Deixa a imagem no centro*/
+/* Estilos para os links em estado ativo */
+a.active {
+    color: #ff9900; /* Altera a cor do link quando estiver ativo */
+    font-weight: bold; /* Deixa o texto em negrito */
 }
 
+/* Seção de título com textos destacados */
+.comunidades h2 {
+    font-weight: bold; /* Define o título com peso de fonte em negrito */
+    font-size: 30px; /* Define o tamanho da fonte do título */
+}
+
+/* Estilos de parágrafo dentro de .comunidades */
+.comunidades p {
+    font-weight: normal; /* Define o peso da fonte como normal */
+}
+
+/* Estilos para os textos de descrição */
+.text-container h2 {
+    font-size: 25px; /* Define o tamanho do texto do título */
+    font-weight: bold; /* Define o texto em negrito */
+}
+
+/* Define o tamanho de parágrafos com fontes */
+.text-container p {
+    font-size: 16px; /* Define o tamanho da fonte dos parágrafos */
+    line-height: 1.5; /* Define o espaçamento entre as linhas */
+}
 
 /* Botão de voltar ao topo */
 .btn-to-top {
@@ -202,6 +222,7 @@ header .icons a {
     color: black;
     transition: 0.3s ease;
 }
+
 
     /* FOOTER */
     * {
@@ -309,3 +330,601 @@ header .icons a {
         background-color: #111; /* Redefine a cor de fundo do footer (redundante, pois já está definido anteriormente) */
         clear: both; /* Garante que o footer não flutue dentro de outro container, forçando-o a aparecer abaixo de qualquer elemento flutuante */
     }
+
+/* Ajuste de layout para melhor organização */
+.client__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  transition: none; /* Garantir que o card não se move ao interagir */
+}
+
+/* Remover o efeito de hover no card */
+.client__card:hover {
+  transform: none;
+}
+
+.client__content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.client__image {
+  flex: 0 0 200px;
+}
+
+.client__card h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.client__card p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Estilo para a imagem */
+.client__card img {
+  width: 200px; /* Tamanho fixo para a imagem */
+  height: 200px; /* Tamanho fixo para a imagem */
+  border-radius: 10px; /* Ajuste para bordas arredondadas */
+  object-fit: cover;
+  margin-right: 20px; /* Espaço ao lado da imagem */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: none !important; /* Garantir que não há transição */
+}
+
+/* Responsividade para imagem quadrada */
+@media (max-width: 768px) {
+  .client__card img {
+      width: 150px;
+      height: 150px;
+  }
+}
+
+
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .client__card {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .client__content {
+      margin-right: 0;
+  }
+
+  .client__image {
+      margin-bottom: 20px;
+  }
+
+  .client__card img {
+      width: 150px;
+      height: 150px;
+  }
+}
+
+
+/* Estilos para o modal */
+#paymentModal .modal-content {
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+#paymentModal .modal-header {
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#paymentModal .modal-title {
+  font-size: 1.5rem;
+  color: #343a40;
+  font-weight: 600;
+}
+
+#paymentModal .underline {
+  width: 50px;
+  height: 3px;
+  background-color: #e69500; /* Mudança para o tom laranja dourado */
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+#paymentModal .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 1.25rem;
+  color: #6c757d;
+}
+
+#paymentModal .modal-body {
+  padding: 20px;
+}
+
+#paymentModal .form-select {
+  background-color: #e9ecef;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  font-size: 1rem;
+  color: #495057;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#paymentModal .form-select:focus {
+  background-color: #fff;
+  border-color: #e69500; /* Mudança para o tom laranja dourado */
+  outline: none;
+}
+
+#paymentModal .next-btn {
+  background-color: #e69500; /* Mudança para o tom laranja dourado */
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#paymentModal .next-btn:hover {
+  background-color: #c68400; /* Tom mais escuro do laranja dourado */
+  transform: translateY(-2px);
+}
+
+#paymentModal .modal-body p {
+  font-size: 1.1rem;
+  color: #495057;
+  margin-top: 15px;
+}
+
+/* Efeitos de animação */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#paymentModal .modal-content {
+  animation: fadeIn 0.3s ease;
+}
+
+.modal {
+  background-color: #f4f4f4c3;
+  padding: 50px;
+  width: 700px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  font-size: 20px;
+  font-weight: 600px;
+  text-align: center; /* Centraliza o texto dentro do elemento */
+  flex: 1; /* Ocupa todo o espaço horizontal disponível */
+}
+
+.back-button {
+  background: transparent; /* Remove o fundo do botão */
+  border: none; /* Remove a borda do botão */
+  cursor: pointer; /* Adiciona o cursor de ponteiro */
+  position: absolute; /* Posicionamento absoluto */
+  left: 70px; /* Alinhado à esquerda dentro do modal */
+  top: 20px; /* Posicionado um pouco abaixo */
+  font-size: 24px; /* Ajusta o tamanho do ícone */
+}
+
+
+.back-button:hover i {
+  color: #f0a550; /* Muda a cor ao passar o mouse */
+  transform: scale(1.1); /* Aumenta um pouco o ícone ao passar o mouse */
+}
+
+.close {
+  background: transparent; /* Remove o fundo do botão */
+  border: none; /* Remove a borda do botão */
+  cursor: pointer; /* Adiciona o cursor de ponteiro */
+  font-size: 35px; /* Ajusta o tamanho do ícone */
+}
+
+.close i {
+  transition: color 0.3s ease, transform 0.3s ease; /* Transição suave para o ícone de fechar */
+}
+
+.close:hover {
+  color: #f0a550; /* Muda a cor ao passar o mouse */
+  transform: scale(1.1); /* Aumenta um pouco o ícone ao passar o mouse */
+}
+
+.modal-body .value-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.value-btn {
+  background-color: #e5a200;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.value-btn:hover {
+  background-color: #cc8f00;
+}
+
+.value-btn.selected {
+  background-color: #f0a4009b !important; /* Cor quando selecionado */
+  color: white; /* Cor do texto quando selecionado */
+}
+
+
+.other-value {
+  display: flex; /* Usar flexbox para centralizar */
+  flex-direction: column; /* Alinha os itens na coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  margin-top: 10px;
+}
+
+.input-value {
+  display: none; /* Inicialmente escondido */
+  margin-top: 10px;
+  width: calc(100% - 22px); /* Ajusta a largura para ocupar todo o espaço disponível */
+  padding: 10px; /* Aumenta o preenchimento interno */
+  font-size: 16px; /* Aumenta o tamanho da fonte */
+  border: 1px solid #f0a500; /* Adiciona uma borda ao campo */
+  border-radius: 5px; /* Bordas arredondadas */
+  text-align: center;
+}
+
+.divider {
+  margin: 20px 0; /* Adiciona espaço ao redor do divisor */
+}
+
+.full-width {
+  width: 100%;
+}
+
+.divider {
+  border: none;
+  border-bottom: 1px solid #e5a200;
+  margin: 15px 0;
+}
+
+.next-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.next-btn:hover {
+  background-color: #333;
+}
+
+.footer-text {
+  margin: 5px 0; /* Reduz a margem superior e inferior */
+  font-size: 14px;
+}
+
+
+.footer-text a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+
+/* Estilos gerais do modal */
+.modal {
+  display: none; /* Modal invisível por padrão */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1050;
+  background-color: rgba(0, 0, 0, 0); /* Fundo escuro para destacar o modal */
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-dialog {
+  max-width: 500px; /* Definindo um tamanho fixo para o modal */
+  width: 100%;
+  margin: 0;
+  border-radius: 8px; /* Bordas arredondadas */
+ 
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.modal-header {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#donorDetailsModalLabel {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.linha-formulario {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"], input[type="password"], select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, select:focus {
+  border-color: #e5a200; /* Cor de borda ao focar */
+}
+
+input[type="text"]:required, input[type="password"]:required, select:required {
+  background-color: #f9f9f9;
+}
+
+select {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+hr.divisor {
+  margin-top: 20px;
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.botao-enviar {
+  background-color: #e5a200;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.texto-rodape {
+  font-size: 0.9rem;
+  color: #777;
+  text-align: center;
+}
+
+.texto-rodape a {
+  color: #e5a200;
+  text-decoration: none;
+}
+
+.texto-rodape a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  .modal-dialog {
+      width: 90%;
+      margin: 0;
+  }
+
+  .linha-formulario {
+      flex-direction: column;
+  }
+}
+
+
+/* Modal Container */
+.custom-modal {
+  display: none; /* Inicialmente escondido */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
+  z-index: 1050; /* Garantir que o modal fique sobre outros conteúdos */
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+/* Modal Content */
+.custom-modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Header */
+.custom-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f1f1f1;
+  padding-bottom: 10px;
+}
+
+.custom-modal-header h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #333;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #888;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+/* Modal Body */
+.custom-modal-body {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.custom-table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+.custom-table td {
+  padding: 8px 15px;
+  border-bottom: 1px solid #f1f1f1;
+  text-align: left;
+  font-size: 1rem;
+  color: #555;
+}
+
+.payment-method h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.radio-container {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 1rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.radio-container input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Privacy Policy */
+.privacy-policy {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 15px;
+}
+
+/* Modal Footer */
+.custom-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.next-button {
+  background-color: #4CAF50; /* Cor do botão */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .custom-modal-content {
+      padding: 15px;
+      max-width: 90%;
+  }
+
+  .custom-modal-header h2 {
+      font-size: 1.2rem;
+  }
+
+  .custom-table td {
+      font-size: 0.9rem;
+  }
+
+  .next-button {
+      width: 100%;
+  }
+}

@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
+/* Importa a fonte "Ruda" do Google Fonts com pesos variando de 400 a 900 */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ruda', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5ca85;
+}
+
+.modal {
+    background-color: #f4f4f4c3;
+    padding: 60px;
+    width: 700px;
+    border-radius: 100px 0 100px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    flex: 1; /* Ocupa todo o espaço horizontal disponível */
+}
+
+
+.back-button {
+    background: transparent; /* Remove o fundo do botão */
+    border: none; /* Remove a borda do botão */
+    cursor: pointer; /* Adiciona o cursor de ponteiro */
+    position: absolute; /* Posicionamento absoluto */
+    left: 70px; /* Alinhado à esquerda dentro do modal */
+    top: 65px; /* Posicionado um pouco abaixo */
+    font-size: 24px; /* Ajusta o tamanho do ícone */
+}
+
+
+.back-button:hover i {
+    color: #f0a550; /* Muda a cor ao passar o mouse */
+    transform: scale(1.1); /* Aumenta um pouco o ícone ao passar o mouse */
+}
+
+.close {
+    background: transparent; /* Remove o fundo do botão */
+    border: none; /* Remove a borda do botão */
+    cursor: pointer; /* Adiciona o cursor de ponteiro */
+    font-size: 35px; /* Ajusta o tamanho do ícone */
+}
+
+.close i {
+    transition: color 0.3s ease, transform 0.3s ease; /* Transição suave para o ícone de fechar */
+}
+
+.close:hover {
+    color: #f0a550; /* Muda a cor ao passar o mouse */
+    transform: scale(1.1); /* Aumenta um pouco o ícone ao passar o mouse */
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-header h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-row input, .form-row select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e4a701;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.divider {
+    margin: 20px 0; /* Adiciona espaço ao redor do divisor */
+}
+
+.full-width {
+    width: 100%;
+}
+
+.divider {
+    border: none;
+    border-bottom: 1px solid #e5a200;
+    margin: 15px 0;
+}
+
+.submit-btn {
+    background-color: #f0a500;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona uma transição suave ao transformar e à sombra */
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: "Ruda", sans-serif; /* Define a fonte principal do corpo */
+    padding: 10px 20px;
+}
+
+.submit-btn:hover{
+    background-color: #d8a435;
+    transform: translateY(-3px);
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}

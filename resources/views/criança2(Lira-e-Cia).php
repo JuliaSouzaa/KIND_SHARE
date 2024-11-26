@@ -82,8 +82,8 @@
     <!-- Perfil da criança -->
     <div class="comunidades">
         <div class="texto">
-            <h2>Conheça a Fernanda!</h2>
-            <p>Fernanda tem 12, é uma garota sonhadora, cheia de imaginação e criatividade. Ela adora contar histórias e se perder em livros que a levam a mundos mágicos. Com um coração gentil, Fernanda é sensível às emoções dos outros e sempre busca ajudar quem está ao seu redor. Ela sonha em ter uma família que a encoraje a explorar suas paixões e a abraçar suas ideias. Com Fernanda, cada dia pode ser uma nova aventura cheia de descobertas!</p>
+            <h2>Conheça a Helena!</h2>
+            <p>Helena tem 12, é uma garota sonhadora, cheia de imaginação e criatividade. Ela adora contar histórias e se perder em livros que a levam a mundos mágicos. Com um coração gentil, Fernanda é sensível às emoções dos outros e sempre busca ajudar quem está ao seu redor. Ela sonha em ter uma família que a encoraje a explorar suas paixões e a abraçar suas ideias. Com Fernanda, cada dia pode ser uma nova aventura cheia de descobertas!</p>
         </div>
         <!-- Imagem à direita -->
         <div class="imagem-comunidade">
@@ -101,7 +101,7 @@
         <div class="cards">
             <div class="card">
                 <a href="/criança2(Lira-e-Cia)">
-                    <img src="img/fernanda (Lira-e-Cia).jpg (Lira-e-Cia).jpg" alt="fernanda">
+                    <img src="img/fernanda (Lira-e-Cia).jpg" alt="fernanda">
                     <h3>Fernanda</h3>
                     <p>12 anos</p>
                 </a>

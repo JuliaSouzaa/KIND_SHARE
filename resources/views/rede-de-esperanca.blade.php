@@ -105,10 +105,12 @@
 <!-- Seção "Conheça as Outras Crianças" -->
 <div class="container outras-criancas">
   <h2>Conheça As Outras Crianças</h2>
+  <p>Com apenas R$ 100,00 mensais, você contribui para a transformação social e permite que nossas crianças continuem sonhando.</p>
+  <br>
   <div class="row">
       <div class="col-md-4">
           <div class="card">
-              <a href="/criança1(Lira-e-Cia)">
+              <a href="/criança1(rede-de-esperanca)">
                   <img src="img/joao (Rede-Esperança).jpg" class="card-img-top" alt="Isabela">
                   <div class="card-body">
                       <h3 class="card-title">João</h3>
@@ -119,7 +121,7 @@
       </div>
       <div class="col-md-4">
           <div class="card">
-              <a href="/criança2(Lira-e-Cia)">
+              <a href="/criança2(rede-de-esperanca)">
                   <img src="img/pedro (Rede-Esperança).jpg" class="card-img-top" alt="Pedro">
                   <div class="card-body">
                       <h3 class="card-title">Pedro</h3>
@@ -130,7 +132,7 @@
       </div>
       <div class="col-md-4">
           <div class="card">
-              <a href="/criança3(Lira-e-Cia)">
+              <a href="/criança3(rede-de-esperanca)">
                   <img src="img/kaique (Rede-Esperança).jpg" class="card-img-top" alt="Felipe">
                   <div class="card-body">
                       <h3 class="card-title">Kaique</h3>
@@ -147,7 +149,7 @@
 
 <!-- Botão abaixo das imagens -->
 <div class="container ver-mais">
-  <button class="btn btn-primary">Veja Mais!</button>
+    <a href="/apadrinheRede" class="btn btn-link">Apadrinhe Já</a>
 </div>
 
 <br><br>

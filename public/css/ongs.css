@@ -264,7 +264,7 @@ header .icons a {
     right: 10px;
 }
 
-.botao-imagem button {
+.botao-imagem a {
     background-color: #f0a500 !important; /* Cor de fundo laranja */
     color: white !important; /* Texto branco */
     border: none !important; /* Sem borda */
@@ -275,15 +275,17 @@ header .icons a {
     transition: background-color 0.3s ease !important; /* Transição suave */
     font-family: 'Ruda';
     font-weight: bold;
+    text-decoration: none !important; /* Remove o sublinhado */
 }
 
-.botao-imagem button:hover {
+.botao-imagem a:hover {
     background-color: #e69500 !important; /* Cor de fundo ao passar o mouse */
 }
 
-.botao-imagem button:focus {
+.botao-imagem a:focus {
     outline: none !important; /* Remove contorno ao focar */
 }
+
 
 
 
@@ -337,7 +339,6 @@ header .icons a {
 /* Estilo para a seção "Conheça as Outras Crianças" */
 .outras-criancas {
     display: flex; /* Habilita o Flexbox */
-    margin-top: -200px; /* Valor negativo para reduzir o espaço entre as seções */
     flex-direction: column; /* Organiza os elementos em coluna */
     align-items: center; /* Centraliza horizontalmente */
     justify-content: center; /* Centraliza verticalmente */
@@ -346,12 +347,18 @@ header .icons a {
     text-align: center; /* Centraliza o texto */
 }
 
+/* Título */
 .outras-criancas h2 {
-    padding: 30px;
+    padding: 40px 0; /* Ajuste o padding para garantir o espaço ao redor */
     font-size: 36px; /* Tamanho do título */
     font-weight: bold;
-    margin-bottom: 20px; /* Espaço abaixo do título */
+    margin-top: -300px; /* Adiciona o espaço desejado acima do título */
+    margin-bottom: 2px; /* Reduz o espaço abaixo do título */
     font-family: "Ruda", sans-serif; /* Define a fonte principal do corpo */
+}
+
+.outras-criancas p {
+    margin-top: -190; /* Remove qualquer espaço extra acima do parágrafo */
 }
 
 /* Estilos para os cartões */
@@ -360,8 +367,8 @@ header .icons a {
     justify-content: center; /* Centraliza os cartões horizontalmente */
     gap: 20px; /* Espaçamento entre os cartões */
     flex-wrap: wrap; /* Permite que os cartões se ajustem em várias linhas, se necessário */
+    justify-content: center; /* Garantir o alinhamento central dos itens */
 }
-
 
 /* Efeito de animação nos cartões das crianças */
 .card {
@@ -389,17 +396,21 @@ header .icons a {
     border-bottom: 2px solid #f8cf47; /* Linha de separação abaixo da imagem */
 }
 
+/* Estilo ajustado para o título dentro dos cards */
 .card h3 {
-    font-size: 24px; /* Tamanho do subtítulo */
-    margin: 10px 0; /* Espaço acima e abaixo do subtítulo */
-    font-family: "Ruda", sans-serif; /* Define a fonte principal do corpo */
+    font-size: 24px; /* Mantém o tamanho do subtítulo */
+    margin: 5px 0 10px 0; /* Aumenta o espaço acima e ajusta o espaço abaixo do subtítulo */
+    font-family: "Ruda", sans-serif; /* Mantém a fonte principal */
 }
 
+/* Ajuste para o parágrafo abaixo do título no card */
 .card p {
-    font-size: 18px; /* Tamanho do texto descritivo */
-    color: #555; /* Cor do texto */
-    font-family: "Ruda", sans-serif; /* Define a fonte principal do corpo */
+    font-size: 18px; /* Mantém o tamanho do texto descritivo */
+    color: #555; /* Mantém a cor do texto */
+    font-family: "Ruda", sans-serif; /* Mantém a fonte principal */
+    margin-bottom: 15px; /* Adiciona espaçamento inferior para separar do próximo elemento */
 }
+
 
 .card a {
     text-decoration: none; /* Remove o sublinhado */
@@ -410,28 +421,48 @@ header .icons a {
 .ver-mais {
     display: flex;
     justify-content: center; /* Centraliza o botão horizontalmente */
-    margin-top: -200px; /* Espaço entre o botão e o card */
+    margin-top: -300px; /* Espaço entre o botão e o card */
     font-family: "Ruda", sans-serif; /* Define a fonte principal do corpo */
 }
 
-.ver-mais button {
+.ver-mais a {
     display: inline-block;
     padding: 10px 20px;
     background-color: #ffa500;
-    color: white;
+    color: white; /* Garante que o texto esteja sempre branco */
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona uma transição suave ao transformar e à sombra */
     border: none;
 }
 
-.ver-mais button:hover {
+/* Remover o estilo de link e garantir que a cor permaneça como está */
+.ver-mais a:focus,
+.ver-mais a:active,
+.ver-mais a:hover,
+.ver-mais a:visited {
+    text-decoration: none; /* Remove o sublinhado */
+    outline: none; /* Remove o contorno (geralmente azul) */
+    color: white !important; /* Garante que o texto permaneça branco ao passar o mouse e ao clicar */
+}
+
+/* Efeito de hover (sem alterar a cor do texto) */
+.ver-mais a:hover {
     background-color: #e69500; /* Muda a cor de fundo no hover */
     transform: translateY(-5px); /* Move o botão 5px para cima */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais pronunciada para o efeito de levantar */
 }
+
+/* Efeito de active (clicado) */
+.ver-mais a:active {
+    background-color: #ffa500 !important; /* Mantém a cor original do botão ao clicar */
+    transform: translateY(0); /* Garante que o botão não se mova quando pressionado */
+}
+
+
+
 
 
 
