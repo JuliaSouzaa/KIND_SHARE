@@ -13,9 +13,6 @@ Route::get('/doacao/download/{id}', [DoacaoController::class, 'download'])->name
 
 Route::post('/contact/submit', [ContactController::class, 'submit'])->name('contact.submit');
 
-
-
-
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
@@ -112,19 +109,31 @@ Route::get('/vozes-da-comunidade', function () {
     return view('vozes-da-comunidade');
 });
 
+// Agrupamento de rotas protegidas pelo middleware `auth` dentro do `/dashboard`
+Route::middleware(['auth', 'verified'])->prefix('dashboard')->group(function () {
+    // Página principal do dashboard
+    Route::get('/', function () {
+        return view('dashboard');
+    })->name('dashboard');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-    App::setLocale('pt_BR');
-})->middleware(['auth', 'verified'])->name('dashboard');
+    // Rotas do dashboard específicas
+    Route::get('/instituicoes', function () {
+        return view('instituicoes');
+    })->name('dashboard.instituicoes');
 
-Route::middleware('auth')->group(function () {
-    App::setLocale('pt_BR');
-    Route::get('/profile', [ProfileController::class, 'show']);
+    Route::get('/doação', function () {
+        return view('doação');
+    })->name('dashboard.doacao');
+
+    Route::get('/lista_necessidades', function () {
+        return view('lista_necessidades');
+    })->name('dashboard.lista_necessidades');
+
+    // Rotas para gerenciamento do perfil
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-
-require __DIR__.'/auth.php';
+// Arquivo de autenticação padrão do Laravel
+require __DIR__ . '/auth.php';

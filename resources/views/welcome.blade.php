@@ -1,5 +1,3 @@
-<!-- TELA ANTES DE LOGADA -->
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>

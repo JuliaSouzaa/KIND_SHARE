@@ -44,6 +44,24 @@
             @endif
         </div>
 
+        <div>
+            <x-input-label for="cpf" :value="__('CPF')" />
+            <x-text-input id="cpf" name="cpf" type="string" class="mt-1 block w-full" :value="old('cpf', $user->cpf)" required autofocus autocomplete="cpf" />
+            <x-input-error class="mt-2" :messages="$errors->get('cpf')" />
+        </div>
+
+        <div>
+            <x-input-label for="nasc" :value="__('Data de Nascimento')" />
+            <x-text-input id="nasc" name="cpf" type="date" class="mt-1 block w-full" :value="old('nasc', $user->nasc)" required autofocus autocomplete="nasc" />
+            <x-input-error class="mt-2" :messages="$errors->get('nasc')" />
+        </div>
+
+        <div>
+            <x-input-label for="phone" :value="__('Telefone')" />
+            <x-text-input id="phone" name="phone" type="string" class="mt-1 block w-full" :value="old('phone', $user->phone)" required autofocus autocomplete="phone" />
+            <x-input-error class="mt-2" :messages="$errors->get('phone')" />
+        </div>
+
         <div class="flex items-center gap-4">
             <x-primary-button>{{ __('Salvar') }}</x-primary-button>
 

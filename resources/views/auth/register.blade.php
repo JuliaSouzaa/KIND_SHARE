@@ -38,17 +38,22 @@
                         <x-input-error :messages="$errors->get('email')" class="mt-2" />
                     </div>
 
+                        <!-- CPF -->
                     <div class="input-group">
                         <label for="cpf">CPF</label>
-                        <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" required>
+                        <input type="string" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
                     </div>
+
+                    <!-- Data de Nascimento -->
                     <div class="input-group">
-                        <label for="dob">Data de Nascimento</label>
-                        <input type="date" class="form-control" id="dob" required>
+                        <label for="nasc">Data de Nascimento</label>
+                        <input type="date" id="nasc" name="nasc" required>
                     </div>
+
+                    <!-- Telefone -->
                     <div class="input-group">
                         <label for="phone">Telefone</label>
-                        <input type="text" class="form-control" id="phone" placeholder="Digite seu telefone"  required>
+                        <input type="string" id="phone" name="phone" placeholder="Digite seu telefone" required>
                     </div>
 
                     <div class="input-group">

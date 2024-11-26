@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/doação.css">
+    <link rel="stylesheet" href="{{ asset('css/doação.css') }}">
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- SCRIPT DA NAV BAR-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="shortcut icon" href="img/logo_web.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('img/logo_web.png') }}" type="image/x-icon">
         
     <title>KIND SHARE</title>
 
@@ -33,14 +33,13 @@
 
         <!-- Box 1: Opção de Pagamento -->
         <div class="col-md-12 mb-4 text-center">
-            <a href="#" class="btn btn-primary btn-lg w-100"> Opção de Pagamento </a>
+            <a href="{{ url('dashboard/pagamento0') }}" class="btn btn-primary btn-lg w-100"> Opção de Pagamento </a>
             <p style="font-size: 20px;">Contribua com a quantia que for de sua preferência.</p>
         </div>
 
-
         <!-- Box 2: Opção de Desapego -->
         <div class="col-md-12 mb-4 text-center">
-            <a href="/desapego" class="btn btn-success btn-lg w-100"> Opção de Desapego </a>
+            <a href="{{ url('dashboard/dasapego') }}" class="btn btn-success btn-lg w-100"> Opção de Desapego </a>
             <p style="font-size: 20px;"> Realize a doação de itens entregando-os diretamente à instituição escolhida. </p>
         </div>
 
@@ -56,7 +55,7 @@
                                     <br> A primeira opção é a contribuição financeira, onde você pode optar entre Pix, cartão de Débito ou Crédito. 
                                     <br> A segunda opção é a doação de itens. Para isso, preencha os campos do formulário e, após avaliarmos as condições dos itens. Você receberá um e-mail confirmando se a doação pode ser entregue à instituição.</p>
 
-                                <img src="img/duvida(doacao).png" alt="cliente" class="img-fluid" />
+                                <img src="{{ asset('img/duvida(doacao).png') }}" alt="cliente" class="img-fluid" />
                             </div>
                         </div>
                     </div>

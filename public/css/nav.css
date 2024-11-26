@@ -68,23 +68,6 @@ header nav a {
 }
 /* Fim da seção Navbar */
 
-/* Estilos para a caixa de pesquisa */
-.search-container {
-    display: none;
-    position: absolute;
-    right: 80px;
-    margin:20px;
-    z-index: 1000;
-    margin-right: 10px; /* Espaço entre a caixa de texto e a lupa */
-
-}
-
-#searchInput {
-    width: 200px;
-    margin-right: 5px; /* Espaço entre a caixa de texto e a lupa */
-    margin-left: 5px; /* Adiciona 5px de espaço à esquerda da caixa de texto */
-
-}
 
 /* Certifica que o dropdown está bem posicionado */
 .dropdown-menu {
@@ -525,40 +508,55 @@ footer {
 
 .dropdown-content {
     display: none; /* Inicialmente escondido */
-    position: absolute; /* Posiciona o menu abaixo do ícone */
-    left: -140px; /* Alinha à esquerda do ícone com um pequeno deslocamento */
-    top: 20px; /* Ajuste este valor para mover o menu para baixo */
-    background-color: black; /* Fundo preto para o dropdown */
-    min-width: 160px; /* Largura mínima do dropdown */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra para o dropdown */
-    z-index: 1; /* Coloca o dropdown acima de outros elementos */
-    padding: 10px; /* Espaçamento interno do dropdown */
-    border-radius: 8px; /* Cantos arredondados */
+    position: absolute; /* Posiciona o menu em relação ao botão */
+    right: 0; /* Alinha o menu à direita */
+    top: 40px; /* Ajusta a posição vertical para ficar abaixo do botão */
+    background-color: #333; /* Fundo cinza escuro igual ao menu esquerdo */
+    min-width: 160px; /* Largura mínima */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra semelhante */
+    z-index: 1; /* Coloca o menu acima de outros elementos */
+    padding: 0; /* Remove padding adicional */
+    border-radius: 4px; /* Bordas levemente arredondadas */
+    transition: all 0.3s ease-in-out; /* Transição suave */
 }
 
 .dropdown-link, .dropdown-button {
     background: none; /* Sem fundo */
     border: none; /* Sem borda */
     cursor: pointer; /* Cursor de ponteiro */
-    color: white; /* Cor do texto */
-    text-decoration: none; /* Sem sublinhado nos links */
-    display: block; /* Cada item ocupa uma linha */
-    padding: 8px 0; /* Espaçamento entre os itens */
-    width: 100%; /* O item ocupa 100% da largura */
-    text-align: left; /* Alinha o texto à esquerda */
-    transition: background-color 0.3s, color 0.3s; /* Transição suave para a cor de fundo e do texto */
+    color: white; /* Texto branco */
+    text-decoration: none; /* Sem sublinhado */
+    display: block; /* Ocupa toda a linha */
+    padding: 10px 15px; /* Espaçamento interno para consistência */
+    text-align: left; /* Texto alinhado à esquerda */
+    font-family: 'Ruda', sans-serif; /* Fonte consistente */
+    font-size: 0.9em; /* Ajuste do tamanho da fonte */
+    transition: background-color 0.3s, color 0.3s; /* Transições suaves */
 }
 
-/* Garante que tanto os links quanto os botões tenham o mesmo efeito */
-.dropdown-link:hover, .dropdown-button:hover {
-    background-color: #e69500;  /* Efeito ao passar o mouse */
-    color: white; /* Garante que o texto permaneça branco no hover */
-    width: 100%; /* Estende o efeito sobre toda a linha */
+/* Adiciona o efeito de ultrapassar a borda */
+.dropdown-link:hover .dropdown-button:hover::before {
+    content: ''; /* Elemento vazio para o efeito */
+    position: absolute; /* Posicionamento relativo ao item */
+    top: 0;
+    left: -10px; /* Ultrapassa 10px para a esquerda */
+    height: 100%; /* Cobre toda a altura do item */
+    width: 10px; /* Largura da parte que ultrapassa */
+    background-color: transparent; /* Transparente por padrão */
+    transition: background-color 0.3s ease; /* Transição suave */
 }
 
-/* Remover o estilo padrão de links para garantir comportamento idêntico ao botão */
-.dropdown-link{
-    text-decoration: none; /* Remove sublinhado padrão do link */
-    color: white; /* Cor do texto para o link também */
-    display: block; /* Garante que o link se comporte como bloco */
+/* Efeito ao passar o mouse */
+.dropdown-link:hover .dropdown-button:hover{
+    background-color:  #e69500; /* Fundo do item */
+    color: white; /* Texto permanece branco */
+}
+
+.dropdown-link:hover .dropdown-button:hover::before {
+    background-color:  #e69500; /* Aplica o mesmo fundo que o hover */
+}
+
+/* Exibe o dropdown ao passar o mouse */
+.user-dropdown:hover .dropdown-content {
+    display: block; /* Torna o menu visível */
 }

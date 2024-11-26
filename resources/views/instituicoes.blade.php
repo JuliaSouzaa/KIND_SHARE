@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/instituicoes.css">
+    <link rel="stylesheet" href="{{ asset('css/instituicoes.css') }}">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" />
-    <link rel="shortcut icon" href="img/5-Photoroom.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('img/logo_web.png') }}" type="image/x-icon">
     <title>KIND SHARE</title>
 </head>
 <body>
@@ -32,53 +32,26 @@
         <h2>Categorias</h2>
         <div class="category-cards">
             <div class="category-card">
-                <img src="img/ong1.png" alt="Corações Unidos">
-                <p><a href="/coracao_unido" class="custom-button">Corações Unidos</a></p>
+                <img src="{{ asset('img/ong1.png') }}" alt="Corações Unidos">
+                <p><a href="{{ asset('/coracao_unido') }}" class="custom-button">Corações Unidos</a></p>
             </div>            
           <div class="category-card">
-            <img src="img/ong2.png" alt="Instituição 2">
-            <p><a href="/lira-e-cia" class="custom-button">Lira e Cia</a></p>
+            <img src="{{ asset('img/ong2.png') }}" alt="Instituição 2">
+            <p><a href="{{ asset('/lira-e-cia') }}" class="custom-button">Lira e Cia</a></p>
           </div>
           <div class="category-card">
-            <img src="img/ong3.png" alt="Instituição 3">
-            <p><a href="/vozes-da-comunidade" class="custom-button">Vozes da Comunidade</a></p>
+            <img src="{{ asset('img/ong3.png') }}" alt="Instituição 3">
+            <p><a href="{{ asset('/vozes-da-comunidade') }}" class="custom-button">Vozes da Comunidade</a></p>
           </div>
           <div class="category-card">
-            <img src="img/ong4.png" alt="Instituição 4">
-            <p><a href="/rede-de-esperanca" class="custom-button">Rede de Esperança</a></p>
+            <img src="{{ asset('img/ong4.png') }}" alt="Instituição 4">
+            <p><a href="{{ asset('/rede-de-esperanca') }}" class="custom-button">Rede de Esperança</a></p>
           </div>
           <div class="category-card">
-            <img src="img/ong5.png" alt="Instituição 5">
-            <p><a href="/amigos-do-bem" class="custom-button">Amigos do Bem</a></p>
+            <img src="{{ asset('img/ong5.png') }}" alt="Instituição 5">
+            <p><a href="{{ asset('/amigos-do-bem') }}" class="custom-button">Amigos do Bem</a></p>
           </div>
-          <div class="category-card">
-            <img src="img/Instituição2.jpg" alt="Instituição 6">
-            <p>Instituição 6</p>
-          </div>
-          <div class="category-card">
-            <img src="img/Instituição3.jpg" alt="Instituição 7">
-            <p>Instituição 7</p>
-          </div>
-          <div class="category-card">
-            <img src="img/Instituição4.jpg" alt="Instituição 8">
-            <p>Instituição 8</p>
-          </div>
-          <div class="category-card">
-            <img src="img/Instituição1.jpg" alt="Instituição 9">
-            <p>Instituição 9</p>
-          </div>
-          <div class="category-card">
-            <img src="img/Instituição2.jpg" alt="Instituição 10">
-            <p>Instituição 10</p>
-          </div>
-          <div class="category-card">
-            <img src="img/Instituição3.jpg" alt="Instituição 11">
-            <p>Instituição 11</p>
-          </div>
-          <div class="category-card">
-            <img src="img/Instituição4.jpg" alt="Instituição 12">
-            <p>Instituição 12</p>
-          </div>
+
         </div>
       </div>
 </section>
