@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIND SHARE</title>
-    <link rel="stylesheet" href="css/pagamento2.css">
+    <link rel="stylesheet" href="{{ asset('css/pagamento2.css') }}">
     <!-- Link para Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -90,7 +90,7 @@
                 event.preventDefault(); // Impede o envio do formulário
 
                 // Redireciona para a próxima página (pagamento3.html)
-                window.location.href = '/pagamento3';
+                window.location.href = "{{ url('dashboard/pagamento3') }}"
             });
         };
     </script>

@@ -122,7 +122,7 @@ html, body {
 .btn-login {
     width: 100%; /* O botão ocupa 100% da largura do container */
     padding: 12px; /* Adiciona padding interno ao botão */
-    color: var(--bg-white); /* Define a cor do texto como branco */
+    color: black; /* Define a cor do texto como branco */
     background-color: var(--bg-orange); /* Define a cor de fundo como laranja */
     border: none; /* Remove borda padrão */
     border-radius: 50px; /* Arredonda as bordas do botão */
@@ -134,7 +134,8 @@ html, body {
 /* Estilos para o botão de login, com cores, bordas arredondadas e transição suave ao passar o mouse */
 
 .btn-login:hover {
-    background-color: var(--bg-orange-hover); /* Muda a cor de fundo quando o botão é hoverado */
+    background-color: #D85F08; /* Muda a cor de fundo quando o botão é hoverado */
+    color:white;
 }
 /* Efeito hover no botão de login, mudando a cor do fundo */
 
@@ -166,7 +167,7 @@ html, body {
 
 .btn-link {
     text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: var(--bg-orange); /* Define a cor do link como laranja */
+    color: #ff9409; /* Define a cor do link como laranja */
     font-weight: 600; /* Aumenta o peso da fonte */
 }
 

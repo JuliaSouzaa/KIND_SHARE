@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Escolha a Instituição para Doação</title>
-  <link rel="stylesheet" href="css/pagamento0.css">
+  <link rel="stylesheet" href="{{ asset('css/pagamento0.css') }}">
 </head>
 <body>
 
@@ -47,7 +47,7 @@
     // Verifica se uma instituição foi selecionada
     if (institutionSelect.value) {
       // Caso tenha selecionado uma instituição, redireciona para pagamento1.html
-      window.location.href = '/pagamento1'; 
+      window.location.href = "{{ url('dashboard/pagamento1') }}"; 
     } else {
       // Se não houver seleção, mostra um alerta
       alert('Por favor, selecione uma instituição antes de continuar.');

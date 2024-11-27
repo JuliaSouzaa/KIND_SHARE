@@ -33,13 +33,13 @@
 
         <!-- Box 1: Opção de Pagamento -->
         <div class="col-md-12 mb-4 text-center">
-            <a href="#" class="btn btn-primary btn-lg w-100"> Opção de Pagamento </a>
+        <a href="{{ url('dashboard/pagamento0') }}" class="btn btn-primary btn-lg w-100"> Opção de Pagamento </a>
             <p style="font-size: 20px;">Contribua com a quantia que for de sua preferência.</p>
         </div>
 
         <!-- Box 2: Opção de Desapego -->
         <div class="col-md-12 mb-4 text-center">
-            <a href="{{ url('dashboard/dasapego') }}" class="btn btn-success btn-lg w-100"> Opção de Desapego </a>
+            <a href="{{ url('dashboard/desapego') }}" class="btn btn-success btn-lg w-100"> Opção de Desapego </a>
             <p style="font-size: 20px;"> Realize a doação de itens entregando-os diretamente à instituição escolhida. </p>
         </div>
 

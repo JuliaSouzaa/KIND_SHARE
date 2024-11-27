@@ -69,11 +69,6 @@
                         <button type="submit" class="btn-login">Login</button>
                     </div>
 
-                    <div class="google-login-container">
-                        <button type="button" class="btn-google">
-                            <i class="fa fa-google"> Continuar com o Google</i>
-                        </button>
-                    </div>
                 </form>
 
                 <div class="register-link">

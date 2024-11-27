@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 /* Corpo da página */
@@ -12,6 +13,8 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #f5ca85;
+  font-family: 'Ruda', sans-serif;
+
 }
 
 /* Container principal */
@@ -27,7 +30,7 @@ body {
 
 /* Título principal */
 h1 {
-  color: #ffa63f;
+  color: #f0a500;
   font-size: 2rem;
   margin-bottom: 20px;
   font-weight: 700;
@@ -43,7 +46,7 @@ p {
 
 /* Alerta de sucesso */
 .alert {
-  background-color: #e78618;
+  background-color: #e98e26;
   color: #fff;
   padding: 20px;
   border-radius: 8px;

@@ -115,10 +115,11 @@ Route::middleware(['auth', 'verified'])->prefix('dashboard')->group(function () 
         return view('pagamento5');
     });
     
-    Route::get('/cartao', function () {
-        return view('cartao');
-    });
-
+    Route::get('/cartao1', function () {
+        return view('cartao1');
+        App::setLocale('pt_BR');
+    })->name('cartao1');
+   
     /*apadrinhe corações unidos*/
     Route::get('/apadrinhe', function () {
         App::setLocale('pt_BR'); // (opcional, se necessário)
@@ -213,6 +214,9 @@ Route::middleware(['auth', 'verified'])->prefix('dashboard')->group(function () 
     Route::get('/criança2(Lira-e-Cia)', function () {
         return view('criança2(Lira-e-Cia)');
         App::setLocale('pt_BR');
+    })->name('criança2(Lira-e-Cia)'); Route::get('/criança2(Lira-e-Cia)', function () {
+        return view('criança2(Lira-e-Cia)');
+        App::setLocale('pt_BR');
     })->name('criança2(Lira-e-Cia)');
     
     Route::get('/criança3(coracao_unido)', function () {
@@ -283,6 +287,13 @@ Route::middleware(['auth', 'verified'])->prefix('dashboard')->group(function () 
         return view('desapego');
         App::setLocale('pt_BR');
     })->name('desapego');
+
+    Route::get('/cartao', function () {
+        return view('cartao');
+        App::setLocale('pt_BR');
+    })->name('cartao');
+
+ 
 
     // Rotas para apadrinhamento
     Route::get('/apadrinhe', [ApadrinheController::class, 'show'])->name('apadrinhe.show'); // Mostra o formulário

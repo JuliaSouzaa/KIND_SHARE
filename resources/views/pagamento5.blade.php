@@ -6,7 +6,8 @@
   <title>Mensagem de Sucesso</title>
 
   <!-- Link para o CSS externo -->
-  <link href="css/pagamento5.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ asset('css/pagamento5.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 

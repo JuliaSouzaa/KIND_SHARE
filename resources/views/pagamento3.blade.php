@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Doação</title>
-  <link rel="stylesheet" href="css/pagamento3.css">
+  <link rel="stylesheet" href="{{ asset('css/pagamento3.css') }}">
   <!-- Link para o Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -15,7 +15,7 @@
            <!-- Botão de Fechar -->
            <button class="btn-close" id="btnClose">&times;</button>
 
-    <a href="pagamento2.html" class="back-button">
+    <a href="{{ url('dashboard/pagamento2') }}" class="back-button">
       <i class="fas fa-arrow-left"></i>
     </a>
 
@@ -75,9 +75,9 @@ document.getElementById('next').addEventListener('click', function() {
   const selectedPaymentMethod = document.querySelector('input[name="paymentMethod"]:checked').value;
   
   if (selectedPaymentMethod === 'pix') {
-    window.location.href = '/pagamento4'; // Página do PIX
+    window.location.href = "{{ url('dashboard/pagamento4') }}"; // Página do PIX
   } else if (selectedPaymentMethod === 'cartao') {
-    window.location.href = '/cartao'; // Página do Cartão
+    window.location.href = '{{ url('dashboard/cartao1') }}'; // Página do Cartão
   }
 });
 </script>

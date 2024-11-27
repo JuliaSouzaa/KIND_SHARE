@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   
   <!-- CSS personalizado -->
-  <link rel="stylesheet" href="css/card.css">
+  <link rel="stylesheet" href="{{ asset('css/card.css') }}">
   
   <style>
     /* Estilo personalizado para o botão */
@@ -87,7 +87,7 @@
         <div class="card bg-gradient shadow-lg text-white">
           <div class="card-body">
             <div class="chip mb-4">
-              <img src="img/chip.svg" alt="Chip" width="50">
+              <img src="{{ asset('img/chip.svg') }}" alt="Chip" width="50">
             </div>
             <p id="card-number" class="h4 fw-bold text-light mb-4">5555 5555 5555 5555</p>
             <p id="validThru" class="text-light mb-4">Val: MM/AA</p>
@@ -105,7 +105,7 @@
 
 document.getElementById('finishButton').addEventListener('click', function(event) {
   event.preventDefault(); // Evita o envio padrão do formulário
-  window.location.href = '/pagamento5'; // Redireciona para a página pagamento5.html
+  window.location.href = "{{ url('dashboard/pagamento5') }}"; // Redireciona para a página pagamento5.html
 });
 
   // Função para atualizar os dados no cartão

@@ -8,18 +8,18 @@
     <!-- Link para Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <link rel="stylesheet" href="css/pagamento1.css">
+    <link rel="stylesheet" href="{{ asset('css/pagamento1.css') }}">
 
     <script>
         window.onload = function() {
             // Evento para o botão de fechar
             document.getElementById('closeModalBtn').addEventListener('click', function() {
-                window.location.href = 'doação.html'; // Redireciona para a página desejada
+                window.location.href = '/doação'; // Redireciona para a página desejada
             });
 
             // Evento para o botão de voltar
             document.getElementById('backButton').addEventListener('click', function() {
-                window.location.href = 'pagamento0.html'; // Redireciona para a página pagamento0.html
+                window.location.href = "{{ url('dashboard/pagamento0') }}"; // Redireciona para a página pagamento0.html
             });
 
             // Evento para os botões de valor
@@ -59,7 +59,7 @@
                     event.preventDefault(); // Impede a navegação se nenhum botão estiver selecionado
                     alert("Por favor, selecione um valor antes de prosseguir."); // Mensagem de alerta
                 } else {
-                    window.location.href = '/pagamento2'; // Redireciona se um valor foi selecionado
+                    window.location.href = "{{ url('dashboard/pagamento2') }}"; // Redireciona se um valor foi selecionado
                 }
             });
         };
@@ -92,7 +92,7 @@
             <input type="text" id="otherValueInput" class="input-value" placeholder="Digite seu valor...">
         </div>
         <hr class="divider">
-        <a href="/pagamento2">
+        <a href="{{ url('dashboard/pagamento2') }}">
             <button class="next-btn">Próximo</button>
         </a>
         <p class="footer-text">Você já é um doador? <a href="/login">Login</a></p>
