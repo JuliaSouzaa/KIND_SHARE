@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/crianças.css') }}">
+    <link rel="stylesheet" href="css/crianças.css">
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- SCRIPT DA NAV BAR-->
     <style>@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');</style>
@@ -43,7 +43,7 @@
         </div>
         <!-- Imagem à direita -->
         <div class="imagem-comunidade">
-            <img src="{{ asset('img/ana (Amigos-do-Bem).jpg') }}" alt="Imagem da Fernanda">
+            <img src="img/ana (Amigos-do-Bem).jpg" alt="Imagem da Fernanda">
         </div>
     </div>
 
@@ -52,16 +52,16 @@
         <h2>Conheça as Outras Crianças</h2>
         <div class="cards">
             <div class="card">
-                <a href="{{ url('dashboard/criança2(amigos-do-bem)') }} ">
-                    <img src="{{ asset('img/eloá (Amigos-do-Bem).jpg') }}" alt="Helena">
+                <a href="/criança2(amigos-do-bem)">
+                    <img src="img/eloá (Amigos-do-Bem).jpg" alt="Helena">
                     <h3>Eloá</h3>
                     <p>6 anos</p>
                 </a>
             </div>
 
             <div class="card">
-                <a href="{{ url('dashboard/criança3(amigos-do-bem)') }}">
-                    <img src="{{ asset('img/julia (Amigos-do-Bem).jpg') }}" alt="julieta">
+                <a href="/criança3(amigos-do-bem)">
+                    <img src="img/julia (Amigos-do-Bem).jpg" alt="julieta">
                     <h3>Julia</h3>
                     <p>10 anos</p>
                 </a>
@@ -118,25 +118,6 @@
         });
 
     </script>
-
-    <!-- Seleciona o ícone de perfil pelo ID -->
-<script>
-    document.getElementById('profileIcon').addEventListener('click', function() {
-        window.location.href = 'bem-vindo.html';
-    });
-
-    // Exibe/oculta a caixa de pesquisa ao clicar na lupa
-    document.getElementById('searchIcon').addEventListener('click', function() {
-        const searchContainer = document.querySelector('.search-container');
-        if (searchContainer.style.display === "none" || searchContainer.style.display === "") {
-            searchContainer.style.display = "flex"; // Mostra a caixa de pesquisa
-            document.getElementById('searchInput').focus(); // Foca na caixa de texto
-        } else {
-            searchContainer.style.display = "none"; // Oculta a caixa de pesquisa
-        }
-    });
-</script>
-
 
 </body>
 </html>

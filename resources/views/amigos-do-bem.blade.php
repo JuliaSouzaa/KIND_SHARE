@@ -166,7 +166,7 @@
   <div class="row">
       <div class="col-md-4">
           <div class="card">
-              <a href="{{ url('dashboard/criança1(amigos-do-bem)') }}" @guest onclick="redirectToLogin(event)" @endguest>
+              <a href="/criança1(amigos-do-bem)')" @guest onclick="redirectToLogin(event)" @endguest>
                   <img src="img/ana (Amigos-do-Bem).jpg" class="card-img-top" alt="ana">
                   <div class="card-body">
                       <h3 class="card-title">Ana</h3>
@@ -177,7 +177,7 @@
       </div>
       <div class="col-md-4">
           <div class="card">
-              <a href="{{ url('dashboard/criança2(amigos-do-bem)') }}" @guest onclick="redirectToLogin(event)" @endguest>
+              <a href="/criança2(amigos-do-bem)" @guest onclick="redirectToLogin(event)" @endguest>
                   <img src="img/julia (Amigos-do-Bem).jpg" class="card-img-top" alt="julia">
                   <div class="card-body">
                       <h3 class="card-title">Julia</h3>
@@ -188,7 +188,7 @@
       </div>
       <div class="col-md-4">
           <div class="card">
-              <a href="{{ url('dashboard/criança3(amigos-do-bem)') }}" @guest onclick="redirectToLogin(event)" @endguest>
+              <a href="/criança3(amigos-do-bem)" @guest onclick="redirectToLogin(event)" @endguest>
                   <img src="img/eloá (Amigos-do-Bem).jpg" class="card-img-top" alt="eloa" >
                   <div class="card-body">
                       <h3 class="card-title">Eloá</h3>

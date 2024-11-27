@@ -128,7 +128,7 @@
       </div>
       <div class="col-md-4">
           <div class="card">
-              <a href="{{ url('dashboard/criança2(vozes-da-comunidade)') }}" @guest onclick="redirectToLogin(event)" @endguest>
+              <a href="criança2(vozes-da-comunidade)" @guest onclick="redirectToLogin(event)" @endguest>
                   <img src="img/betania (Vozes-Comunidade).jpg" class="card-img-top" alt="Pedro">
                   <div class="card-body">
                       <h3 class="card-title">Betania</h3>
@@ -139,7 +139,7 @@
       </div>
       <div class="col-md-4">
           <div class="card">
-              <a href="{{ url('dashboard/criança3(vozes-da-comunidade)') }}" @guest onclick="redirectToLogin(event)" @endguest>
+              <a href="/criança3(vozes-da-comunidade)" @guest onclick="redirectToLogin(event)" @endguest>
                   <img src="img/nicolli (Vozes-Comunidade).jpg" class="card-img-top" alt="Felipe">
                   <div class="card-body">
                       <h3 class="card-title">Nicolli</h3>

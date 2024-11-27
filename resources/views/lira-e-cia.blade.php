@@ -117,7 +117,7 @@
   <div class="row">
       <div class="col-md-4">
           <div class="card">
-              <a href="{{ url('dashboard/criança1(Lira-e-Cia)') }}" @guest onclick="redirectToLogin(event)" @endguest>
+              <a href="criança1(Lira-e-Cia)" @guest onclick="redirectToLogin(event)" @endguest>
                   <img src="img/fernanda (Lira-e-Cia).jpg" class="card-img-top" alt="Fernanda">
                   <div class="card-body">
                       <h3 class="card-title">Fernanda</h3>
@@ -128,7 +128,7 @@
       </div>
       <div class="col-md-4">
           <div class="card">
-              <a href="{{ url('dashboard/criança2(Lira-e-Cia)') }}" @guest onclick="redirectToLogin(event)" @endguest>
+              <a href="/criança2(Lira-e-Cia)" @guest onclick="redirectToLogin(event)" @endguest>
                   <img src="img/helena (Lira-e-Cia).jpg" class="card-img-top" alt="Helena">
                   <div class="card-body">
                       <h3 class="card-title">Helena</h3>
@@ -139,7 +139,7 @@
       </div>
       <div class="col-md-4">
           <div class="card">
-              <a href="{{ url('dashboard/criança3(Lira-e-Cia)') }}" @guest onclick="redirectToLogin(event)" @endguest>
+              <a href="/criança3(Lira-e-Cia)" @guest onclick="redirectToLogin(event)" @endguest>
                   <img src="img/julieta (Lira-e-Cia).jpg" class="card-img-top" alt="Julieta">
                   <div class="card-body">
                       <h3 class="card-title">Julieta</h3>
@@ -156,7 +156,7 @@
 
 <!-- Botão abaixo das imagens -->
 <div class="container ver-mais">
-    <a href="{{ url('dashboard/apadrinheLIRA') }}" class="btn btn-link" @guest onclick="redirectToLogin(event)" @endguest>
+    <a href="{{ url('dashboard/apadrinheLIRA') }}"  class="btn btn-link" @guest onclick="redirectToLogin(event)" @endguest>
     Apadrinhe Já</a>
 </div>
 

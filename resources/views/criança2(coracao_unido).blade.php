@@ -80,12 +80,6 @@
                 <p>10 anos</p>
             </a>
         </div>
-
-         <!-- Botão abaixo da imagem -->
-         <div class="botao-imagem">
-            <a href="{{ url('dashboard/apadrinhe') }}" class="btn btn-link">
-            <button>Apadrinhar</button></a>
-            </div>
     </div>
 </div>
 

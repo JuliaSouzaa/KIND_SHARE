@@ -38,7 +38,7 @@
 
             // Se os campos estiverem preenchidos, redireciona para a próxima página
             event.preventDefault(); // Impede o comportamento padrão
-            window.location.href = "{{ url('dashboard/apadrinhe2') }}"; // Redireciona
+            window.location.href = "/apadrinhe2') }}"; // Redireciona
             });
         });
     </script>

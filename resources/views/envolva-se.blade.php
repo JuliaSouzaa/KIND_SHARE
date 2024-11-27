@@ -29,18 +29,18 @@
 
         <div class="links">
             </a>
-            <a href="como ajudar.html" class="link-item">
+            <a href="/doação" class="link-item">
                  Como ajudar as ONGs?
             </a>
 
-            <a href="" class="link-item">
+            <a href="{{ route('register') }}" class="link-item">
                  Faça seu cadastro
             </a>
 
-            <a href="/instiuicoes" class="link-item">
+            <a href="/instituicoes" class="link-item">
                  Instituições
 
-            <a href="contato.html" class="link-item">
+            <a href="/sobre" class="link-item">
                 Entre em contato conosco
 
             <a href="https://www.instagram.com/kindshare__tcc?igsh=aG56ZzEyeTh1d3Qy" class="link-item">
