@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   
   <!-- CSS personalizado -->
-  <link rel="stylesheet" href="css/card.css">
+  <link rel="stylesheet" href="{{ asset('css/card.css') }}">
   
   <style>
     /* Estilo personalizado para o botão */
@@ -105,7 +105,7 @@
 
 document.getElementById('finishButton').addEventListener('click', function(event) {
   event.preventDefault(); // Evita o envio padrão do formulário
-  window.location.href = '/pagamento5'; // Redireciona para a página pagamento5.html
+  window.location.href = "{{ url('dashboard/pagamento5') }}"; // Redireciona para a página pagamento5.html
 });
 
   // Função para atualizar os dados no cartão

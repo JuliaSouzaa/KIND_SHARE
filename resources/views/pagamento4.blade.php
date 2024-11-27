@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pagamento com Pix</title>
   <!-- Link para o arquivo CSS externo -->
-  <link rel="stylesheet" href="css/pagamento4.css">
+  <link rel="stylesheet" href="{{ asset('css/pagamento4.css') }}">
   <!-- Fonte Google -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -22,13 +22,13 @@
 
     <!-- Chave Pix -->
     <div class="text-center">
-      <p><strong>xxxxxxxxxxxxxxxx@xxxxxxxx.xxx</strong></p>
+      <p><strong>11953097836</strong></p>
     </div>
 
     <!-- Botões de ação -->
     <div class="button-container">
-      <a href="/pagamento3" class="btn btn-secondary">Voltar</a>
-      <a href="/pagamento5" class="btn btn-primary">Finalizar</a>
+      <a href="{{ url('dashboard/pagamento3') }}" class="btn btn-secondary">Voltar</a>
+      <a href="{{ url('dashboard/pagamento5') }}" class="btn btn-primary">Finalizar</a>
     </div>
   </div>
 

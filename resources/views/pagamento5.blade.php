@@ -6,7 +6,7 @@
   <title>Mensagem de Sucesso</title>
 
   <!-- Link para o CSS externo -->
-  <link href="css/pagamento5.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ asset('css/pagamento5.css') }}">
 </head>
 <body>
 
