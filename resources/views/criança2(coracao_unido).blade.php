@@ -51,12 +51,12 @@
     <!-- Imagem à direita -->
     <div class="imagem-comunidade">
         <img src="{{ asset('img/pedro (coracao_unido).jpg') }}" alt="Imagem do Pedro">
-   <!-- Botão abaixo da imagem -->
-<div class="container ver-mais">
-    <a href="{{ url('dashboard/apadrinhe') }}" class="btn btn-link" @guest onclick="redirectToLogin(event)" @endguest>
-    Apadrinhe Já</a>
-</div>
-</div>
+        <!-- Botão abaixo da imagem -->
+        <div class="botao-imagem">
+        <a href="{{ url('dashboard/apadrinhe') }}" class="btn btn-link">
+        <button>Apadrinhar</button></a>
+        </div>
+    </div>
 </div>
 
 <!-- Seção "Conheça as Outras Crianças" -->
