@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KINDSHARE</title>
-    <link rel="stylesheet" href="css/apadrinhe3.css"> <!-- Arquivo CSS externo -->
+    <link rel="stylesheet" href="{{ asset('css/apadrinhe2.css') }}"> <!-- Arquivo CSS externo -->
     <script>
         function redirecionar(event) {
             event.preventDefault(); // Previne o envio padrão do formulário
-            window.location.href = 'apadrinhe3.html'; // Redireciona para apadrinhe3.html
+            window.location.href = '{{ url('dashboard/apadrinhe3') }}'; // Redireciona para apadrinhe3.html
         }
 
         document.addEventListener('DOMContentLoaded', function () {
@@ -20,7 +20,7 @@
 <body>
     <div class="form-container">
         <div class="form-header">
-            <img src="img/logo_branca.jpg" alt="Logo"> <!-- Substitua pela sua logo -->
+            <img src="{{ url('img/logo_branca.jpg') }}" alt="Logo"> <!-- Substitua pela sua logo -->
         </div>
         <form id="myForm">
             <div class="select-container">

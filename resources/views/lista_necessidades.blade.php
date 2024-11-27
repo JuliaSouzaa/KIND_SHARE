@@ -66,8 +66,8 @@
                         <li>Papel higiênico</li>
                     </ul>
                     <div class="button-container">
-                        <button class="btn-doar">DOAR</button>
-                        <button class="btn-doar-especifico">DOAR ITEM ESPECÍFICO</button>
+                        <a href="/doação">
+                        <button class="btn-doar">CONTRIBUIR</button></a>
                     </div>
                 </div>
                 <div class="carousel-image">
@@ -96,8 +96,8 @@
                         <li>Toalhas de papel</li>
                     </ul>
                     <div class="button-container">
-                        <button class="btn-doar">DOAR</button>
-                        <button class="btn-doar-especifico">DOAR ITEM ESPECÍFICO</button>
+                        <a href="/doação">
+                        <button class="btn-doar">CONTRIBUIR</button></a>
                     </div>
                 </div>
                 <div class="carousel-image">

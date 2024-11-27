@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KINDSHARE</title>
-    <link rel="stylesheet" href="css/apadrinhe3.css"> <!-- Arquivo CSS externo -->
+    <link rel="stylesheet" href="{{ asset('css/apadrinhe3.css') }}"> <!-- Arquivo CSS externo -->
 </head>
 <body>
     <div class="form-container">
         <div class="form-header">
-            <img src="img/logo_branca.jpg" alt="Logo"> <!-- Substitua pela sua logo -->
+            <img src="{{ url('img/logo_branca.jpg') }}" alt="Logo"> <!-- Substitua pela sua logo -->
         </div>
         <form>
             <div class="select-container">
@@ -45,7 +45,7 @@
             // Verifica se uma criança foi selecionada
             if (selectedChild) {
                 // Redireciona para a página apadrinhe4.html
-                window.location.href = "/apadrinhe4.";
+                window.location.href = "{{ url('dashboard/apadrinhe4') }}";
             } else {
                 // Exibe um alerta se nenhuma criança foi selecionada
                 alert("Por favor, selecione o nome de uma criança antes de enviar.");
@@ -62,11 +62,11 @@
             let imageSrc = '';
 
             if (selectedValue === 'child1') {
-                imageSrc = 'img/isabela (coracao_undio).jpg'; 
+                imageSrc = '{{ asset('img/isabela (coracao_undio).jpg') }}'; 
             } else if (selectedValue === 'child2') {
-                imageSrc = 'img/pedro (coracao_unido).jpg'; 
+                imageSrc = '{{ asset('img/pedro (coracao_unido).jpg') }}'; 
             } else if (selectedValue === 'child3') {
-                imageSrc = 'img/felipe (coracao_unido).jpg'; 
+                imageSrc = '{{ asset('img/felipe (coracao_unido).jpg') }}'; 
             }
 
             if (imageSrc) {

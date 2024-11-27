@@ -124,7 +124,8 @@
     
     <div class="imagem-comunidade">
       <img src="img/nece1.jpg" class="img-fluid" alt="Pessoas na Comunidade">
-      <button class="btnnecessidades">Ver Lista de Necessidades</button>
+      <a href="/lista_necessidades">
+      <button class="btnnecessidades">Ver Lista de Necessidades</button></a>
   </div>
   </section>
 

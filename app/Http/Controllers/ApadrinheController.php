@@ -52,5 +52,6 @@ class ApadrinheController extends Controller
 
         // Redirecionar para a próxima página (dashboard/apadrinhe2)
         return redirect()->route('dashboard.apadrinhe2')->with('success', 'Dados salvos com sucesso!');
+
     }
 }

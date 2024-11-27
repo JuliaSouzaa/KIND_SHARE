@@ -29,11 +29,16 @@
                     }
                 });
 
-                // Se houver algum campo vazio, impede o envio
-                if (!allFilled) {
-                    event.preventDefault(); // Impede o envio do formulário
-                    alert('Por favor, preencha todos os campos obrigatórios.');
-                }
+           // Se houver algum campo vazio, impede o envio
+           if (!allFilled) {
+                event.preventDefault(); // Impede o envio do formulário
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return; // Encerra a execução
+            }
+
+            // Se os campos estiverem preenchidos, redireciona para a próxima página
+            event.preventDefault(); // Impede o comportamento padrão
+            window.location.href = "{{ url('dashboard/apadrinhe2') }}"; // Redireciona
             });
         });
     </script>

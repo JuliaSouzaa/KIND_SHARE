@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/crianças.css">
+    <link rel="stylesheet" href="{{ asset('css/crianças.css') }}">
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- SCRIPT DA NAV BAR-->
     <style>@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');</style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="img/logo_web.png" type="image/x-icon">
+
     <title>KIND SHARE</title>
 
     <style>
@@ -31,53 +33,7 @@
 <body>
 
 <!-- Header -->
-<header>
-    <div class="logo">
-        <img src="img/logo_preta.png" alt="Logo KIND SHARE">
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Início</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="instituicaoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ONGS</a>
-                    <ul class="dropdown-menu" aria-labelledby="instituicaoDropdown">
-                        <li><a class="dropdown-item" href="/instituicoes">Instituição</a></li>
-                        <li><a class="dropdown-item" href="/doação">Doe Agora</a></li>
-                        <li><a class="dropdown-item" href="/lista_necessidades">Necessidades</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="/envolva-se">Envolva-se</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="guia.html">Guia</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="/sobre">Sobre</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    
-    <div class="icons">
-        <div class="search-container">
-            <input type="text" class="form-control" placeholder="Pesquisar..." id="searchInput">
-        </div>
-        <i class="fas fa-search icon" id="searchIcon"></i>
-        <a href="bem-vindo.html">
-            <i class="fas fa-user icon" id="profileIcon"></i>
-        </a>
-    </div>
-</header>
+@include('components.nav')
 
     <!-- Perfil da criança -->
     <div class="comunidades">
@@ -87,9 +43,12 @@
         </div>
         <!-- Imagem à direita -->
         <div class="imagem-comunidade">
-            <img src="img/isabela (coracao_undio).jpg" alt="Imagem da Isabela">
+            <img src="{{ asset('img/isabela (coracao_undio).jpg') }}" alt="Imagem da Isabela">
             <!-- Botão abaixo da imagem -->
-            
+            <div class="botao-imagem">
+            <a href="{{ url('dashboard/apadrinhe') }}" class="btn btn-link">
+            <button>Apadrinhar</button></a>
+            </div>
         </div>
     </div>
 
@@ -98,16 +57,16 @@
         <h2>Conheça as Outras Crianças</h2>
         <div class="cards">
             <div class="card">
-                <a href="/criança2(coracao_unido)">
-                    <img src="img/pedro (coracao_unido).jpg" alt="Pedro">
+                <a href="{{ url('dashboard/criança2(coracao_unido)') }}">
+                    <img src="{{ asset('img/pedro (coracao_unido).jpg') }}" alt="Pedro">
                     <h3>Pedro</h3>
                     <p>12 anos</p>
                 </a>
             </div>
 
             <div class="card">
-                <a href="/criança3(coracao_unido)">
-                    <img src="img/felipe (coracao_unido).jpg" alt="Felipe">
+                <a href="{{ url('dashboard/criança3(coracao_unido)') }}">
+                    <img src="{{ asset('img/felipe (coracao_unido).jpg') }}" alt="Felipe">
                     <h3>Felipe</h3>
                     <p>10 anos</p>
                 </a>
@@ -115,10 +74,16 @@
         </div>
     </div>
 
-    <!-- Botão abaixo das imagens -->
-    <div class="ver-mais">
+<!-- Botão abaixo das imagens -->
+
+<div class="ver-mais">
+    <a href="/instituicoes">
         <button>Veja Mais!</button>
-    </div>
+    </a>
+</div>
+
+<br></br>
+
 
     <!-- Botão de voltar ao topo -->
     <a href="#" class="btn-to-top">
