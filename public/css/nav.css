@@ -513,7 +513,7 @@ footer {
     top: 40px; /* Ajusta a posição vertical para ficar abaixo do botão */
     background-color: #333; /* Fundo cinza escuro igual ao menu esquerdo */
     min-width: 160px; /* Largura mínima */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra semelhante */
+    box-shadow: 0 8px 16px #333; /* Sombra semelhante */
     z-index: 1; /* Coloca o menu acima de outros elementos */
     padding: 0; /* Remove padding adicional */
     border-radius: 4px; /* Bordas levemente arredondadas */

@@ -6,110 +6,6 @@ body, h1, h2, h3, h4, h5, h6, p, a, button {
     font-family: 'Ruda', sans-serif; /* Define a fonte "Ruda" como padrão */
 }
 
-/* Estilos para o cabeçalho (header) */
-header {
-    background-color: black; /* Define a cor de fundo do cabeçalho */
-    color: white; /* Define a cor do texto no cabeçalho */
-    display: flex; /* Usa o layout flexbox para organizar os itens */
-    justify-content: space-between; /* Espaça os itens igualmente entre as extremidades */
-    align-items: center; /* Centraliza os itens verticalmente no centro */
-    padding: 10px 20px; /* Padding para dar um bom espaço ao redor do conteúdo */
-    box-sizing: border-box; /* Garante que o padding seja considerado no tamanho total */
-    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" ao cabeçalho */
-}
-
-/* Estilos para os links de navegação no cabeçalho */
-header nav a {
-    color: white; /* Define a cor dos links como branco */
-    margin: 0 10px; /* Adiciona uma margem horizontal de 10px entre os links */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    font-size: 1em; /* Tamanho da fonte dos links */
-    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" aos links */
-}
-
-/* Estilos para os ícones de perfil e redes sociais */
-.socialIcons a, .icon-section a, .btn-learn-more, .btnnecessidades, .btn-to-top {
-    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" aos botões e links */
-}
-
-/* Estilos para as legendas, textos e ícones */
-.icon-section p, .text-container h2, .text-container p, .comunidades h2, .comunidades p {
-    font-family: 'Ruda', sans-serif; /* Aplica a fonte "Ruda" aos textos das seções */
-}
-
-/* Define a fonte padrão para o site e remove as margens e preenchimentos padrões */
-body {
-    margin: 0; /* Remove margens padrão do navegador */
-    padding: 0; /* Remove preenchimento padrão do navegador */
-    background-color: #FFFAFA !important;
-}
-
-/* Estilos para o cabeçalho (header) */
-header {
-    background-color: black; /* Define a cor de fundo do cabeçalho */
-    color: white; /* Define a cor do texto no cabeçalho */
-    display: flex; /* Usa o layout flexbox para organizar os itens */
-    justify-content: space-between; /* Espaça os itens igualmente entre as extremidades */
-    align-items: center; /* Centraliza os itens verticalmente no centro */
-    padding: 10px 20px; /* Padding para dar um bom espaço ao redor do conteúdo */
-    box-sizing: border-box; /* Garante que o padding seja considerado no tamanho total */
-}
-
-/* Estilos para o logotipo no cabeçalho */
-header .logo img {
-    width: 60px; /* Aumente o tamanho da logo */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-/* Estilos para os links de navegação no cabeçalho */
-header nav a {
-    color: white; /* Define a cor dos links como branco */
-    margin: 0 10px; /* Adiciona uma margem horizontal de 10px entre os links */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    font-size: 1em; /* Tamanho da fonte dos links */
-}
-
-/* Estilos para a seção de ícones no cabeçalho (pesquisa e perfil) */
-header .icons {
-    display: flex; /* Usa o layout flexbox para organizar os ícones em linha */
-    align-items: center; /* Centraliza verticalmente os itens */
-    gap: 10px; /* Define um espaçamento (gap) de 10px entre os ícones */
-}
-
-/* Estilos para os ícones individuais no cabeçalho */
-header .icons .icon {
-    font-size: 24px; /* Tamanho do ícone */
-    color: white; /* Cor padrão dos ícones */
-    cursor: pointer; /* Muda o cursor para uma mãozinha quando passar o mouse sobre o ícone */
-    transition: color 0.3s; /* Animação suave para a mudança de cor */
-}
-
-/* Mudança de cor ao passar o mouse sobre o ícone */
-header .icons .icon:hover {
-    color: #ffa600; /* Cor que o ícone muda ao passar o mouse */
-}
-
-/* Garantindo que o link do ícone de perfil não altere a aparência do cursor */
-header .icons a {
-    color: inherit; /* Herda a cor do ícone */
-    text-decoration: none; /* Remove o sublinhado do link */
-}
-
-.navbar-nav .nav-link {
-    color: white !important;
-}
-
-.navbar-nav .dropdown-menu {
-    background-color: #333; /* Fundo escuro no dropdown */
-}
-
-.navbar-nav .dropdown-item {
-    color: white !important;
-}
-
-.navbar-nav .dropdown-item:hover {
-    background-color: #555; /* Cor de fundo ao passar o mouse */
-}
 
 /* ESSSE PEDEAÇO FAZ PARTE DO FOOTER E NAO TIRAR ELE DAQUI*/
 /* Ajustando a aparência de todos os ícones de rede social */
@@ -131,11 +27,6 @@ header .icons a {
 }
 
 
-/* Garante que o carrossel ocupe a largura completa */
-.carousel {
-    border-top: 2px solid #ffa600; /* Borda no topo para separar visualmente */
-    position: relative;
-}
 
 /* Define a altura e o estilo das imagens do carrossel */
 .carousel-item img {
@@ -170,6 +61,8 @@ header .icons a {
     text-align: center;
     font-family: 'Ruda', sans-serif;
     padding: 20px;
+    margin-bottom: 50px; /* Aumenta o espaçamento abaixo do texto */
+
 }
 
 
@@ -191,17 +84,20 @@ header .icons a {
 
 /* CARROSSEL DE LISTA DE NECESSIDADES */
 /* CARROSSEL DE LISTA DE NECESSIDADES */
+/* Ajustar espaçamento no container */
 .carousel-content {
     display: flex;
-    /* Configura o layout do slide para ser flexível (texto e imagem lado a lado) */
-    background-color: #F4A300;
-    /* Define o fundo amarelo para todo o conteúdo do slide */
-    padding: 20px;
-    /* Espaçamento interno (padding) ao redor do conteúdo */
-    border-radius: 100px 0px 100px 0px;
-    /* Bordas arredondadas para o contêiner do slide */
-    
+    background-color: #f8cf47;
+    padding: 85px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 100px 0 100px 0; /* Bordas arredondadas apenas nos cantos superiores */
+    margin-top: 50px; /* Adiciona espaçamento no topo do container */
+    padding-left: 50px;  /* Aumenta o espaçamento à esquerda do container */
+    padding-right: 50px; /* Aumenta o espaçamento à direita do container */
 }
+
   
 .carousel-text {
     flex: 1;
@@ -237,6 +133,8 @@ header .icons a {
 }
   
 .carousel-text hr {
+    display: none; /* Remove a linha horizontal */
+
     width: 50%;
     /* Define a largura da linha horizontal */
     border: 2px solid #000;
@@ -297,8 +195,6 @@ header .icons a {
 }
 
   
-  
-
 /* Botão de voltar ao topo */
 .btn-to-top {
     position: fixed;
@@ -430,22 +326,3 @@ header .icons a {
         clear: both; /* Garante que o footer não flutue dentro de outro container, forçando-o a aparecer abaixo de qualquer elemento flutuante */
     }
     
-    /* Estilo para a caixa de pesquisa */
-.search-container {
-    display: flex;
-    align-items: center;
-    margin-right: 10px; /* Espaço entre a caixa de pesquisa e o ícone de perfil */
-}
-
-#searchInput {
-    width: 200px; /* Ajuste o tamanho conforme necessário */
-    padding: 5px; /* Espaçamento interno da caixa */
-    border: 1px solid #ccc; /* Borda leve */
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: border-color 0.3s; /* Transição suave para mudança de cor da borda */
-}
-
-#searchInput:focus {
-    border-color: #007bff; /* Cor da borda ao focar */
-    outline: none; /* Remove a borda padrão do foco */
-}

@@ -10,6 +10,9 @@
     <title>Cadastro</title>
 </head>
 <body>
+
+@include('components;nav')
+
     <main class="main-container">
         <div class="form-container">
             <div class="form-header">
