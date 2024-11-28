@@ -19,7 +19,10 @@ body {
     padding: 0;
     background-color: #FFFAFA !important;
 }
+.custom-page{
+    border-top: 2px solid #ffa600;
 
+}
         /* Layout geral */
         .container {
             max-width: 95%;

@@ -247,3 +247,51 @@ footer {
     background-color: #111; /* Redefine a cor de fundo do footer (redundante, pois já está definido anteriormente) */
     clear: both; /* Garante que o footer não flutue dentro de outro container, forçando-o a aparecer abaixo de qualquer elemento flutuante */
 }
+
+
+/* ESTILIZAÇÃO TELA LOGADA (HAMBURGUER LOG OUT E PERFIL)*/
+
+/* Estilos do menu suspenso */
+.user-dropdown {
+    position: relative; /* Para que o dropdown se posicione corretamente */
+}
+
+.dropdown-content {
+    display: none; /* Inicialmente escondido */
+    position: absolute; /* Posiciona o menu abaixo do ícone */
+    left: -140px; /* Alinha à esquerda do ícone com um pequeno deslocamento */
+    top: 20px; /* Ajuste este valor para mover o menu para baixo */
+    background-color: black; /* Fundo preto para o dropdown */
+    min-width: 160px; /* Largura mínima do dropdown */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra para o dropdown */
+    z-index: 1; /* Coloca o dropdown acima de outros elementos */
+    padding: 10px; /* Espaçamento interno do dropdown */
+    border-radius: 8px; /* Cantos arredondados */
+}
+
+.dropdown-link, .dropdown-button {
+    background: none; /* Sem fundo */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Cursor de ponteiro */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Sem sublinhado nos links */
+    display: block; /* Cada item ocupa uma linha */
+    padding: 8px 0; /* Espaçamento entre os itens */
+    width: 100%; /* O item ocupa 100% da largura */
+    text-align: left; /* Alinha o texto à esquerda */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para a cor de fundo e do texto */
+}
+
+/* Garante que tanto os links quanto os botões tenham o mesmo efeito */
+.dropdown-link:hover, .dropdown-button:hover {
+    background-color: #e69500;  /* Efeito ao passar o mouse */
+    color: white; /* Garante que o texto permaneça branco no hover */
+    width: 100%; /* Estende o efeito sobre toda a linha */
+}
+
+/* Remover o estilo padrão de links para garantir comportamento idêntico ao botão */
+.dropdown-link{
+    text-decoration: none; /* Remove sublinhado padrão do link */
+    color: white; /* Cor do texto para o link também */
+    display: block; /* Garante que o link se comporte como bloco */
+}
