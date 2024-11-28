@@ -166,7 +166,7 @@
   <div class="row">
       <div class="col-md-4">
           <div class="card">
-              <a href="/criança1(amigos-do-bem)')" @guest onclick="redirectToLogin(event)" @endguest>
+              <a href="/criança1(amigos-do-bem)" @guest onclick="redirectToLogin(event)" @endguest>
                   <img src="img/ana (Amigos-do-Bem).jpg" class="card-img-top" alt="ana">
                   <div class="card-body">
                       <h3 class="card-title">Ana</h3>

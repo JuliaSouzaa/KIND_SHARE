@@ -50,47 +50,46 @@
             <span class="text-muted">Preencha seus dados para se tornar padrinho/madrinha e apoiar uma criança que precisa da sua ajuda.</span>
         </div>
         <!-- Formulário com ID para o JavaScript acessar -->
-        <form id="myForm" action="/apadrinhe2" method="GET">
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" required placeholder="Digite seu Nome Completo" :value="old('name', $user->name)" autofocus autocomplete="name" >
-            <x-input-error :messages="$errors->get('name')" class="mt-2" />
+        <form action="{{ route('apadrinhar.store') }}" method="POST">
+    @csrf
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" required placeholder="Digite seu E-mail" :value="old('email', $user->email)" autofocus autocomplete="email">
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-    
-            <label for="cpf">CPF:</label>
-            <input type="string" id="cpf" required placeholder="Digite seu CPF" :value="old('cpf', $user->cpf)" autofocus autocomplete="cpf" >
-            <x-input-error :messages="$errors->get('cpf')" class="mt-2" />
+    <!-- Nome -->
+    <label for="nome">Nome Completo:</label>
+    <input type="text" id="nome" name="nome" value="{{ Auth::user()->name }}" readonly>
 
-            <label for="nascimento">Data de Nascimento:</label>
-            <input type="date" id="nascimento" required :value="old('nasc', $user->nasc)">
-            <x-input-error :messages="$errors->get('nasc')" class="mt-2" />
-    
-            <label for="telefone">Telefone:</label>
-            <input type="string" id="telefone" required placeholder="Digite seu Telefone" :value="old('phone', $user->phone)" autofocus autocomplete="phone"  >
-            <x-input-error :messages="$errors->get('phone')" class="mt-2" />
+    <!-- Email -->
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" value="{{ Auth::user()->email }}" readonly>
 
-            <label for="sexoPadrinho">Sexo:</label>
-            <select id="sexoPadrinho" required name="sexoPadrinho">
-                <option value="">Selecione</option>
-                <option value="masculino">Masculino</option>
-                <option value="feminino">Feminino</option>
-                <option value="nao-declarado">Prefiro Não Falar</option>
-            </select>
+    <!-- CPF -->
+    <label for="cpf">CPF:</label>
+    <input type="text" id="cpf" name="cpf" value="{{ Auth::user()->cpf }}" readonly>
 
-            <label for="estadoPadrinho">Estado:</label>
-            <select id="estadoPadrinho" required name="estadoPadrinho">
-                <option value="" disabled hidden>Selecione</option>
-                <option value="SP">São Paulo</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="RS">Rio Grande do Sul</option>
-            </select>
+    <!-- Telefone -->
+    <label for="telefone">Telefone:</label>
+    <input type="text" id="telefone" name="telefone" value="{{ Auth::user()->phone }}" readonly>
 
-            <!-- Botão de envio -->
-            <button type="submit" class="submit-btn">Seguir</button>
-        </form>
+    <!-- Sexo -->
+    <label for="sexoPadrinho">Sexo:</label>
+    <select id="sexoPadrinho" name="sexoPadrinho" required>
+        <option value="" disabled selected>Selecione</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="nao-declarado">Prefiro Não Falar</option>
+    </select>
+
+    <!-- Estado -->
+    <label for="estadoPadrinho">Estado:</label>
+    <select id="estadoPadrinho" name="estadoPadrinho" required>
+        <option value="" disabled selected>Selecione</option>
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="RS">Rio Grande do Sul</option>
+    </select>
+
+    <button type="submit" class="submit-btn">Seguir</button>
+</form>
 
     </div>
 

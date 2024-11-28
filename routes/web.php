@@ -6,6 +6,10 @@ use App\Http\Controllers\DoacaoController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\InstituicaoController;
 use App\Http\Controllers\ApadrinheController;
+use App\Http\Controllers\ApadrinhamentoController;
+
+Route::post('/apadrinhar', [ApadrinhamentoController::class, 'store'])->name('apadrinhar.store');
+
 
 Route::get('/instituicoes/search', [InstituicaoController::class, 'search'])->name('instituicoes.search');
 
@@ -129,7 +133,24 @@ Route::get('/criança3(rede-de-esperanca)', function () {
     App::setLocale('pt_BR');
 })->name('criança3(rede-de-esperanca)');
 
-/* Amigos do bem*/
+/* Apadrinhes diferentes do bem*/
+    /*apadrinhe corações unidos*/
+    Route::get('/apadrinhe', function () {
+        App::setLocale('pt_BR'); // (opcional, se necessário)
+        return view('apadrinhe');
+    });
+
+Route::get('/apadrinhe2', function () {
+    return view('apadrinhe2');
+});
+
+Route::get('/apadrinhe3', function () {
+    return view('apadrinhe3');
+});
+
+Route::get('/apadrinhe4', function () {
+    return view('apadrinhe4');
+});
 
 Route::get('/criança1(amigos-do-bem)', function () {
     return view('criança1(amigos-do-bem)');
@@ -147,7 +168,7 @@ Route::get('/criança3(amigos-do-bem)', function () {
 })->name('criança3(amigos-do-bem)');
 
 Route::get('/apadrinheLIRA2', function () {
-    return view('dapadrinheLIRA2');
+    return view('apadrinheLIRA2');
 });
 
 Route::get('/apadrinheLIRA3', function () {
@@ -205,17 +226,6 @@ Route::middleware(['auth', 'verified'])->prefix('dashboard')->group(function () 
         App::setLocale('pt_BR');
     })->name('dashboard');
 
-    Route::get('/apadrinhe2', function () {
-        return view('apadrinhe2');
-    });
-    
-    Route::get('/apadrinhe3', function () {
-        return view('apadrinhe3');
-    });
-    
-    Route::get('/apadrinhe4', function () {
-        return view('apadrinhe4');
-    });
     
     Route::get('/criança1(coracao_unido)', function () {
         return view('criança1(coracao_unido)');
@@ -266,33 +276,37 @@ Route::get('/criança3(coracao_unido)', function () {
         App::setLocale('pt_BR');
     })->name('cartao1');
    
-    /*apadrinhe corações unidos*/
-    Route::get('/apadrinhe', function () {
-        App::setLocale('pt_BR'); // (opcional, se necessário)
-        return view('apadrinhe');
-    });
 
-    /*apadrinhe lira*/
-    Route::get('/apadrinheLIRA', function () {
-        return view('apadrinheLIRA');
-    });
 
-        /*apadrinhe comu*/
-    Route::get('/apadrinheComu', function () {
-         return view('apadrinheComu');
-     });
+  
+    
+    
+    Route::get('/dashboard/apadrinhe/{instituicao}2', function ($instituicao) {
+    return view("apadrinhe{$instituicao}2"); // Carrega a view dinamicamente
+})->name('apadrinhe.dinamico');
 
-         /*apadrinhe rede*/
-    
-    Route::get('/apadrinheRede', function () {
-        return view('apadrinheRede');
-    });
-    
-        /*apadrinhe amigos do bem*/
-    Route::get('/apadrinheAmi', function () {
-        return view('apadrinheAmi');
-    });
-    
+  /*apadrinhe lira*/
+  Route::get('/apadrinheLIRA', function () {
+    return view('apadrinheLIRA');
+});
+
+    /*apadrinhe comu*/
+Route::get('/apadrinheComu', function () {
+     return view('apadrinheComu');
+ });
+
+     /*apadrinhe rede*/
+
+Route::get('/apadrinheRede', function () {
+    return view('apadrinheRede');
+});
+
+    /*apadrinhe amigos do bem*/
+Route::get('/apadrinheAmi', function () {
+    return view('apadrinheAmi');
+});
+
+
     Route::get('/desapego', function () {
         return view('desapego');
         App::setLocale('pt_BR');
