@@ -25,7 +25,6 @@ body {
             max-width: 95%;
             margin: auto;
             padding: 20px;
-            border-top: 2px solid #ffa600;
 
         }
 
@@ -67,21 +66,9 @@ body {
             border-radius: 12px;
         }
 
-        .video-container {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 8px; /* Bordas arredondadas opcionais */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.video-container:hover {
-    transform: scale(1.05); /* Aumenta o tamanho ligeiramente */
-    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8); /* Sombreamento branco */
-}
-
-.video-container:hover .overlay {
-    opacity: 1; /* Torna o texto visível */
+        .step-video:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8); /* Adiciona sombra */
 }
 
 .overlay {
@@ -342,6 +329,7 @@ footer {
 <body>
     <!-- Navbar -->
 @include('components.nav')
+<div class="custom-page">
 
     <!-- Conteúdo Principal -->
     <main class="container">
@@ -353,8 +341,8 @@ footer {
                 <a href="/instituicoes" class="custom-button">Explorar Instituições</a>
             </div>
             <div class="step-video">
-                <video controls>
-                    <source src="video1.mp4" type="video/mp4">
+                <video autoplay muted loop controls>
+                    <source src="mp4/video1.mp4" type="video/mp4">
                     Seu navegador não suporta vídeos.
                 </video>
             </div>
@@ -369,8 +357,8 @@ footer {
                 <a href="/doacao" class="custom-button">Fazer Doação</a>
             </div>
             <div class="step-video">
-                <video controls>
-                    <source src="video2.mp4" type="video/mp4">
+                <video autoplay muted loop controls>
+                    <source src="mp4/video2.mp4" type="video/mp4">
                     Seu navegador não suporta vídeos.
                 </video>
             </div>
@@ -385,8 +373,8 @@ footer {
                 Apadrinhar</a>
             </div>
             <div class="step-video">
-                <video controls>
-                    <source src="video3.mp4" type="video/mp4">
+                <video autoplay muted loop controls>
+                    <source src="mp4/video3.mp4" type="video/mp4">
                     Seu navegador não suporta vídeos.
                 </video>
             </div>
@@ -399,6 +387,7 @@ footer {
                 <br><br>Entre em contato conosco e faça parte dessa jornada solidária. Junte-se à KindShare e seja um membro dessa ponte de esperança! 🧡</p>
             <button onclick="window.location.href='/sobre'">Entrar em Contato</button>
         </div>
+</div>
     </main>
 
     <br><br>
@@ -446,6 +435,7 @@ footer {
         event.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+
 
 </script>
 

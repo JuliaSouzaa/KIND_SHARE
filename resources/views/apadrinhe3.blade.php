@@ -45,7 +45,7 @@
             // Verifica se uma criança foi selecionada
             if (selectedChild) {
                 // Redireciona para a página apadrinhe4.html
-                window.location.href = "{{ url('dashboard/apadrinhe4') }}";
+                window.location.href = "/apadrinhe4";
             } else {
                 // Exibe um alerta se nenhuma criança foi selecionada
                 alert("Por favor, selecione o nome de uma criança antes de enviar.");

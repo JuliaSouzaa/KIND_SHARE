@@ -90,6 +90,7 @@
             <img src="img/helena (Lira-e-Cia).jpg" alt="Imagem da Fernanda">
             <!-- Botão abaixo da imagem -->
             <div class="botao-imagem">
+            <a href="{{ url('dashboard/apadrinheLIRA') }}" class="btn btn-link">
                 <button>Apadrinhar</button>
             </div>
         </div>

@@ -8,7 +8,7 @@
     <script>
         function redirecionar(event) {
             event.preventDefault(); // Previne o envio padrão do formulário
-            window.location.href = '{{ url('dashboard/apadrinhe3') }}'; // Redireciona para apadrinhe3.html
+            window.location.href = '/apadrinhe3'; // Redireciona para apadrinhe3.html
         }
 
         document.addEventListener('DOMContentLoaded', function () {
